@@ -1,0 +1,27 @@
+{
+  "name": "michelemazzucco.it",
+  "version": "1.0.0",
+  "description": "Michele Mazzucco's personal portfolio website",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "gatsby",
+    "portfolio"
+  ],
+  "author": "Michele Mazzucco <hello@michelemazzucco.it>",
+  "license": "MIT",
+  "dependencies": {
+    "gatsby": "^1.9.118",
+    "gatsby-link": "^1.6.28",
+    "gatsby-plugin-styled-components": "^2.0.2",
+    "gatsby-source-filesystem": "^1.5.8",
+    "gatsby-transformer-json": "^1.0.12",
+    "styled-components": "^2.2.3",
+    "styled-reset": "^0.1.3"
+  }
+}

@@ -1,0 +1,10 @@
+# Node files
+npm-debug.log
+node_modules
+
+# Build
+public/
+
+# Hidden files
+.cache/
+.DS_Store
