@@ -1,4 +1,5 @@
 import React from 'react'
+import Nav from '../components/Nav'
 import globalStyles from '../utils/globalStyles'
 
 const Layout = ({ children }) => {
@@ -6,6 +7,7 @@ const Layout = ({ children }) => {
   return (
     <div> 
       {children()}
+      <Nav />
     </div>
   )
 }

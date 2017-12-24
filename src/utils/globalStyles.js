@@ -1,14 +1,29 @@
 import { injectGlobal } from 'styled-components'
 import reset from 'styled-reset'
+import { colors, fonts } from './constants'
 
 const globalStyles = () => 
   injectGlobal`
     ${reset}
     body {
-      background: #1e2733;
+      background: ${colors.blue900};
       color: #FFF;
-      font-family: 'Roboto', sans-serif;
-      font-weight: 400;
+      font-family: ${fonts.sansSerif};
+      font-size: 14px;
+      text-rendering: optimizeLegibility;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 300;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    * {
+      box-sizing: border-box;
     }
   `
 
