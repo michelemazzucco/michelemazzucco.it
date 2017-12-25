@@ -19,9 +19,11 @@
     "@jacobmischka/gatsby-plugin-react-svg": "^1.0.0",
     "gatsby": "^1.9.118",
     "gatsby-link": "^1.6.28",
+    "gatsby-plugin-react-helmet": "^2.0.3",
     "gatsby-plugin-styled-components": "^2.0.2",
     "gatsby-source-filesystem": "^1.5.8",
     "gatsby-transformer-json": "^1.0.12",
+    "react-helmet": "^5.2.0",
     "styled-components": "^2.2.3",
     "styled-reset": "^0.1.3"
   }

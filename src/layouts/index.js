@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from '../components/Nav'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import globalStyles from '../utils/globalStyles'
 
 const Layout = ({ children }) => {
@@ -10,6 +11,7 @@ const Layout = ({ children }) => {
       <Header />
       {children()}
       <Nav />
+      <Footer />
     </div>
   )
 }

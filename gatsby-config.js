@@ -10,6 +10,7 @@ module.exports = {
         path: `${__dirname}/src/data/`
       }
     },
+    'gatsby-plugin-react-helmet',
     'gatsby-transformer-json',
     '@jacobmischka/gatsby-plugin-react-svg'
   ],

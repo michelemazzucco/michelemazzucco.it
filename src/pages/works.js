@@ -8,8 +8,8 @@ export default ({ data }) =>
     </MainWrapper>
   </div>
 
-export const query = graphql`
-  query WorksQUery {
+export const worksQuery = graphql`
+  query WorksQuery {
     allWorksJson {
       edges {
         node {
