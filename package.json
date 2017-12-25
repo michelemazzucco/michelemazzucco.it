@@ -16,6 +16,7 @@
   "author": "Michele Mazzucco <hello@michelemazzucco.it>",
   "license": "MIT",
   "dependencies": {
+    "@jacobmischka/gatsby-plugin-react-svg": "^1.0.0",
     "gatsby": "^1.9.118",
     "gatsby-link": "^1.6.28",
     "gatsby-plugin-styled-components": "^2.0.2",

@@ -1,9 +1,11 @@
 import React from 'react'
+import MainWrapper from '../components/MainWrapper'
 
 export default ({ data }) =>
   <div>
-    <h1>Works</h1>
-    <ul>{data.allWorksJson.edges.map((w, i) => <li key={i}>{w.node.title}</li>)}</ul>
+    <MainWrapper>
+      {data.allWorksJson.edges.map((w, i) => <div key={i}>{w.node.title}</div>)}
+    </MainWrapper>
   </div>
 
 export const query = graphql`
