@@ -1,9 +1,112 @@
 [
   {
     "title": "Cum sociis natoque",
-    "category": "design"
+    "category": [ "design" ],
+    "collaborators": [ "incode" ],
+    "featured": true,
+    "coverImage": "/images/works/work-image-example-01.png"
   },{
-    "title": "Etiam porta sem malesuada magna mollis euismod",
-    "category": "design"
+    "title": "Cum sociis natoque",
+    "category": [ "design" ],
+    "collaborators": [ "incode" ],
+    "featured": true,
+    "coverImage": "/images/works/work-image-example-01.png"
+  },{
+    "title": "Cum sociis natoque",
+    "category": [ "design" ],
+    "collaborators": [ "incode" ],
+    "featured": true,
+    "coverImage": "/images/works/work-image-example-01.png"
+  },{
+    "title": "Cum sociis natoque",
+    "category": [ "design" ],
+    "collaborators": [ "incode" ],
+    "featured": true,
+    "coverImage": "/images/works/work-image-example-01.png"
+  },{
+    "title": "Cum sociis natoque",
+    "category": [ "code", "design" ],
+    "collaborators": [ "incode" ],
+    "featured": false
+  },{
+    "title": "Cum sociis natoque",
+    "category": [ "design" ],
+    "collaborators": [ "incode" ],
+    "featured": false
+  },{
+    "title": "Cum sociis natoque",
+    "category": [ "code" ],
+    "collaborators": [ "incode" ],
+    "featured": false
+  },{
+    "title": "Cum sociis natoque",
+    "category": [ "design" ],
+    "collaborators": [ "incode" ],
+    "featured": false
+  },{
+    "title": "Cum sociis natoque",
+    "category": [ "design" ],
+    "collaborators": [ "incode" ],
+    "featured": false
+  },{
+    "title": "Cum sociis natoque",
+    "category": [ "code" ],
+    "collaborators": [ "incode" ],
+    "featured": false
+  },{
+    "title": "Cum sociis natoque",
+    "category": [ "design" ],
+    "collaborators": [ "incode" ],
+    "featured": false
+  },{
+    "title": "Cum sociis natoque",
+    "category": [ "code", "design" ],
+    "collaborators": [ "incode" ],
+    "featured": false
+  },{
+    "title": "Cum sociis natoque",
+    "category": [ "design" ],
+    "collaborators": [ "incode" ],
+    "featured": false
+  },{
+    "title": "Cum sociis natoque",
+    "category": [ "code", "design" ],
+    "collaborators": [ "incode" ],
+    "featured": false
+  },{
+    "title": "Cum sociis natoque",
+    "category": [ "design" ],
+    "collaborators": [ "incode" ],
+    "featured": false
+  },{
+    "title": "Cum sociis natoque",
+    "category": [ "design" ],
+    "collaborators": [ "incode" ],
+    "featured": false
+  },{
+    "title": "Cum sociis natoque",
+    "category": [ "design" ],
+    "collaborators": [ "incode" ],
+    "featured": false
+  },{
+    "title": "Cum sociis natoque",
+    "category": [ "code", "design" ],
+    "collaborators": [ "incode" ],
+    "featured": false
+  },{
+    "title": "Cum sociis natoque",
+    "category": [ "code", "design" ],
+    "collaborators": [ "incode" ],
+    "featured": false
+  },{
+    "title": "Cum sociis natoque",
+    "category": [ "code", "design" ],
+    "collaborators": [ "incode" ],
+    "featured": false
+  },{
+    "title": "Cum sociis natoque",
+    "category": [ "code", "design" ],
+    "collaborators": [ "incode" ],
+    "featured": false
   }
 ]

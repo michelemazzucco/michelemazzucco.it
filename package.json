@@ -23,6 +23,7 @@
     "gatsby-plugin-styled-components": "^2.0.2",
     "gatsby-source-filesystem": "^1.5.8",
     "gatsby-transformer-json": "^1.0.12",
+    "idx": "^2.2.0",
     "react-helmet": "^5.2.0",
     "styled-components": "^2.2.3",
     "styled-reset": "^0.1.3"

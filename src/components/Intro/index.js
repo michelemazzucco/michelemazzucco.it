@@ -1,14 +1,14 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
-import { colors, fonts } from '../../utils/commonStyles'
+import { colors, fonts, getOuterSpace } from '../../utils/commonStyles'
 
 const IntroWrapper = styled.div`
   font-size: 1.7rem;
   position: absolute; 
   top: 0;
   right: 0;
-  padding: 4rem;
   text-align: right;
+  ${getOuterSpace('padding')};
   h1 span {
     color: ${colors.yellow500};
     text-decoration: line-through;

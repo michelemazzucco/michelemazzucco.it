@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
-import { colors, fonts } from '../../utils/commonStyles'
+import { colors, fonts, getOuterSpace } from '../../utils/commonStyles'
 
 const FooterWrapper = styled.footer`
   width: 100%;
@@ -15,15 +15,18 @@ const FooterItem = styled.div`
   font-size: .8rem;
   ${props => props.position === 'left' 
     ? css`
-      left: 4rem;
       transform: rotate(-90deg) translateX(-50%);
       transform-origin: left;
+      ${getOuterSpace('left')}
     `
     : css`
-      right: 4rem;
       transform: rotate(90deg) translateX(50%);
       transform-origin: right;
+      ${getOuterSpace('right')}
     ` }
+  a:hover {
+    color: ${colors.gray500};
+  }
 `
 
 const Footer = () =>

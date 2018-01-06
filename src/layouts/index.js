@@ -1,19 +1,14 @@
 import React from 'react'
-import Nav from '../components/Nav'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import globalStyles from '../utils/globalStyles'
+import Navigation from '../components/Navigation'
+import '../utils/globalStyles'
 
-const Layout = ({ children }) => {
-  globalStyles()
-  return (
-    <div> 
-      <Header />
-      {children()}
-      <Nav />
-      <Footer />
-    </div>
-  )
-}
+const Layout = ({ children }) =>
+  <Navigation> 
+    <Header />
+    {children()}
+    <Footer />
+  </Navigation>
 
 export default Layout
