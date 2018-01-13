@@ -6,26 +6,26 @@ import WorksList from '../components/WorksList'
 class WorksPage extends Component {
   getData() {
     const { data } = this.props
-    return idx(data, _ => _.allWorksJson.edges) 
+    return idx(data, _ => _.works.edges) 
   }
 
   getWorks() {  
     const works = this.getData()
-    return works && works.filter(w => !w.node.featured)
+    return works && works.filter(({ work }) => !work.featured)
   }
   
   getFeaturedWorks() {
     const works = this.getData()
-    return works && works.filter(w => w.node.featured)
+    return works && works.filter(({ work }) => work.featured)
   }
 
   render() {
-    console.log('f works', this.getFeaturedWorks())
+    console.log('featured works', this.getFeaturedWorks())
     console.log('works', this.getWorks())
     return (
       <ContentWrapper>
-        <WorksList works={this.getWorks()}/>
-      </ContentWrapper>      
+        <WorksList works={this.getWorks()} />
+      </ContentWrapper> 
     )
   }
 }
@@ -34,13 +34,14 @@ export default WorksPage
 
 export const worksQuery = graphql`
   query WorksQuery {
-    allWorksJson {
+    works: allWorksJson {
       edges {
-        node {
+        work: node {
           title,
           category,
-          featured,
           collaborators,
+          client,
+          featured,
           coverImage
         }
       }

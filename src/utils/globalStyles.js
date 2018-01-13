@@ -14,7 +14,6 @@ injectGlobal`
     color: #FFF;
     font-family: ${fonts.sansSerif};
     font-size: 14px;
-    text-rendering: optimizeLegibility;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -29,5 +28,9 @@ injectGlobal`
   * {
     box-sizing: border-box;
     line-height: 1.3em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: auto;
   }
 `

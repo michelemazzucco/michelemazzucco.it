@@ -2,111 +2,132 @@
   {
     "title": "Cum sociis natoque",
     "category": [ "design" ],
-    "collaborators": [ "incode" ],
+    "collaborators": [ "Incode" ],
+    "client": "Name of client",
     "featured": true,
     "coverImage": "/images/works/work-image-example-01.png"
   },{
     "title": "Cum sociis natoque",
     "category": [ "design" ],
-    "collaborators": [ "incode" ],
+    "collaborators": [ "Incode" ],
+    "client": "Name of client",
     "featured": true,
     "coverImage": "/images/works/work-image-example-01.png"
   },{
     "title": "Cum sociis natoque",
     "category": [ "design" ],
-    "collaborators": [ "incode" ],
+    "collaborators": [ "Incode" ],
+    "client": "Name of client",
     "featured": true,
     "coverImage": "/images/works/work-image-example-01.png"
   },{
     "title": "Cum sociis natoque",
     "category": [ "design" ],
-    "collaborators": [ "incode" ],
+    "collaborators": [ "Incode" ],
+    "client": "Name of client",
     "featured": true,
     "coverImage": "/images/works/work-image-example-01.png"
   },{
     "title": "Cum sociis natoque",
     "category": [ "code", "design" ],
-    "collaborators": [ "incode" ],
+    "collaborators": [ "Incode", "Test" ],
+    "client": "Name of client",
     "featured": false
   },{
     "title": "Cum sociis natoque",
     "category": [ "design" ],
-    "collaborators": [ "incode" ],
+    "collaborators": [ "Incode", "Test" ],
+    "client": "Name of client",
     "featured": false
   },{
     "title": "Cum sociis natoque",
     "category": [ "code" ],
-    "collaborators": [ "incode" ],
+    "collaborators": [ "Incode", "Test" ],
+    "client": "Name of client",
     "featured": false
   },{
     "title": "Cum sociis natoque",
     "category": [ "design" ],
-    "collaborators": [ "incode" ],
+    "collaborators": [ "Incode" ],
+    "client": "Name of client",
     "featured": false
   },{
     "title": "Cum sociis natoque",
     "category": [ "design" ],
-    "collaborators": [ "incode" ],
+    "collaborators": [ "Incode" ],
+    "client": "Name of client",
     "featured": false
   },{
     "title": "Cum sociis natoque",
     "category": [ "code" ],
-    "collaborators": [ "incode" ],
+    "collaborators": [ "Incode" ],
+    "client": "Name of client",
     "featured": false
   },{
     "title": "Cum sociis natoque",
     "category": [ "design" ],
-    "collaborators": [ "incode" ],
+    "collaborators": [ "Incode" ],
+    "client": "Name of client",
     "featured": false
   },{
     "title": "Cum sociis natoque",
     "category": [ "code", "design" ],
-    "collaborators": [ "incode" ],
+    "collaborators": [ "Incode" ],
+    "client": "Name of client",
     "featured": false
   },{
     "title": "Cum sociis natoque",
     "category": [ "design" ],
-    "collaborators": [ "incode" ],
+    "collaborators": [ "Incode" ],
+    "client": "Name of client",
     "featured": false
   },{
     "title": "Cum sociis natoque",
     "category": [ "code", "design" ],
-    "collaborators": [ "incode" ],
+    "collaborators": [ "Incode" ],
+    "client": "Name of client",
     "featured": false
   },{
     "title": "Cum sociis natoque",
     "category": [ "design" ],
-    "collaborators": [ "incode" ],
+    "collaborators": [ "Incode" ],
+    "client": "Name of client",
     "featured": false
   },{
     "title": "Cum sociis natoque",
     "category": [ "design" ],
-    "collaborators": [ "incode" ],
+    "collaborators": [ "Incode" ],
+    "client": "Name of client",
     "featured": false
   },{
     "title": "Cum sociis natoque",
     "category": [ "design" ],
-    "collaborators": [ "incode" ],
+    "collaborators": [ "Incode" ],
+    "client": "Name of client",
     "featured": false
   },{
     "title": "Cum sociis natoque",
     "category": [ "code", "design" ],
-    "collaborators": [ "incode" ],
+    "collaborators": [ "Incode" ],
+    "client": "Name of client",
     "featured": false
   },{
     "title": "Cum sociis natoque",
     "category": [ "code", "design" ],
-    "collaborators": [ "incode" ],
+    "collaborators": [ "Incode" ],
+    "client": "Name of client",
     "featured": false
   },{
     "title": "Cum sociis natoque",
     "category": [ "code", "design" ],
-    "collaborators": [ "incode" ],
+    "collaborators": [ "Incode" ],
+    "client": "Name of client",
     "featured": false
   },{
     "title": "Cum sociis natoque",
     "category": [ "code", "design" ],
-    "collaborators": [ "incode" ],
+    "collaborators": [ "Incode" ],
+    "client": "Name of client",
     "featured": false
   }
 ]

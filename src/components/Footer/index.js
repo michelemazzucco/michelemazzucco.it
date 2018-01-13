@@ -1,6 +1,7 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 import { colors, fonts, getOuterSpace } from '../../utils/commonStyles'
+import { getCurrentYear } from '../../utils/functions'
 
 const FooterWrapper = styled.footer`
   width: 100%;
@@ -32,7 +33,7 @@ const FooterItem = styled.div`
 const Footer = () =>
   <FooterWrapper>
     <FooterItem position='left'>
-      Made (with love) in 2017
+      Made (with love) in {getCurrentYear()}
     </FooterItem>
     <FooterItem position='right'>
       <a target='_blank' href='https://github.com/'>Source code</a>
