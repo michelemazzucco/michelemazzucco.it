@@ -23,10 +23,10 @@ export const spaces = {
   p25: '.25rem'
 }
 
-const mq = {
+export const mq = {
   sm: '40em',
   md: '54em',
-  lg: '68em'
+  lg: '85em'
 }
 
 export const media = {

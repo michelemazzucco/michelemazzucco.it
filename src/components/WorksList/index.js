@@ -1,21 +1,84 @@
 import React, { Component } from 'react'
+import styled, { css } from 'styled-components'
 import WorksItem from '../WorksItem'
+import { colors, fonts } from '../../utils/commonStyles'
+
+const WorksWrapper = styled.div`
+  max-width: 80%;
+  margin: 5rem auto 0;
+`
+
+const WorksTitle = styled.h3`
+  font-size: 1.6rem;
+`
+
+const ButtonsWrapper = styled.div`
+  padding: .75rem 0 1.5rem;
+`
+
+const FilterButton = styled.button`
+  border: 0;
+  background: 0;
+  padding: 0;
+  margin: 0;
+  appereance: none;
+  font-size: .9rem;
+  font-family: ${fonts.mono};
+  cursore: pointer;
+
+  &:not(:last-child):after {
+    content: '-';
+    display: inline-block;
+    margin: 0 .5rem;
+    color: ${colors.gray500}
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  ${props => props.active 
+    ? css`
+      color: ${colors.yellow500};
+    `
+    : css`
+      color: ${colors.gray500}
+    `}
+`
 
 class WorksList extends Component {
-  state = { category: null }
+  constructor() {
+    super()
+    this.state = { category: null }
+  }
+
+  setCategory(category) {
+    this.setState({ category })
+  }
+
+  getWorksList(category) {
+    const { works } = this.props
+    return category 
+      ? works.filter(({ work }) => work.category.includes(category))
+      : works
+  }
 
   render() {
     const { works } = this.props
-    
+    const { category } = this.state
+
     return (
-      <div>
-        <h3>Other works</h3>
+      <WorksWrapper>
+        <WorksTitle>Other works</WorksTitle>
+        <ButtonsWrapper>
+          <FilterButton active={category === 'design'} onClick={() => this.setCategory('design')}>design</FilterButton>
+          <FilterButton active={category === 'code'} onClick={() => this.setCategory('code')}>code</FilterButton>
+          {category && <FilterButton onClick={() => this.setCategory( null)}>all</FilterButton>}
+        </ButtonsWrapper>
         <ul>
-        { works.map(({ work }, i) => 
-          <WorksItem key={i} work={work} />
-        )}
+          {this.getWorksList(category).map(({ work }, i) => <WorksItem key={i} work={work} />)}
         </ul>
-      </div>
+      </WorksWrapper>
     )
   }
 }

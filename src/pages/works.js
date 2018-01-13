@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import idx from 'idx'
 import ContentWrapper from '../components/ContentWrapper'
 import WorksList from '../components/WorksList'
+import WorksFeatured from '../components/WorksFeatured'
 
 class WorksPage extends Component {
   getData() {
@@ -20,10 +21,9 @@ class WorksPage extends Component {
   }
 
   render() {
-    console.log('featured works', this.getFeaturedWorks())
-    console.log('works', this.getWorks())
     return (
       <ContentWrapper>
+        <WorksFeatured works={this.getFeaturedWorks()} />
         <WorksList works={this.getWorks()} />
       </ContentWrapper> 
     )
@@ -41,8 +41,10 @@ export const worksQuery = graphql`
           category,
           collaborators,
           client,
+          year,
+          url,
           featured,
-          coverImage
+          image
         }
       }
     }

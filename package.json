@@ -17,6 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "@jacobmischka/gatsby-plugin-react-svg": "^1.0.0",
+    "file-loader": "^1.1.6",
     "gatsby": "^1.9.118",
     "gatsby-link": "^1.6.28",
     "gatsby-plugin-react-helmet": "^2.0.3",

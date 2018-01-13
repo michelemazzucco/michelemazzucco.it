@@ -5,12 +5,8 @@ import Intro from '../components/Intro'
 
 const IndexPage = ({ data }) =>
   <div>
-    <Helmet
-      title={data.site.siteMetadata.title}
-    />
-    <Intro 
-      fixed={true} 
-    />
+    <Helmet title={data.site.siteMetadata.title} />
+    <Intro fixed={true} />
   </div>
 
 export default IndexPage
