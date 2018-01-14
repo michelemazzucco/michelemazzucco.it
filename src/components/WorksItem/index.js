@@ -4,7 +4,7 @@ import { fonts, colors } from '../../utils/commonStyles'
 
 const WorkWrapper = styled.li`
   padding: 1.3rem 0;
-  border-bottom: 1px solid #2f3743;
+  border-bottom: 1px dotted #2f3743;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

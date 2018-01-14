@@ -33,4 +33,9 @@ injectGlobal`
     -moz-osx-font-smoothing: grayscale;
     font-kerning: auto;
   }
+
+  ::selection {
+    color: #FFF;
+    background: ${colors.yellow500};
+  }
 `

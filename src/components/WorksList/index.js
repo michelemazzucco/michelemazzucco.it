@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import styled, { css } from 'styled-components'
 import WorksItem from '../WorksItem'
+import EmailMe from '../EmailMe'
+import Divider from './divider.svg'
 import { colors, fonts } from '../../utils/commonStyles'
 
 const WorksWrapper = styled.div`
@@ -24,7 +26,7 @@ const FilterButton = styled.button`
   appereance: none;
   font-size: .9rem;
   font-family: ${fonts.mono};
-  cursore: pointer;
+  cursor: pointer;
 
   &:not(:last-child):after {
     content: '-';
@@ -44,6 +46,31 @@ const FilterButton = styled.button`
     : css`
       color: ${colors.gray500}
     `}
+`
+
+const NDAWrapper = styled.div`
+  padding-top: 4.5rem;
+  text-align: center;
+  
+  h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFF;
+    margin-bottom: 1rem;
+  }
+`
+
+const StyledDivider = styled(Divider)`
+  margin-bottom: 3rem;
+`
+
+const StyledEmailMe = styled(EmailMe)`
+  color: ${colors.gray500};
+  font-family: ${fonts.mono};
+  font-size: .8rem;
+  border-bottom: 1px dotted ${colors.gray700};
+  padding: 0 0 .3rem;
+  display: inline-block;
 `
 
 class WorksList extends Component {
@@ -78,6 +105,11 @@ class WorksList extends Component {
         <ul>
           {this.getWorksList(category).map(({ work }, i) => <WorksItem key={i} work={work} />)}
         </ul>
+        <NDAWrapper>
+          <StyledDivider height={6} width={43} />
+          <h3>Alcuni dei miei lavori sono sotto NDA, vuoi vederne altri?</h3>
+          <StyledEmailMe text='Scrivimi' />
+        </NDAWrapper>
       </WorksWrapper>
     )
   }

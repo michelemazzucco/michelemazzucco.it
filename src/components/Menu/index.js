@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled, { css } from 'styled-components'
+import EmailMe from '../EmailMe'
 import { colors, fonts, getOuterSpace } from '../../utils/commonStyles'
 
 const NavWrapper = styled.nav`
@@ -12,6 +13,7 @@ const NavWrapper = styled.nav`
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  pointer-events: none;
   ${getOuterSpace('padding')};
   ul:last-child {
     text-align: right;
@@ -36,6 +38,7 @@ const NavItem = styled.li`
 
   a {
     font-family: ${fonts.mono};
+    pointer-events: all;
     ${props => props.highlight 
       ? css`
         color: ${colors.yellow500};
@@ -81,7 +84,7 @@ const Menu = () =>
       <NavItem><NavLink exact to='/'>Index</NavLink></NavItem>
       <NavItem><NavLink exact to='/works'>Works</NavLink></NavItem>
       <NavItem><NavLink exact to='/profile'>Profile</NavLink></NavItem>
-      <NavItem highlight><a href='mailto:hello@michelemazzucco.it'>Contact</a></NavItem>
+      <NavItem highlight><EmailMe text="Contact"/></NavItem>
     </Nav>
   </NavWrapper>
 
