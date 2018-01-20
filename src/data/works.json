@@ -1,174 +1,172 @@
-[
-  {
-    "title": "Cum sociis natoque",
-    "category": [ "design" ],
-    "collaborators": [ "Incode" ],
-    "client": "Name of client",
-    "year": "2015",
-    "url": "http://wwww.google.com",
-    "featured": true,
-    "image": "img/work-image-example-01.png"
-  },{
-    "title": "Cum sociis natoque",
-    "category": [ "design" ],
-    "collaborators": [ "Incode" ],
-    "client": "Name of client",
-    "year": "2015",
-    "featured": true,
-    "image": "img/work-image-example-01.png"
-  },{
-    "title": "Cum sociis natoque",
-    "category": [ "design" ],
-    "collaborators": [ "Incode" ],
-    "client": "Name of client",
-    "year": "2015",
-    "url": "http://wwww.google.com",
-    "featured": true,
-    "image": "img/work-image-example-02.png"
-  },{
-    "title": "Cum sociis natoque",
-    "category": [ "design" ],
-    "collaborators": [ "Incode" ],
-    "client": "Name of client",
-    "year": "2015",
-    "url": "http://wwww.google.com",
-    "featured": true,
-    "image": "img/work-image-example-03.png"
-  },{
-    "title": "Cum sociis natoque",
-    "category": [ "code", "design" ],
-    "collaborators": [ "Incode", "Test" ],
-    "client": "Name of client",
-    "year": "2015",
-    "url": "http://wwww.google.com",
-    "featured": false
-  },{
-    "title": "Cum sociis natoque",
-    "category": [ "design" ],
-    "collaborators": [ "Incode", "Test" ],
-    "client": "Name of client",
-    "year": "2015",
-    "url": "http://wwww.google.com",
-    "featured": false
-  },{
-    "title": "Cum sociis natoque",
-    "category": [ "code" ],
-    "collaborators": [ "Incode", "Test" ],
-    "client": "Name of client",
-    "year": "2015",
-    "url": "http://wwww.google.com",
-    "featured": false
-  },{
-    "title": "Cum sociis natoque",
-    "category": [ "design" ],
-    "collaborators": [ "Incode" ],
-    "client": "Name of client",
-    "year": "2015",
-    "url": "http://wwww.google.com",
-    "featured": false
-  },{
-    "title": "Cum sociis natoque",
-    "category": [ "design" ],
-    "collaborators": [ "Incode" ],
-    "client": "Name of client",
-    "year": "2015",
-    "url": "http://wwww.google.com",
-    "featured": false
-  },{
-    "title": "Cum sociis natoque",
-    "category": [ "code" ],
-    "collaborators": [ "Incode" ],
-    "client": "Name of client",
-    "year": "2015",
-    "url": "http://wwww.google.com",
-    "featured": false
-  },{
-    "title": "Cum sociis natoque",
-    "category": [ "design" ],
-    "collaborators": [ "Incode" ],
-    "client": "Name of client",
-    "year": "2015",
-    "url": "http://wwww.google.com",
-    "featured": false
-  },{
-    "title": "Cum sociis natoque",
-    "category": [ "code", "design" ],
-    "collaborators": [ "Incode" ],
-    "client": "Name of client",
-    "year": "2015",
-    "url": "http://wwww.google.com",
-    "featured": false
-  },{
-    "title": "Cum sociis natoque",
-    "category": [ "design" ],
-    "collaborators": [ "Incode" ],
-    "client": "Name of client",
-    "year": "2015",
-    "url": "http://wwww.google.com",
-    "featured": false
-  },{
-    "title": "Cum sociis natoque",
-    "category": [ "code", "design" ],
-    "collaborators": [ "Incode" ],
-    "client": "Name of client",
-    "year": "2015",
-    "url": "http://wwww.google.com",
-    "featured": false
-  },{
-    "title": "Cum sociis natoque",
-    "category": [ "design" ],
-    "collaborators": [ "Incode" ],
-    "client": "Name of client",
-    "year": "2015",
-    "url": "http://wwww.google.com",
-    "featured": false
-  },{
-    "title": "Cum sociis natoque",
-    "category": [ "design" ],
-    "collaborators": [ "Incode" ],
-    "client": "Name of client",
-    "year": "2015",
-    "url": "http://wwww.google.com",
-    "featured": false
-  },{
-    "title": "Cum sociis natoque",
-    "category": [ "design" ],
-    "collaborators": [ "Incode" ],
-    "client": "Name of client",
-    "year": "2015",
-    "url": "http://wwww.google.com",
-    "featured": false
-  },{
-    "title": "Cum sociis natoque",
-    "category": [ "code", "design" ],
-    "collaborators": [ "Incode" ],
-    "client": "Name of client",
-    "year": "2015",
-    "url": "http://wwww.google.com",
-    "featured": false
-  },{
-    "title": "Cum sociis natoque",
-    "category": [ "code", "design" ],
-    "collaborators": [ "Incode" ],
-    "client": "Name of client",
-    "year": "2015",
-    "url": "http://wwww.google.com",
-    "featured": false
-  },{
-    "title": "Cum sociis natoque",
-    "category": [ "code", "design" ],
-    "collaborators": [ "Incode" ],
-    "client": "Name of client",
-    "year": "2015",
-    "url": "http://wwww.google.com",
-    "featured": false
-  },{
-    "title": "Cum sociis natoque",
-    "category": [ "code", "design" ],
-    "collaborators": [ "Incode" ],
-    "client": "Name of client",
-    "year": "2015",
-    "url": "http://wwww.google.com",
-    "featured": false
-  }
-]
+[{
+  "title": "Cum sociis natoque",
+  "category": [ "design" ],
+  "collaborators": [ "Incode" ],
+  "client": "Name of client",
+  "year": "2015",
+  "url": "http://wwww.google.com",
+  "featured": true,
+  "image": "img/work-image-example-01.png"
+},{
+  "title": "Cum sociis natoque",
+  "category": [ "design" ],
+  "collaborators": [ "Incode" ],
+  "client": "Name of client",
+  "year": "2015",
+  "featured": true,
+  "image": "img/work-image-example-01.png"
+},{
+  "title": "Cum sociis natoque",
+  "category": [ "design" ],
+  "collaborators": [ "Incode" ],
+  "client": "Name of client",
+  "year": "2015",
+  "url": "http://wwww.google.com",
+  "featured": true,
+  "image": "img/work-image-example-02.png"
+},{
+  "title": "Cum sociis natoque",
+  "category": [ "design" ],
+  "collaborators": [ "Incode" ],
+  "client": "Name of client",
+  "year": "2015",
+  "url": "http://wwww.google.com",
+  "featured": true,
+  "image": "img/work-image-example-03.png"
+},{
+  "title": "Cum sociis natoque",
+  "category": [ "code", "design" ],
+  "collaborators": [ "Incode", "Test" ],
+  "client": "Name of client",
+  "year": "2015",
+  "url": "http://wwww.google.com",
+  "featured": false
+},{
+  "title": "Cum sociis natoque",
+  "category": [ "design" ],
+  "collaborators": [ "Incode", "Test" ],
+  "client": "Name of client",
+  "year": "2015",
+  "url": "http://wwww.google.com",
+  "featured": false
+},{
+  "title": "Cum sociis natoque",
+  "category": [ "code" ],
+  "collaborators": [ "Incode", "Test" ],
+  "client": "Name of client",
+  "year": "2015",
+  "url": "http://wwww.google.com",
+  "featured": false
+},{
+  "title": "Cum sociis natoque",
+  "category": [ "design" ],
+  "collaborators": [ "Incode" ],
+  "client": "Name of client",
+  "year": "2015",
+  "url": "http://wwww.google.com",
+  "featured": false
+},{
+  "title": "Cum sociis natoque",
+  "category": [ "design" ],
+  "collaborators": [ "Incode" ],
+  "client": "Name of client",
+  "year": "2015",
+  "url": "http://wwww.google.com",
+  "featured": false
+},{
+  "title": "Cum sociis natoque",
+  "category": [ "code" ],
+  "collaborators": [ "Incode" ],
+  "client": "Name of client",
+  "year": "2015",
+  "url": "http://wwww.google.com",
+  "featured": false
+},{
+  "title": "Cum sociis natoque",
+  "category": [ "design" ],
+  "collaborators": [ "Incode" ],
+  "client": "Name of client",
+  "year": "2015",
+  "url": "http://wwww.google.com",
+  "featured": false
+},{
+  "title": "Cum sociis natoque",
+  "category": [ "code", "design" ],
+  "collaborators": [ "Incode" ],
+  "client": "Name of client",
+  "year": "2015",
+  "url": "http://wwww.google.com",
+  "featured": false
+},{
+  "title": "Cum sociis natoque",
+  "category": [ "design" ],
+  "collaborators": [ "Incode" ],
+  "client": "Name of client",
+  "year": "2015",
+  "url": "http://wwww.google.com",
+  "featured": false
+},{
+  "title": "Cum sociis natoque",
+  "category": [ "code", "design" ],
+  "collaborators": [ "Incode" ],
+  "client": "Name of client",
+  "year": "2015",
+  "url": "http://wwww.google.com",
+  "featured": false
+},{
+  "title": "Cum sociis natoque",
+  "category": [ "design" ],
+  "collaborators": [ "Incode" ],
+  "client": "Name of client",
+  "year": "2015",
+  "url": "http://wwww.google.com",
+  "featured": false
+},{
+  "title": "Cum sociis natoque",
+  "category": [ "design" ],
+  "collaborators": [ "Incode" ],
+  "client": "Name of client",
+  "year": "2015",
+  "url": "http://wwww.google.com",
+  "featured": false
+},{
+  "title": "Cum sociis natoque",
+  "category": [ "design" ],
+  "collaborators": [ "Incode" ],
+  "client": "Name of client",
+  "year": "2015",
+  "url": "http://wwww.google.com",
+  "featured": false
+},{
+  "title": "Cum sociis natoque",
+  "category": [ "code", "design" ],
+  "collaborators": [ "Incode" ],
+  "client": "Name of client",
+  "year": "2015",
+  "url": "http://wwww.google.com",
+  "featured": false
+},{
+  "title": "Cum sociis natoque",
+  "category": [ "code", "design" ],
+  "collaborators": [ "Incode" ],
+  "client": "Name of client",
+  "year": "2015",
+  "url": "http://wwww.google.com",
+  "featured": false
+},{
+  "title": "Cum sociis natoque",
+  "category": [ "code", "design" ],
+  "collaborators": [ "Incode" ],
+  "client": "Name of client",
+  "year": "2015",
+  "url": "http://wwww.google.com",
+  "featured": false
+},{
+  "title": "Cum sociis natoque",
+  "category": [ "code", "design" ],
+  "collaborators": [ "Incode" ],
+  "client": "Name of client",
+  "year": "2015",
+  "url": "http://wwww.google.com",
+  "featured": false
+}]

@@ -13,7 +13,7 @@ const WorkWrapper = styled.li`
 
   > header {
     transform: translateX(0);
-    transition: transform .4s cubic-bezier(0.5, 0.1, 0, 1.15);
+    transition: transform .5s cubic-bezier(0.5, 0.1, 0, 1.15);
   }
   
   &:last-child {

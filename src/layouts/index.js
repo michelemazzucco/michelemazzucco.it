@@ -7,7 +7,7 @@ import '../utils/globalStyles'
 const Layout = ({ children }) =>
   <Navigation> 
     <Header />
-    {children()}
+      {children()}
     <Footer />
   </Navigation>
 

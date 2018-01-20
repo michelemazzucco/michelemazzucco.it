@@ -1,14 +1,31 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { fonts, colors } from '../../utils/commonStyles'
+import { LAMBDA_ENDPOINT } from '../../utils/constants'
 
-const toKilometers = distance => Math.floor((distance / 1000) * 100) / 100
+const loading = keyframes`
+  0%{
+    background-position: -20rem 0
+  }
+  100%{
+    background-position: 20rem 0
+  }
+`
 
 const DistanceLoader = styled.div`
   display: inline-block;
   height: 1rem;
-  width: 8rem;
+  width: 10rem;
   background: #273240;
+  animation-duration: .75s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: ${loading};
+  animation-timing-function: linear;
+  background: #273240;
+  background: linear-gradient(to right, #273240 8%, #2c3644 18%, #273240 33%);
+  background-size: 800px 104px;
+  border-radius: 2px;
 `
 
 const DistanceWrapper = styled.div`
@@ -36,13 +53,15 @@ class WeekDistance extends Component {
   state = { distance: null }
 
   componentDidMount() {
-    fetch('https://d998ufi65f.execute-api.us-east-1.amazonaws.com/dev/distance')
+    fetch(LAMBDA_ENDPOINT)
       .then(res => res.json())
       .then(data => this.setState({ distance: data.distance }))
   }
 
   getEmoji(distance) {
-    return distance >= 40000 ? <EmojiWrapper>🔥</EmojiWrapper> : <EmojiWrapper>⚡️</EmojiWrapper>
+    return distance >= 40 
+      ? <EmojiWrapper>🔥</EmojiWrapper> 
+      : <EmojiWrapper>⚡️</EmojiWrapper>
   }
 
   renderDistance() {
@@ -50,7 +69,7 @@ class WeekDistance extends Component {
 
     return distance === 0 
       ? <DistanceWrapper><EmojiWrapper>🙀</EmojiWrapper>No run this week</DistanceWrapper>
-      : <DistanceWrapper>{this.getEmoji(distance)}Run <Kilometers>{toKilometers(this.state.distance)}km</Kilometers> last week</DistanceWrapper>
+      : <DistanceWrapper>{this.getEmoji(distance)}Run <Kilometers>{this.state.distance}km</Kilometers> last week</DistanceWrapper>
   }
 
   render() {

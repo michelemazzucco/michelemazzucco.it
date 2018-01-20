@@ -22,8 +22,9 @@ const WorkFeatured = styled.li`
     transform: translateY(0);
     border-radius: 1px;
     overflow: hidden;
-    transition: all .4s cubic-bezier(0.5, 0.1, 0, 1.15);
+    transition: all .5s cubic-bezier(0.5, 0.1, 0, 1.15);
     position: relative;
+    transform-style: preserve-3d;
   }
   
   &:hover > div {
