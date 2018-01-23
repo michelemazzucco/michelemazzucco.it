@@ -4,7 +4,7 @@ import WeekDistance from '../WeekDistance'
 import Intro from '../Intro'
 import { fonts, colors } from '../../utils/commonStyles'
 
-const ProfileWrapper = styled.article`
+const ProfileWrapper = styled.section`
   display: flex;
   flex-wrap: wrap;
   position: relative;

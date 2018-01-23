@@ -1,9 +1,12 @@
 import React from 'react'
+import styled from 'styled-components'
 
 const ProfileBlock = ({ title, children }) =>
-  <section>
-    <h3>{title}</h3>
-    <div>{children}</div>
-  </section>
+  <article>
+    <header>
+      <h3>{title}</h3>
+    </header>
+    <main>{children}</main>
+  </article>
 
 export default ProfileBlock
