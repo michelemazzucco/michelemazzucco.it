@@ -63,7 +63,7 @@ const WorkYear = styled.span`
   }
 `
 
-const WorksItem = props =>  {
+const WorksListItem = props =>  {
   const { title, client, year, collaborators, url } = props.work
 
   return (
@@ -83,4 +83,4 @@ const WorksItem = props =>  {
   )
 }
 
-export default WorksItem
+export default WorksListItem

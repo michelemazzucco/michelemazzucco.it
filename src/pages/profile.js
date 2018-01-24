@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
+import styled from 'styled-components'
 import ContentWrapper from '../components/ContentWrapper'
 import ProfileIntro from '../components/ProfileIntro'
-import ProfileBlock from '../components/ProfileBlock'
-import BlockList from '../components/BlockList'
-import EventsBlockList from '../components/EventsBlockList'
-import styled from 'styled-components';
-
+import ProfileList from '../components/ProfileList'
+import ProfileListItem from '../components/ProfileListItem'
+import EventListItem from '../components/EventListItem'
 
 const BlocksWrapper = styled.section`
   display: grid;
@@ -24,21 +23,45 @@ const ProfilePage = props => {
       <ProfileIntro />
       <BlocksWrapper>
         {clients.edges.length > 0 && 
-          <ProfileBlock title="Clients">
-            <BlockList edges={clients.edges} />
-          </ProfileBlock>}
+          <ProfileList 
+            title='Clients'
+            list={() => clients.edges.map(({ client }, i) => (
+              <ProfileListItem 
+                key={i}
+                {...client}
+              />
+            ))}
+          />}
         {events.edges.length > 0 && 
-          <ProfileBlock title="Timeline">
-            <EventsBlockList events={events.edges} />
-          </ProfileBlock>}
+          <ProfileList 
+            title='Timeline'
+            list={() => events.edges.map(({ event }, i) => (
+              <EventListItem 
+                key={i}
+                {...event}
+              />
+            ))}
+          />}
         {mentions.edges.length > 0 && 
-          <ProfileBlock title="Mentions & Features">
-            <BlockList edges={mentions.edges} />
-          </ProfileBlock>}
+          <ProfileList 
+            title='Mentions & Features'
+            list={() => mentions.edges.map(({ mention }, i) => (
+              <ProfileListItem 
+                key={i}
+                {...mention}
+              />
+            ))}
+          />}
         {articles.edges.length > 0 && 
-          <ProfileBlock title="Public speaking & Articles">
-            <BlockList edges={articles.edges} />
-          </ProfileBlock>}
+          <ProfileList 
+            title='Public speaking & Articles'
+            list={() => articles.edges.map(({ article }, i) => (
+              <ProfileListItem 
+                key={i}
+                {...article}
+              />
+            ))}
+          />}
       </BlocksWrapper>
     </ContentWrapper> 
   )
@@ -50,14 +73,14 @@ export const profileQuery = graphql`
   query ProfileQuery {
     clients: allClientsJson {
       edges {
-        node {
+        client: node {
           name
         }
       }
     }
     events: allEventsJson {
       edges {
-        node {
+        event: node {
           year
           position
           company
@@ -66,7 +89,7 @@ export const profileQuery = graphql`
     }
     mentions: allMentionsJson {
       edges {
-        node {
+        mention: node {
           name
           url
         }
@@ -74,7 +97,7 @@ export const profileQuery = graphql`
     }
     articles: allArticlesJson {
       edges {
-        node {
+        article: node {
           name
           url
         }

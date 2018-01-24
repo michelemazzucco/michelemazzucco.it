@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled, { css } from 'styled-components'
-import WorksItem from '../WorksItem'
+import WorksListItem from '../WorksListItem'
 import EmailMe from '../EmailMe'
 import Divider from './divider.svg'
 import { colors, fonts } from '../../utils/commonStyles'
@@ -103,7 +103,7 @@ class WorksList extends Component {
           {category && <FilterButton onClick={() => this.setCategory( null)}>all</FilterButton>}
         </ButtonsWrapper>
         <ul>
-          {this.getWorksList(category).map(({ work }, i) => <WorksItem key={i} work={work} />)}
+          {this.getWorksList(category).map(({ work }, i) => <WorksListItem key={i} work={work} />)}
         </ul>
         <NDAWrapper>
           <StyledDivider height={6} width={43} />
