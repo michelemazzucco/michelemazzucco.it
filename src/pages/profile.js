@@ -5,14 +5,19 @@ import ProfileIntro from '../components/ProfileIntro'
 import ProfileList from '../components/ProfileList'
 import ProfileListItem from '../components/ProfileListItem'
 import EventListItem from '../components/EventListItem'
+import { media } from '../utils/commonStyles'
 
-const BlocksWrapper = styled.section`
+const ListsWrapper = styled.section`
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto auto; 
   grid-column-gap: 2rem;
   grid-row-gap: 4rem;
   padding: 6rem 0;
+  ${media.md`
+    grid-template-columns: 100%;
+    grid-column-gap: 0;
+  `} 
 `
 
 const ProfilePage = props => {
@@ -21,7 +26,7 @@ const ProfilePage = props => {
   return (
     <ContentWrapper>
       <ProfileIntro />
-      <BlocksWrapper>
+      <ListsWrapper>
         {clients.edges.length > 0 && 
           <ProfileList 
             title='Clients'
@@ -62,7 +67,7 @@ const ProfilePage = props => {
               />
             ))}
           />}
-      </BlocksWrapper>
+      </ListsWrapper>
     </ContentWrapper> 
   )
 }
