@@ -1,19 +1,22 @@
 import { injectGlobal } from 'styled-components'
 import reset from 'styled-reset'
-import { colors, fonts } from './commonStyles'
+import { colors, fonts, media } from './commonStyles'
 
 injectGlobal`
   ${reset}
   html,
   body {
     height: 100%;
+    font-size: 16px;
+    ${media.xl`
+      font-size: 14px;
+    `}
   }
 
   body {
     background: ${colors.blue900};
     color: #FFF;
     font-family: ${fonts.sansSerif};
-    font-size: 14px;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -27,7 +30,7 @@ injectGlobal`
 
   * {
     box-sizing: border-box;
-    line-height: 1.3em;
+    line-height: 1.4em;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

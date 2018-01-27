@@ -67,52 +67,32 @@ const StyledDivider = styled(Divider)`
 const StyledEmailMe = styled(EmailMe)`
   color: ${colors.gray500};
   font-family: ${fonts.mono};
-  font-size: .8rem;
+  font-size: .9rem;
   border-bottom: 1px dotted ${colors.gray700};
   padding: 0 0 .3rem;
   display: inline-block;
 `
 
-class WorksList extends Component {
-  constructor() {
-    super()
-    this.state = { category: null }
-  }
-
-  setCategory(category) {
-    this.setState({ category })
-  }
-
-  getWorksList(category) {
-    const { works } = this.props
-    return category 
-      ? works.filter(({ work }) => work.category.includes(category))
-      : works
-  }
-
-  render() {
-    const { works } = this.props
-    const { category } = this.state
-
-    return (
-      <WorksWrapper>
-        <WorksTitle>Other works</WorksTitle>
-        <ButtonsWrapper>
-          <FilterButton active={category === 'design'} onClick={() => this.setCategory('design')}>design</FilterButton>
-          <FilterButton active={category === 'code'} onClick={() => this.setCategory('code')}>code</FilterButton>
-          {category && <FilterButton onClick={() => this.setCategory( null)}>all</FilterButton>}
-        </ButtonsWrapper>
-        <ul>
-          {this.getWorksList(category).map(({ work }, i) => <WorksListItem key={i} work={work} />)}
-        </ul>
-        <NDAWrapper>
-          <StyledDivider height={6} width={43} />
-          <h3>Alcuni dei miei lavori sono sotto NDA, vuoi vederne altri?</h3>
-          <StyledEmailMe text='Scrivimi' />
-        </NDAWrapper>
-      </WorksWrapper>
-    )
-  }
-}
+const WorksList = ({ 
+  works, 
+  category, 
+  setCategory 
+}) => 
+  <WorksWrapper>
+    <WorksTitle>Other works</WorksTitle>
+    <ButtonsWrapper>
+      <FilterButton active={category === 'design'} onClick={() => setCategory('design')}>design</FilterButton>
+      <FilterButton active={category === 'code'} onClick={() => setCategory('code')}>code</FilterButton>
+      {category && <FilterButton onClick={() => setCategory(null)}>all</FilterButton>}
+    </ButtonsWrapper>
+    <ul>
+      {works.map(({ work }, i) => <WorksListItem key={i} work={work} />)}
+    </ul>
+    <NDAWrapper>
+      <StyledDivider height={6} width={43} />
+      <h3>Alcuni dei miei lavori sono sotto NDA, vuoi vederne altri?</h3>
+      <StyledEmailMe text='Scrivimi' />
+    </NDAWrapper>
+  </WorksWrapper>
 
 export default WorksList

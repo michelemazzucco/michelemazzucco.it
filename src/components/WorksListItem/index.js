@@ -46,7 +46,7 @@ const WorkTitle = styled.h3`
 const WorkInfos = styled.div`
   margin-top: .5rem;
   font-family: ${fonts.mono};
-  font-size: .8rem;
+  font-size: .9rem;
   color: ${colors.gray500};
 `
 

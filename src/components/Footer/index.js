@@ -13,7 +13,7 @@ const FooterItem = styled.div`
   position: absolute;
   font-family: ${fonts.mono};
   color: ${colors.gray700};
-  font-size: .8rem;
+  font-size: .9rem;
   ${props => props.position === 'left' 
     ? css`
       transform: rotate(-90deg) translateX(-50%);

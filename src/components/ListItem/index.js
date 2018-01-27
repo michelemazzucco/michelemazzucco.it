@@ -4,7 +4,7 @@ import { colors, fonts } from '../../utils/commonStyles'
 
 const ListItem = styled.div`
   font-family: ${fonts.mono};
-  font-size: .8rem;
+  font-size: .9rem;
   color: ${colors.gray500};
   padding: .25rem 0;
 `

@@ -2,19 +2,23 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Circle from './circle.svg'
 import styled from 'styled-components'
-import { colors, fonts, getOuterSpace } from '../../utils/commonStyles'
+import { colors, fonts, media, getOuterSpace } from '../../utils/commonStyles'
 
-const HeaderWrapper = styled.header`
+const LogoWrapper = styled.div`
   position: fixed; 
   top: 0;
   left: 0;
   max-width: 18rem;
   ${getOuterSpace('padding')}
+  ${media.md`
+    position: static;
+    padding: 0;
+  `} 
 `
 
-const Header = () =>
-  <HeaderWrapper>
+const Logo = () =>
+  <LogoWrapper>
     <Link to='/'><Circle /></Link>
-  </HeaderWrapper>
+  </LogoWrapper>
 
-export default Header
+export default Logo

@@ -30,7 +30,7 @@ const DistanceLoader = styled.div`
 
 const DistanceWrapper = styled.div`
   font-family: ${fonts.mono};
-  font-size: .8rem;
+  font-size: .9rem;
   color: ${colors.gray500};
 `
 
@@ -53,9 +53,14 @@ class WeekDistance extends Component {
   state = { distance: null }
 
   componentDidMount() {
-    fetch(LAMBDA_ENDPOINT)
-      .then(res => res.json())
-      .then(data => this.setState({ distance: data.distance }))
+
+    if (process.NODE_ENV === 'production') {
+      fetch(LAMBDA_ENDPOINT)
+        .then(res => res.json())
+        .then(data => this.setState({ distance: data.distance }))
+    } else {
+      this.setState({ distance: 22 })
+    }
   }
 
   getEmoji(distance) {
@@ -66,18 +71,20 @@ class WeekDistance extends Component {
 
   renderDistance() {
     const { distance } = this.state
+    const { className } = this.props
 
     return distance === 0 
-      ? <DistanceWrapper><EmojiWrapper>🙀</EmojiWrapper>No run this week</DistanceWrapper>
-      : <DistanceWrapper>{this.getEmoji(distance)}Run <Kilometers>{this.state.distance}km</Kilometers> last week</DistanceWrapper>
+      ? <span><EmojiWrapper>🙀</EmojiWrapper>No run this week</span>
+      : <span>{this.getEmoji(distance)}Run <Kilometers>{this.state.distance}km</Kilometers> last week</span>
   }
 
   render() {
-    console.log(this.state.distance)
+    const { className } = this.props
+    
     return (
       this.state.distance !== null
-        ? this.renderDistance()
-        : <DistanceLoader />
+        ? <DistanceWrapper className={className}>{this.renderDistance()}</DistanceWrapper>
+        : <DistanceLoader className={className} />
     )
   }
 }

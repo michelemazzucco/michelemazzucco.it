@@ -3,7 +3,7 @@ import { css } from 'styled-components'
 export const colors = {
   blue900: '#1e2733',
   gray500: '#94989E',
-  gray700: '#585f68',
+  gray700: '#656a73',
   yellow500: '#EBC86E',
   yellow700: '#6b6349'
 }
@@ -24,12 +24,19 @@ export const spaces = {
 }
 
 export const mq = {
+  xs: '22em',
   sm: '40em',
   md: '54em',
-  lg: '85em'
+  lg: '85em',
+  xl: '125em'
 }
 
 export const media = {
+  xs: (...a) => css`
+    @media (max-width: ${mq.xs}) {
+      ${css(...a)}
+    }
+  `,
   sm: (...a) => css`
     @media (max-width: ${mq.sm}) {
       ${css(...a)}
@@ -42,6 +49,11 @@ export const media = {
   `,
   lg: (...a) => css`
     @media (max-width: ${mq.lg}) {
+      ${css(...a)}
+    }
+  `,
+  xl: (...a) => css`
+  @media (max-width: ${mq.xl}) {
       ${css(...a)}
     }
   `
@@ -58,7 +70,7 @@ export const getOuterSpace = p =>
     ${media.md`
       ${rule(p, spaces.p300)}
     `}  
-    ${media.md`
+    ${media.sm`
       ${rule(p, spaces.p200)}
     `}
   `

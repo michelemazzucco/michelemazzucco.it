@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled, { css } from 'styled-components'
 import EmailMe from '../EmailMe'
-import { colors, fonts, getOuterSpace } from '../../utils/commonStyles'
+import { colors, fonts, media, getOuterSpace } from '../../utils/commonStyles'
 
 const NavWrapper = styled.nav`
   position: fixed;
@@ -37,8 +37,10 @@ const NavItem = styled.li`
   }
 
   a {
+    font-size: 1rem;
     font-family: ${fonts.mono};
     pointer-events: all;
+
     ${props => props.highlight 
       ? css`
         color: ${colors.yellow500};
