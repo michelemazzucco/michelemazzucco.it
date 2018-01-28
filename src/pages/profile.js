@@ -9,7 +9,7 @@ import { media } from '../utils/commonStyles'
 
 const ListsWrapper = styled.section`
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto auto; 
   grid-column-gap: 2rem;
   grid-row-gap: 4rem;

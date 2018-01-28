@@ -95,6 +95,7 @@ const WorksFeatured = ({ works, isMobile }) => {
         showArrows={false}
         showThumbs={false}
         showStatus={false}
+        interval={10000}
         infiniteLoop
         autoPlay
       >
