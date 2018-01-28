@@ -3,11 +3,15 @@ import styled, { css } from 'styled-components'
 import WorksListItem from '../WorksListItem'
 import EmailMe from '../EmailMe'
 import Divider from './divider.svg'
-import { colors, fonts } from '../../utils/commonStyles'
+import { colors, fonts, media } from '../../utils/commonStyles'
 
 const WorksWrapper = styled.div`
   max-width: 80%;
   margin: 5rem auto 0;
+  ${media.md`
+    max-width: 100%;
+    margin: 2rem auto 0;
+  `}
 `
 
 const WorksTitle = styled.h3`

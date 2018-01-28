@@ -19,12 +19,12 @@ const ListTitle = styled.h3`
   }
 `
 
-const ProfileList = ({ title, list }) =>
-  <article>
+const ProfileList = ({ title, list, className }) =>
+  <article className={className}>
     <header>
       <ListTitle>{title}</ListTitle>
     </header>
-    <main>{list()}</main>
+    <ul>{list()}</ul>
   </article>
 
 export default ProfileList

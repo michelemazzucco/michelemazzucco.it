@@ -1,35 +1,71 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import Logo from '../components/Logo'
 import Footer from '../components/Footer'
 import Menu from '../components/Menu'
-import { media, getOuterSpace } from '../utils/commonStyles'
+import { colors, media, getOuterSpace } from '../utils/commonStyles'
 import '../utils/globalStyles'
 
 const NavWrapper = styled.div`
   ${media.md`
-    ${getOuterSpace('padding')};
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     width: 100%;
-    height: 9rem;
-    background-image: linear-gradient(-180deg, rgba(30,39,51,0.01) 0%, #1E2733 56%);
-    display: flex;
-    align-items: flex-end;
     z-index: 10;
   `} 
 `
 
 const Shoable = styled.div`
   ${media.md`
-    display: none;
+    background: ${colors.blue900};
+    padding: 0 2rem 2rem;
+    ${props => props.open 
+      ? css`
+        display: block;
+      `
+      : css`
+        display: none;
+      `}
   `} 
 `
 
+const ToggleMenu = styled.div`
+  height: 2rem;
+  width: 2rem;
+  ${props => props.open 
+    ? css`
+      background: red;
+    `
+    : css`
+      background: green;
+    `}
+`
+
+const Header = styled.header`
+  ${media.md`
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    min-height: 9rem;
+    background-image: linear-gradient(to bottom,rgba(30,39,51,0.0) 0%,rgba(30,39,51,1) 50%);
+    ${getOuterSpace('padding')};
+  `}
+`
+
 class Layout extends Component {
+  constructor() {
+    super()
+    this.state = { navOpen: false }
+    this.toggleMenu = this.toggleMenu.bind(this)
+  }
   state = { navOpen: false }
+
+  toggleMenu() {
+    this.setState({ navOpen: !this.state.navOpen })
+  }
 
   render() {
     const { children } = this.props
@@ -38,11 +74,15 @@ class Layout extends Component {
       <div>
         <div>{children()}</div>
         <NavWrapper>
-          <header>
+          <Header>
             <Logo />
-          </header>
-          <Shoable>
-            <Menu {...open} />
+            <ToggleMenu 
+              open={this.state.navOpen} 
+              onClick={this.toggleMenu} 
+            />
+          </Header>
+          <Shoable open={this.state.navOpen}>
+            <Menu />
             <Footer />
           </Shoable>
         </NavWrapper>

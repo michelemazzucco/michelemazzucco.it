@@ -18,6 +18,10 @@ const NavWrapper = styled.nav`
   ul:last-child {
     text-align: right;
   }
+  ${media.md`
+    position: static;
+    padding: 0;
+  `}
 `
 
 const Nav = styled.ul`

@@ -20,6 +20,9 @@ const ListsWrapper = styled.section`
   `} 
 `
 
+const ClientsList = styled(ProfileList)`
+`
+
 const ProfilePage = props => {
   const { clients, events, mentions, articles } = props.data
   
@@ -28,7 +31,7 @@ const ProfilePage = props => {
       <ProfileIntro />
       <ListsWrapper>
         {clients.edges.length > 0 && 
-          <ProfileList 
+          <ClientsList 
             title='Clients'
             list={() => clients.edges.map(({ client }, i) => (
               <ProfileListItem 

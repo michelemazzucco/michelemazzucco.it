@@ -10,6 +10,11 @@ const LogoWrapper = styled.div`
   left: 0;
   max-width: 18rem;
   ${getOuterSpace('padding')}
+
+  a, svg {
+    display: block;
+  }
+
   ${media.md`
     position: static;
     padding: 0;
@@ -18,7 +23,7 @@ const LogoWrapper = styled.div`
 
 const Logo = () =>
   <LogoWrapper>
-    <Link to='/'><Circle /></Link>
+    <Link to='/'><Circle width={22} height={22} /></Link>
   </LogoWrapper>
 
 export default Logo
