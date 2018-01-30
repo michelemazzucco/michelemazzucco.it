@@ -12,6 +12,7 @@ module.exports = {
     },
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-json',
-    '@jacobmischka/gatsby-plugin-react-svg'
+    '@jacobmischka/gatsby-plugin-react-svg',
+    'gatsby-plugin-styled-components'
   ],
 }

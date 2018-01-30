@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import Anime from 'react-anime'
 import ContentWrapper from '../components/ContentWrapper'
 import ProfileIntro from '../components/ProfileIntro'
 import ProfileList from '../components/ProfileList'

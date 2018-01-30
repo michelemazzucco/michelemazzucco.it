@@ -6,12 +6,12 @@ import { fonts, colors, media } from '../../utils/commonStyles'
 
 const ProfileWrapper = styled.section`
   display: grid;
-  grid-template-columns: repeat(8, 12.5% [col]);
-  grid-template-rows: .4fr [content-start] 1fr [content-end] 20px;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   position: relative;
   ${media.md`
     grid-template-columns: 100%;
-    grid-template-rows: auto [content-start] auto [content-end] auto;
+    grid-template-rows: repeat(3, auto);
     grid-row-gap: 2rem;
   `}
 `
@@ -33,14 +33,14 @@ const Box = styled.div`
 `
 
 const StyledWeekDistance = styled(WeekDistance)`
-  grid-row: 3 / last-line;
+  grid-row: 4 / last-line;
   grid-column: 1 / span 4;
   align-self: end;
   z-index: 2;
 `
 
 const InfoWrapper = styled.header`
-  grid-row: content-start/ content-end;
+  grid-row: 2 / 4;
   grid-column: 1 / 6;
   z-index: 2;
 `

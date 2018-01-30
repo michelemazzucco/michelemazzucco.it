@@ -84,7 +84,7 @@ const WorksFeatured = ({ works, isMobile }) => {
     return (
       <WorkFeatured key={i}>
         <img width={500} height={360} src={imagePath} />
-        {url && <a href={url} target="_blank" />}
+        {url && <a href={url} target="_blank" rel="noopener" />}
       </WorkFeatured>
     )
   })

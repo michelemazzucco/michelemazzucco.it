@@ -6,7 +6,7 @@ const ListItem = styled.li`
   font-family: ${fonts.mono};
   font-size: .9rem;
   color: ${colors.gray500};
-  padding: .25rem 0;
+  padding: .5rem 0;
 `
 
 export default ListItem

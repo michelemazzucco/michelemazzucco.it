@@ -32,6 +32,7 @@ const Shoable = styled.div`
 `
 
 const ToggleMenu = styled.div`
+  display: none;
   height: 2rem;
   width: 2rem;
   ${props => props.open 
@@ -41,6 +42,10 @@ const ToggleMenu = styled.div`
     : css`
       background: green;
     `}
+  
+  ${media.md`
+    display: block;
+  `}
 `
 
 const Header = styled.header`

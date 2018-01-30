@@ -48,7 +48,7 @@ const Footer = () =>
       Made (with love) in {getCurrentYear()}
     </FooterItem>
     <FooterItem position='right'>
-      <a target='_blank' href='https://github.com/'>Source code</a>
+      <a target="_blank" rel="noopener" href='https://github.com/'>Source code</a>
     </FooterItem>
   </FooterWrapper>
 
