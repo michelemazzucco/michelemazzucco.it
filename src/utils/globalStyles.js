@@ -17,6 +17,7 @@ injectGlobal`
     background: ${colors.blue900};
     color: #FFF;
     font-family: ${fonts.sansSerif};
+    backface-visibility: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -38,7 +39,7 @@ injectGlobal`
   }
 
   ::selection {
-    color: #FFF;
-    background: ${colors.yellow500};
+    color: ${colors.yellow500};
+    background: transparent;
   }
 `

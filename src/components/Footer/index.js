@@ -9,6 +9,7 @@ const FooterWrapper = styled.footer`
   top: 50%;
   ${media.md`
     position: static;
+    padding-top: 1.5rem;
   `}
 `
 
@@ -32,13 +33,16 @@ const FooterItem = styled.div`
   
   a:hover {
     color: ${colors.gray500};
+    line-height: 1em;
   }
   
   ${media.md`
     position: static;
     transform: rotate(0) translateX(0);
     transform-origin: 0;
-    padding: 0;
+    padding: .5rem 0 0;
+    text-align: center;
+    font-size: .8rem;
   `}
 `
 

@@ -68,9 +68,6 @@ export const getOuterSpace = p =>
       ${rule(p, spaces.p300)}
     `}  
     ${media.md`
-      ${rule(p, spaces.p300)}
-    `}  
-    ${media.sm`
       ${rule(p, spaces.p200)}
     `}
   `

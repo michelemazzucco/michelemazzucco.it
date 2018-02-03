@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled, { keyframes } from 'styled-components'
 import { fonts, colors } from '../../utils/commonStyles'
-import { LAMBDA_ENDPOINT } from '../../utils/constants'
+import { getWeekDistance } from '../../utils/api'
 
 const loading = keyframes`
   0%{
@@ -47,20 +47,15 @@ const Kilometers = styled.span`
   padding: 0 0 .3rem;
   display: inline-block;
   vertical-align: top;
+  color: #FFF;
 `
 
 class WeekDistance extends Component {
   state = { distance: null }
 
   componentDidMount() {
-
-    if (process.NODE_ENV === 'production') {
-      fetch(LAMBDA_ENDPOINT)
-        .then(res => res.json())
-        .then(data => this.setState({ distance: data.distance }))
-    } else {
-      this.setState({ distance: 22 })
-    }
+    getWeekDistance()
+      .then(data => this.setState({ distance: data.distance }))
   }
 
   getEmoji(distance) {

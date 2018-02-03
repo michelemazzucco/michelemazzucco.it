@@ -16,6 +16,7 @@ const WorkFeatured = styled.div`
   transform: translateY(0);
   transition: all .5s cubic-bezier(0.5, 0.1, 0, 1.15);
   transform-style: preserve-3d;
+  backface-visibility: hidden;
 
   ${media.sm`
     padding-top: 100% !important;

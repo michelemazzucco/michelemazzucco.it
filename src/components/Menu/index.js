@@ -15,8 +15,8 @@ const NavWrapper = styled.nav`
   justify-content: space-between;
   pointer-events: none;
   ${getOuterSpace('padding')};
-  ul:last-child {
-    text-align: right;
+  ul:last-child li a {
+    justify-content: flex-end;
   }
   ${media.md`
     position: static;
@@ -34,16 +34,18 @@ const Nav = styled.ul`
 
 const NavItem = styled.li`
   list-style: none;
-  padding: .4rem 0;
-  
+  padding: .5rem 0;
+
   &:last-child {
     padding-bottom: 0;
   }
 
   a {
-    font-size: 1rem;
+    font-size: .9rem;
     font-family: ${fonts.mono};
     pointer-events: all;
+    display: flex;
+    align-items: center;
 
     ${props => props.highlight 
       ? css`
@@ -61,6 +63,7 @@ const NavItem = styled.li`
 const NavLink = styled(Link).attrs({
   activeClassName: 'active'
 })`
+
   &.active {
     color: #FFF;
   }
@@ -69,12 +72,11 @@ const NavLink = styled(Link).attrs({
     background: ${colors.yellow500};
     border-radius: 100%;
     content: '';
-    display: inline-block;
-    height: 4px;  
-    margin-right: .5rem;
+    display: block;
+    height: .3rem;  
+    margin-right: .75rem;
     vertical-align: middle;
-    width: 4px;
-    border: 1px solid ${colors.yellow700};
+    width: .3rem;
   }
 `
 

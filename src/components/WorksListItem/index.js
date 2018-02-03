@@ -38,7 +38,7 @@ const WorkWrapper = styled.li`
 `
 
 const WorkTitle = styled.h3`
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #FFF;
   font-weight: 400;
 `
@@ -72,7 +72,7 @@ const WorksListItem = props =>  {
         <WorkTitle>{title}</WorkTitle>
         <WorkInfos>
           <span>{client}</span>
-          {collaborators && <span>w/ {collaborators.map(c => c).join(', ')}</span>}
+          {collaborators && <span> w/ {collaborators.map(c => c).join(', ')}</span>}
         </WorkInfos>
       </header>
       <WorkInfos>

@@ -9,6 +9,23 @@ module.exports = {
         name: 'data',
         path: `${__dirname}/src/data/`
       }
+    },{
+      resolve: 'gatsby-plugin-favicon',
+      options: {
+        logo: './src/img/favicon.png',
+        injectHTML: true,
+        icons: {
+          android: false,
+          appleIcon: false,
+          appleStartup: false,
+          coast: false,
+          favicons: true,
+          firefox: false,
+          twitter: false,
+          yandex: false,
+          windows: false
+        }
+      }
     },
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-json',

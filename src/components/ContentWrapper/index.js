@@ -7,7 +7,7 @@ const ContentWrapper = styled.div`
   margin: 11rem auto 6.5rem;
   ${media.md`
     width: 100%;
-    margin: 2rem auto 2rem;
+    margin: 2rem auto 9rem;
     padding: 0 2rem;
   `} 
 `

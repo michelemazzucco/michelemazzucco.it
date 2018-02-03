@@ -15,6 +15,18 @@ const LogoWrapper = styled.div`
     display: block;
   }
 
+  a {
+    width: 1.65rem;
+    ${media.lg`
+      width: 1.45rem;
+    `} 
+  }
+
+  svg {
+    width: 100%;
+    height: auto;
+  }
+
   ${media.md`
     position: static;
     padding: 0;

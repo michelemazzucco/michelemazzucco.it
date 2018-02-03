@@ -6,13 +6,17 @@ const IntroWrapper = styled.div`
   font-size: 1.7rem;
   max-width: 36rem;
   line-height: 1.3em;
-  
+
   ${media.md`
-    font-size: 1.4rem;
+    font-size: 2rem;
+  `}
+  
+  ${media.sm`
+    font-size: 1.5rem;
   `}
 
   ${media.xs`
-    font-size: 1.2rem;
+    font-size: 1.35rem;
   `}
   
   h1 span {

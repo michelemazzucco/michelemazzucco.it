@@ -34,139 +34,91 @@
   "featured": true,
   "image": "img/work-image-example-03.png"
 },{
-  "title": "Cum sociis natoque",
-  "category": [ "code", "design" ],
-  "collaborators": [ "Incode", "Test" ],
-  "client": "Name of client",
-  "year": "2015",
-  "url": "http://wwww.google.com",
-  "featured": false
-},{
-  "title": "Cum sociis natoque",
+  "title": "Fifty Finance - website",
   "category": [ "design" ],
-  "collaborators": [ "Incode", "Test" ],
-  "client": "Name of client",
-  "year": "2015",
-  "url": "http://wwww.google.com",
+  "client": "Fifty Finance",
+  "collaborators": ["Incode"],
+  "year": "2017",
   "featured": false
 },{
-  "title": "Cum sociis natoque",
+  "title": "Savi - website",
+  "category": [ "design", "development" ],
+  "client": "Savi srl",
+  "url": "http://www.saviweb.com/",
+  "collaborators": ["One Farm Design"],
+  "year": "2017",
+  "featured": false
+},{
+  "title": "FreeJourn",
+  "category": [ "design", "development" ],
+  "client": "FreeJourn",
+  "collaborators": ["Incode"],
+  "url": "https://www.freejourn.com/it/pages/static/how_it_works",
+  "year": "2017",
+  "featured": false
+},{
+  "title": "Kenzai's Mobile apps",
+  "category": [ "design" ],
+  "client": "Kenzai",
+  "year": "2016",
+  "featured": false
+},{
+  "title": "BEE pro",
+  "category": [ "design", "code" ],
+  "client": "MailUp",
+  "collaborators": ["MailUp"],
+  "url": "https://pro.beefree.io/login",
+  "year": "2016",
+  "featured": false
+},{
+  "title": "CREW Cremonesi - website",
+  "category": [ "design", "code" ],
+  "client": "CREW Cremonesi",
+  "collaborators": ["Incode"],
+  "url": "http://crew.it/",
+  "year": "2015",
+  "featured": false
+},{
+  "title": "Manfrotto School Of Xcellence",
+  "category": [ "design", "code" ],
+  "client": "Manfrotto",
+  "collaborators": ["Incode"],
+  "year": "2015",
+  "featured": false
+},{
+  "title": "Beast Technologies - website",
   "category": [ "code" ],
-  "collaborators": [ "Incode", "Test" ],
-  "client": "Name of client",
+  "client": "Beast Technologies",
+  "collaborators": ["Incode"],
   "year": "2015",
-  "url": "http://wwww.google.com",
   "featured": false
 },{
-  "title": "Cum sociis natoque",
-  "category": [ "design" ],
-  "collaborators": [ "Incode" ],
-  "client": "Name of client",
+  "title": "Isolconfort",
+  "category": [ "design", "code" ],
+  "client": "Isolconfort",
+  "collaborators": ["Incode"],
   "year": "2015",
-  "url": "http://wwww.google.com",
   "featured": false
 },{
-  "title": "Cum sociis natoque",
-  "category": [ "design" ],
-  "collaborators": [ "Incode" ],
-  "client": "Name of client",
-  "year": "2015",
-  "url": "http://wwww.google.com",
+  "title": "Cobox - website",
+  "category": [ "design", "code" ],
+  "client": "CRIT",
+  "collaborators": ["Incode"],
+  "url": "https://dribbble.com/shots/1705611-Coworking-Space",
+  "year": "2014",
   "featured": false
 },{
-  "title": "Cum sociis natoque",
-  "category": [ "code" ],
-  "collaborators": [ "Incode" ],
-  "client": "Name of client",
-  "year": "2015",
-  "url": "http://wwww.google.com",
+  "title": "La Pagoda",
+  "category": [ "design", "code" ],
+  "client": "La Pagoda",
+  "collaborators": ["asaquattrocento"],
+  "url": "https://dribbble.com/shots/1655479-Ethnic-furniture-website",
+  "year": "2014",
   "featured": false
 },{
-  "title": "Cum sociis natoque",
-  "category": [ "design" ],
-  "collaborators": [ "Incode" ],
-  "client": "Name of client",
-  "year": "2015",
-  "url": "http://wwww.google.com",
-  "featured": false
-},{
-  "title": "Cum sociis natoque",
-  "category": [ "code", "design" ],
-  "collaborators": [ "Incode" ],
-  "client": "Name of client",
-  "year": "2015",
-  "url": "http://wwww.google.com",
-  "featured": false
-},{
-  "title": "Cum sociis natoque",
-  "category": [ "design" ],
-  "collaborators": [ "Incode" ],
-  "client": "Name of client",
-  "year": "2015",
-  "url": "http://wwww.google.com",
-  "featured": false
-},{
-  "title": "Cum sociis natoque",
-  "category": [ "code", "design" ],
-  "collaborators": [ "Incode" ],
-  "client": "Name of client",
-  "year": "2015",
-  "url": "http://wwww.google.com",
-  "featured": false
-},{
-  "title": "Cum sociis natoque",
-  "category": [ "design" ],
-  "collaborators": [ "Incode" ],
-  "client": "Name of client",
-  "year": "2015",
-  "url": "http://wwww.google.com",
-  "featured": false
-},{
-  "title": "Cum sociis natoque",
-  "category": [ "design" ],
-  "collaborators": [ "Incode" ],
-  "client": "Name of client",
-  "year": "2015",
-  "url": "http://wwww.google.com",
-  "featured": false
-},{
-  "title": "Cum sociis natoque",
-  "category": [ "design" ],
-  "collaborators": [ "Incode" ],
-  "client": "Name of client",
-  "year": "2015",
-  "url": "http://wwww.google.com",
-  "featured": false
-},{
-  "title": "Cum sociis natoque",
-  "category": [ "code", "design" ],
-  "collaborators": [ "Incode" ],
-  "client": "Name of client",
-  "year": "2015",
-  "url": "http://wwww.google.com",
-  "featured": false
-},{
-  "title": "Cum sociis natoque",
-  "category": [ "code", "design" ],
-  "collaborators": [ "Incode" ],
-  "client": "Name of client",
-  "year": "2015",
-  "url": "http://wwww.google.com",
-  "featured": false
-},{
-  "title": "Cum sociis natoque",
-  "category": [ "code", "design" ],
-  "collaborators": [ "Incode" ],
-  "client": "Name of client",
-  "year": "2015",
-  "url": "http://wwww.google.com",
-  "featured": false
-},{
-  "title": "Cum sociis natoque",
-  "category": [ "code", "design" ],
-  "collaborators": [ "Incode" ],
-  "client": "Name of client",
-  "year": "2015",
-  "url": "http://wwww.google.com",
+  "title": "Half House - website",
+  "category": [ "design", "code" ],
+  "client": "One Farm Design",
+  "year": "2014",
   "featured": false
 }]

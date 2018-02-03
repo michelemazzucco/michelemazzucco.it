@@ -12,16 +12,24 @@ const ListsWrapper = styled.section`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto auto; 
-  grid-column-gap: 2rem;
-  grid-row-gap: 4rem;
+  grid-column-gap: 3rem;
+  grid-row-gap: 4.5rem;
   padding: 6rem 0;
-  ${media.md`
-    grid-template-columns: 100%;
+  ${media.sm`
+    grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 0;
   `} 
 `
 
 const ClientsList = styled(ProfileList)`
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    ${media.sm`
+      grid-template-columns: repeat(1, 1fr);
+      grid-column-gap: 0;
+    `} 
+  }
 `
 
 const ProfilePage = props => {
@@ -31,16 +39,6 @@ const ProfilePage = props => {
     <ContentWrapper>
       <ProfileIntro />
       <ListsWrapper>
-        {clients.edges.length > 0 && 
-          <ClientsList 
-            title='Clients'
-            list={() => clients.edges.map(({ client }, i) => (
-              <ProfileListItem 
-                key={i}
-                {...client}
-              />
-            ))}
-          />}
         {events.edges.length > 0 && 
           <ProfileList 
             title='Timeline'
@@ -51,9 +49,19 @@ const ProfilePage = props => {
               />
             ))}
           />}
+        {clients.edges.length > 0 && 
+          <ClientsList 
+            title='Aziende con cui ho lavorato'
+            list={() => clients.edges.map(({ client }, i) => (
+              <ProfileListItem 
+                key={i}
+                {...client}
+              />
+            ))}
+          />}
         {mentions.edges.length > 0 && 
           <ProfileList 
-            title='Mentions & Features'
+            title='Featured on'
             list={() => mentions.edges.map(({ mention }, i) => (
               <ProfileListItem 
                 key={i}
