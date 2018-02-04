@@ -70,7 +70,6 @@ const NavItem = styled.li`
     display: flex;
     align-items: center;
     transition: color .1s ease;
-
     ${props => props.highlight 
       ? css`
         color: ${colors.yellow500};
@@ -100,9 +99,9 @@ const Menu = () =>
   <NavWrapper>
     <Nav>
       <NavItem><a href='https://twitter.com/MicheleMazzucco' target='_blank'>Twitter</a></NavItem>
-      <NavItem><a href='https://twitter.com/MicheleMazzucco' target='_blank'>Dribbble</a></NavItem>
-      <NavItem><a href='https://twitter.com/MicheleMazzucco' target='_blank'>Instagram</a></NavItem>
-      <NavItem><a href='https://twitter.com/MicheleMazzucco' target='_blank'>Github</a></NavItem>
+      <NavItem><a href='https://dribbble.com/michelemazzucco' target='_blank'>Dribbble</a></NavItem>
+      <NavItem><a href='https://www.instagram.com/michele.mazzucco/' target='_blank'>Instagram</a></NavItem>
+      <NavItem><a href='https://github.com/michelemazzucco' target='_blank'>Github</a></NavItem>
     </Nav>
     <Nav>
       <NavItem><NavLink exact to='/'>Index</NavLink></NavItem>

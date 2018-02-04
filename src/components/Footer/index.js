@@ -17,7 +17,7 @@ const FooterItem = styled.div`
   position: absolute;
   font-family: ${fonts.mono};
   color: ${colors.gray700};
-  font-size: .9rem;
+  font-size: .85rem;
   
   ${props => props.position === 'left' 
     ? css`
@@ -52,6 +52,7 @@ const Footer = () =>
       Made (with love) in {getCurrentYear()}
     </FooterItem>
     <FooterItem position='right'>
+      P.I. 03671100984&nbsp;-&nbsp;
       <a target="_blank" rel="noopener" href='https://github.com/'>Source code</a>
     </FooterItem>
   </FooterWrapper>

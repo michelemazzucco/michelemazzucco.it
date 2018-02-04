@@ -16,14 +16,14 @@ const Wrapper = styled.div`
   overflow: hidden;
 
   div {
-    transition: transform .3s cubic-bezier(0.41,0,0.07,1);
+    transition: transform .3s cubic-bezier(0.45, 0, .1, 1);
   }
 
-  div:first-child {
+  .position {
     transform: translateY(0);
   }
 
-  div:last-child {
+  .year {
     position: absolute;
     top: 0;
     right: 0;
@@ -34,10 +34,10 @@ const Wrapper = styled.div`
   }
 
   &:hover {
-    div:first-child {
+    .position {
       transform: translateY(-100%);
     }    
-    div:last-child {
+    .year {
       transform: translateY(0);
     }
   }
@@ -47,12 +47,8 @@ const Wrapper = styled.div`
 const EventListItem = ({ year, position, company }) =>
   <ListItem>
     <Wrapper>
-      <div>
-        <Position>{position}</Position> at <span>{company}</span>
-      </div>
-      <div>
-        {year}
-      </div>
+      <div className="position"><Position>{position}</Position> at <span>{company}</span></div>
+      <div className="year">{year}</div>
     </Wrapper>
   </ListItem>
 

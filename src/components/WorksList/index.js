@@ -79,7 +79,7 @@ const StyledEmailMe = styled(EmailMe)`
   color: ${colors.yellow500};
   font-family: ${fonts.mono};
   font-size: .9rem;
-  border-bottom: 1px dotted ${colors.gray700};
+  border-bottom: 1px dotted ${colors.yellow700};
   padding: 0 0 .3rem;
   display: inline-block;
 `
