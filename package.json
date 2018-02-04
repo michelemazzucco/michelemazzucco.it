@@ -4,8 +4,9 @@
   "description": "Michele Mazzucco's personal portfolio website",
   "main": "n/a",
   "scripts": {
-    "build": "gatsby build",
-    "dev": "gatsby develop",
+    "clean": "rimraf ./public",
+    "build": "npm run clean && gatsby build",
+    "dev": "npm run clean && gatsby develop",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -18,23 +19,23 @@
   "dependencies": {
     "@jacobmischka/gatsby-plugin-react-svg": "^1.0.0",
     "file-loader": "^1.1.6",
-    "gatsby": "^1.9.172",
-    "gatsby-image": "^1.0.34",
-    "gatsby-link": "^1.6.35",
+    "gatsby": "^1.9.178",
+    "gatsby-link": "^1.6.36",
     "gatsby-plugin-favicon": "^2.1.1",
+    "gatsby-plugin-google-analytics": "^1.0.17",
     "gatsby-plugin-react-helmet": "^2.0.4",
     "gatsby-plugin-styled-components": "^2.0.5",
-    "gatsby-source-filesystem": "^1.5.15",
+    "gatsby-source-filesystem": "^1.5.16",
     "gatsby-transformer-json": "^1.0.14",
     "idx": "^2.2.0",
-    "nuka-carousel": "^3.0.1",
-    "react-anime": "^2.1.0",
     "react-helmet": "^5.2.0",
-    "react-motion": "^0.5.2",
     "react-responsive-carousel": "^3.1.33",
     "react-sizes": "^1.0.0",
     "styled-components": "2.4.0",
     "styled-reset": "^1.0.1",
     "url-loader": "^0.6.2"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.2"
   }
 }

@@ -90,7 +90,7 @@ const WorksList = ({
   setCategory 
 }) => 
   <WorksWrapper>
-    <WorksTitle>Selected works</WorksTitle>
+    <WorksTitle>Other works</WorksTitle>
     <ButtonsWrapper>
       <FilterButton active={category === 'design'} onClick={() => setCategory('design')}>design</FilterButton>
       <FilterButton active={category === 'code'} onClick={() => setCategory('code')}>code</FilterButton>

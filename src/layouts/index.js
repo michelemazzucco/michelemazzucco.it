@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import styled, { css } from 'styled-components'
+import Helmet from 'gatsby-plugin-react-helmet'
 import Logo from '../components/Logo'
 import Footer from '../components/Footer'
 import Menu from '../components/Menu'
 import ToggleMenu from '../components/ToggleMenu'
 import { colors, media, getOuterSpace } from '../utils/commonStyles'
+import { META } from '../utils/constants'
 import '../utils/globalStyles'
 
 const NavWrapper = styled.div`
@@ -25,7 +27,7 @@ const Shoable = styled.div`
       padding: 0 3rem 3rem;
     }
     overflow: hidden;
-    transition: max-height .6s cubic-bezier(0.41,0,0.07,1);
+    transition: max-height .6s cubic-bezier(0.45, 0, .1, 1);
     ${props => props.open 
       ? css`
         max-height: 200px;

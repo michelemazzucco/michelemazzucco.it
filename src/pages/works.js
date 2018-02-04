@@ -3,6 +3,8 @@ import idx from 'idx'
 import ContentWrapper from '../components/ContentWrapper'
 import WorksList from '../components/WorksList'
 import WorksFeatured from '../components/WorksFeatured'
+import Head from '../components/Head'
+import { META } from '../utils/constants'
 
 class WorksPage extends Component {
   constructor() {
@@ -49,6 +51,11 @@ class WorksPage extends Component {
 
     return (
       <ContentWrapper>
+        <Head 
+          title={META.works.title}
+          description={META.works.description}
+          image={META.common.image}
+        />
         <WorksFeatured works={this.getFeaturedWorks()} />
         <WorksList 
           works={this.getWorks()} 

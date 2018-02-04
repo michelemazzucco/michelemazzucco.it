@@ -17,6 +17,29 @@ const NavWrapper = styled.nav`
   ${getOuterSpace('padding')};
   ul:last-child li a {
     justify-content: flex-end;
+    &:before {
+      background: ${colors.yellow500};
+      border-radius: 100%;
+      content: '';
+      display: block;
+      height: .35rem;  
+      margin-right: .75rem;
+      vertical-align: middle;
+      width: .35rem;
+      transition: transform .3s cubic-bezier(0.45, 0, .1, 1), opacity .1s ease;
+    }
+
+    &:not(.active):before {
+      opacity: 0;
+      transform: translateX(-1rem);
+    }
+
+    &:hover {
+      &:before {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
   }
   ${media.md`
     position: static;
@@ -48,27 +71,6 @@ const NavItem = styled.li`
     align-items: center;
     transition: color .1s ease;
 
-    &:before {
-      background: ${colors.yellow500};
-      border-radius: 100%;
-      content: '';
-      display: block;
-      height: .35rem;  
-      margin-right: .75rem;
-      vertical-align: middle;
-      width: .35rem;
-      opacity: 0;
-      transform: translateX(-1rem);
-      transition: transform .3s cubic-bezier(0.45, 0, .1, 1), opacity .1s ease;
-    }
-
-    &:hover {
-      &:before {
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
-
     ${props => props.highlight 
       ? css`
         color: ${colors.yellow500};
@@ -85,11 +87,10 @@ const NavItem = styled.li`
 const NavLink = styled(Link).attrs({
   activeClassName: 'active'
 })`
-
   &.active {
     color: #FFF;
     &:before {
-      transform: translateX(0);
+      transform:translateX(0);
       opacity: 1;
     }
   }

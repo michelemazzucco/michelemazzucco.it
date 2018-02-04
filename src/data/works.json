@@ -6,7 +6,7 @@
   "year": "2015",
   "url": "http://wwww.google.com",
   "featured": true,
-  "image": "img/work-image-example-01.png"
+  "image": "/images/works/work-image-example-01.png"
 },{
   "title": "Cum sociis natoque",
   "category": [ "design" ],
@@ -14,16 +14,7 @@
   "client": "Name of client",
   "year": "2015",
   "featured": true,
-  "image": "img/work-image-example-01.png"
-},{
-  "title": "Cum sociis natoque",
-  "category": [ "design" ],
-  "collaborators": [ "Incode" ],
-  "client": "Name of client",
-  "year": "2015",
-  "url": "http://wwww.google.com",
-  "featured": true,
-  "image": "img/work-image-example-02.png"
+  "image": "/images/works/work-image-example-01.png"
 },{
   "title": "Cum sociis natoque",
   "category": [ "design" ],
@@ -32,7 +23,16 @@
   "year": "2015",
   "url": "http://wwww.google.com",
   "featured": true,
-  "image": "img/work-image-example-03.png"
+  "image": "/images/works/work-image-example-02.png"
+},{
+  "title": "Cum sociis natoque",
+  "category": [ "design" ],
+  "collaborators": [ "Incode" ],
+  "client": "Name of client",
+  "year": "2015",
+  "url": "http://wwww.google.com",
+  "featured": true,
+  "image": "/images/works/work-image-example-03.png"
 },{
   "title": "Fifty Finance - website",
   "category": [ "design" ],

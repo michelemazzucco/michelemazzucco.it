@@ -81,10 +81,9 @@ const StyledCarousel = styled(Carousel)`
 const WorksFeatured = ({ works, isMobile }) => {
   const worksList = works.map(({ work }, i) => {
     const { image, url } = work
-    const imagePath = require(`../../${image}`)
     return (
       <WorkFeatured key={i}>
-        <img width={500} height={360} src={imagePath} />
+        <img width={500} height={360} src={withPrefix(image)} />
         {url && <a href={url} target="_blank" rel="noopener" />}
       </WorkFeatured>
     )

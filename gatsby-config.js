@@ -1,7 +1,5 @@
 module.exports = {
-  siteMetadata: {
-    title: 'Michele Mazzucco | Multidisciplinary designer'
-  },
+  pathPrefix: '/',
   plugins: [
     {
       resolve: 'gatsby-source-filesystem',
@@ -12,7 +10,7 @@ module.exports = {
     },{
       resolve: 'gatsby-plugin-favicon',
       options: {
-        logo: './src/img/favicon.png',
+        logo: './static/favicon.png',
         injectHTML: true,
         icons: {
           android: false,
@@ -26,6 +24,13 @@ module.exports = {
           windows: false
         }
       }
+    },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-113472346-1',
+        anonymize: true,
+      },
     },
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-json',

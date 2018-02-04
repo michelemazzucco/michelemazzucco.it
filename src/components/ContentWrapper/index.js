@@ -4,7 +4,7 @@ import { media, mq } from '../../utils/commonStyles'
 const ContentWrapper = styled.div`
   max-width: 68rem; 
   width: calc(100% - 9.25rem * 2);
-  margin: 11rem auto 6.5rem;
+  margin: 11rem auto 5rem;
   ${media.lg`
     margin: 8rem auto 6.5rem;
     width: calc(100% - 11rem * 2);

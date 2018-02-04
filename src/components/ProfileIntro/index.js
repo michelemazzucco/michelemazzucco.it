@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import WeekDistance from '../WeekDistance'
 import Intro from '../Intro'
 import { fonts, colors, media } from '../../utils/commonStyles'
-import portrait from './michele-mazzucco-portrait.jpg'
 
 const ProfileWrapper = styled.section`
   display: grid;
@@ -74,7 +73,7 @@ const InfoWrapper = styled.header`
   `}
 `
 
-const AboutMe = styled.main`
+const Content = styled.main`
   margin-top: 1rem;
   line-height: 1.8em;
   color: ${colors.gray500};
@@ -92,20 +91,14 @@ const AboutMe = styled.main`
   }
 `
 
-const ProfileIntro = () => 
+const ProfileIntro = ({ content }) => 
   <ProfileWrapper>
     <InfoWrapper>
       <Intro fixed={false} />
-      <AboutMe>
-        <p>Da più di 4 anni lavoro con piccole e grandi aziende in tutto il mondo. Sono focalizzato principalmente sul costruire interfacce utente usabili, scalabili e testabili per qualsiasi piattaforma. Mi piace il mondo open source, <a href="">sperimentare e costruire cose.</a></p>
-        
-        <p>Alle volte posto qualcosa <a>Behance</a>, <a>Twitter</a> o <a>Instagram</a>.</p>  
-      </AboutMe>
+      <Content>{content()}</Content>
     </InfoWrapper>
     <StyledWeekDistance />
-    <Box>
-      <img src={portrait} />
-    </Box>
+    <Box><img src="/images/michele-mazzucco-portrait.jpg" /></Box>
   </ProfileWrapper>
 
 export default ProfileIntro
