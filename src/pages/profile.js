@@ -13,20 +13,29 @@ const ListsWrapper = styled.section`
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto auto; 
   grid-column-gap: 3rem;
-  grid-row-gap: 4.5rem;
-  padding: 6rem 0;
+  grid-row-gap: 5rem;
+  padding: 5rem 0;
   ${media.sm`
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 0;
+    grid-row-gap: 3rem;
   `} 
 `
 
 const ClientsList = styled(ProfileList)`
   ul {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: max-content max-content max-content;
+    grid-template-rows: repeat(6, 1fr);
+    grid-auto-flow: column;
+    grid-column-gap: 5rem;
+    ${media.sm`
+      grid-column-gap: 3rem;
+    `}
     ${media.sm`
       grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+      grid-auto-flow: unset;
       grid-column-gap: 0;
     `} 
   }
@@ -49,13 +58,13 @@ const ProfilePage = props => {
               />
             ))}
           />}
-        {clients.edges.length > 0 && 
-          <ClientsList 
-            title='Aziende con cui ho lavorato'
-            list={() => clients.edges.map(({ client }, i) => (
+        {articles.edges.length > 0 && 
+          <ProfileList 
+            title='Public speaking & Articles'
+            list={() => articles.edges.map(({ article }, i) => (
               <ProfileListItem 
                 key={i}
-                {...client}
+                {...article}
               />
             ))}
           />}
@@ -69,13 +78,13 @@ const ProfilePage = props => {
               />
             ))}
           />}
-        {articles.edges.length > 0 && 
-          <ProfileList 
-            title='Public speaking & Articles'
-            list={() => articles.edges.map(({ article }, i) => (
+        {clients.edges.length > 0 && 
+          <ClientsList 
+            title='Aziende con cui ho lavorato'
+            list={() => clients.edges.map(({ client }, i) => (
               <ProfileListItem 
                 key={i}
-                {...article}
+                {...client}
               />
             ))}
           />}

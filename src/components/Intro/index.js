@@ -8,10 +8,11 @@ const IntroWrapper = styled.div`
   line-height: 1.3em;
 
   ${media.md`
-    font-size: 2rem;
+    max-width: 32rem;
   `}
   
   ${media.sm`
+    max-width: 100%;
     font-size: 1.5rem;
   `}
 

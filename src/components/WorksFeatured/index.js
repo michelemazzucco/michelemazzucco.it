@@ -14,7 +14,7 @@ const WorkFeatured = styled.div`
   padding-top: 74% !important;
   box-shadow: 0 10px 30px rgba(19,27,37,.4);
   transform: translateY(0);
-  transition: all .5s cubic-bezier(0.5, 0.1, 0, 1.15);
+  transition: all .3s cubic-bezier(0.45, 0, .1, 1);
   transform-style: preserve-3d;
   backface-visibility: hidden;
 

@@ -27,7 +27,7 @@ export const mq = {
   xs: '22em',
   sm: '40em',
   md: '54em',
-  lg: '85em',
+  lg: '78em',
   xl: '125em'
 }
 
@@ -68,6 +68,9 @@ export const getOuterSpace = p =>
       ${rule(p, spaces.p300)}
     `}  
     ${media.md`
+      ${rule(p, spaces.p300)}
+    `}
+    ${media.sm`
       ${rule(p, spaces.p200)}
     `}
   `

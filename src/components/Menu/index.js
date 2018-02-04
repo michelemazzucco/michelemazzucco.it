@@ -46,6 +46,28 @@ const NavItem = styled.li`
     pointer-events: all;
     display: flex;
     align-items: center;
+    transition: color .1s ease;
+
+    &:before {
+      background: ${colors.yellow500};
+      border-radius: 100%;
+      content: '';
+      display: block;
+      height: .35rem;  
+      margin-right: .75rem;
+      vertical-align: middle;
+      width: .35rem;
+      opacity: 0;
+      transform: translateX(-1rem);
+      transition: transform .3s cubic-bezier(0.45, 0, .1, 1), opacity .1s ease;
+    }
+
+    &:hover {
+      &:before {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
 
     ${props => props.highlight 
       ? css`
@@ -66,17 +88,10 @@ const NavLink = styled(Link).attrs({
 
   &.active {
     color: #FFF;
-  }
-
-  &.active:before {
-    background: ${colors.yellow500};
-    border-radius: 100%;
-    content: '';
-    display: block;
-    height: .3rem;  
-    margin-right: .75rem;
-    vertical-align: middle;
-    width: .3rem;
+    &:before {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 `
 

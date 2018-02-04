@@ -1,25 +1,21 @@
 [{
-  "name": "App Quality"
-},{
-  "name": "FreeJourn"
-},{
   "name": "MailUp"
-},{
-  "name": "Manfrotto"
 },{
   "name": "Incode"
 },{
-  "name": "Techsoup"
+  "name": "Manfrotto"
 },{
   "name": "Kenzai"
 },{
-  "name": "Sky - Italy"
+  "name": "Sky"
 },{
   "name": "TotalErg"
 },{
   "name": "Enel Energia"
-},    {
-  "name": "PayPal - Italy"
 },{
-  "name": "and many others!"
+  "name": "PayPal"
+},{
+  "name": "Techsoup"
+},{
+  "name": "FreeJourn"
 }]

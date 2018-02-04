@@ -8,10 +8,16 @@ import { colors, fonts, media } from '../../utils/commonStyles'
 const WorksWrapper = styled.div`
   max-width: 80%;
   margin: 5rem auto 0;
-  ${media.md`
+  ${media.lg`
     max-width: 100%;
-    margin: 2rem auto 0;
   `}
+  ${media.md`
+    margin: 5rem auto 0;
+  `}
+  ${media.sm`
+    margin: 3rem auto 0;
+  `}
+
 `
 
 const WorksTitle = styled.h3`
@@ -61,6 +67,7 @@ const NDAWrapper = styled.div`
     font-weight: 400;
     color: #FFF;
     margin-bottom: 1rem;
+    line-height: 1.4em;
   }
 `
 
@@ -69,7 +76,7 @@ const StyledDivider = styled(Divider)`
 `
 
 const StyledEmailMe = styled(EmailMe)`
-  color: ${colors.gray500};
+  color: ${colors.yellow500};
   font-family: ${fonts.mono};
   font-size: .9rem;
   border-bottom: 1px dotted ${colors.gray700};

@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components'
 import Logo from '../components/Logo'
 import Footer from '../components/Footer'
 import Menu from '../components/Menu'
+import ToggleMenu from '../components/ToggleMenu'
 import { colors, media, getOuterSpace } from '../utils/commonStyles'
 import '../utils/globalStyles'
 
@@ -20,32 +21,24 @@ const NavWrapper = styled.div`
 const Shoable = styled.div`
   ${media.md`
     background: ${colors.blue900};
-    padding: 0 2rem 2rem;
+    > div {
+      padding: 0 3rem 3rem;
+    }
+    overflow: hidden;
+    transition: max-height .6s cubic-bezier(0.41,0,0.07,1);
     ${props => props.open 
       ? css`
-        display: block;
+        max-height: 200px;
       `
       : css`
-        display: none;
+        max-height: 0;
       `}
   `} 
-`
-
-const ToggleMenu = styled.div`
-  display: none;
-  height: 2rem;
-  width: 2rem;
-  ${props => props.open 
-    ? css`
-      background: red;
-    `
-    : css`
-      background: green;
-    `}
-  
-  ${media.md`
-    display: block;
-  `}
+  ${media.sm`
+    > div {
+      padding: 0 2rem 2rem;
+    }
+  `} 
 `
 
 const Header = styled.header`
@@ -54,7 +47,7 @@ const Header = styled.header`
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
-    min-height: 9rem;
+    min-height: 7rem;
     background-image: linear-gradient(to bottom,rgba(30,39,51,0.0) 0%,rgba(30,39,51,1) 50%);
     ${getOuterSpace('padding')};
   `}
@@ -72,9 +65,17 @@ class Layout extends Component {
     this.setState({ navOpen: !this.state.navOpen })
   }
 
+  componentDidUpdate(prevProps) {
+    const { location } = this.props
+
+    if (location.pathname !== prevProps.location.pathname) {
+      this.toggleMenu()
+    }
+  }
+
   render() {
     const { children } = this.props
-    
+
     return(
       <div>
         <div>{children()}</div>
@@ -87,8 +88,10 @@ class Layout extends Component {
             />
           </Header>
           <Shoable open={this.state.navOpen}>
+            <div>
             <Menu />
             <Footer />
+            </div>
           </Shoable>
         </NavWrapper>
       </div>      
