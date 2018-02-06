@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import WeekDistance from '../WeekDistance'
 import Intro from '../Intro'
+import Image from '../Image'
 import { fonts, colors, media } from '../../utils/commonStyles'
 
 const ProfileWrapper = styled.section`
@@ -16,35 +17,21 @@ const ProfileWrapper = styled.section`
   `}
 `
 
-const Box = styled.div`
+const StyledImage = styled(Image)`
   grid-area: 1 / 4 / last-line / end;
   background: ${colors.blue900};
-  position: relative;
-  overflow: hidden;
 
   img {
-    height: 100%;
-    width: auto;
     mix-blend-mode: lighten;
-    opacity: .15;
+    opacity: .1;   
+    width: 100%;
+    height: 100%;
     display: block;
-    position: absolute;
-    top: -100%;
-    right: -100%;
-    bottom: -100%;
-    left: -100%;
-    margin: auto;
+    object-fit: cover;
+    
     ${media.sm`
-      opacity: .30;
-      width: 100%;
-      height: auto;
+      opacity: .25;
     `}
-  }
-
-  &:before {
-    content: '';
-    padding-top: 145%;
-    display: block;
   }
 
   ${media.sm`
@@ -100,7 +87,25 @@ const ProfileIntro = ({ content }) =>
       <Content>{content()}</Content>
     </InfoWrapper>
     <StyledWeekDistance />
-    <Box><img src="/images/michele-mazzucco-portrait.jpg" /></Box>
+    <StyledImage 
+      src="/images/michele-mazzucco-portrait.jpg"
+      alt="Michele Mazzucco - Interdiscliplinary Designer"
+      sources={[{
+        media: 'max-width: 40rem',
+        srcset: [
+          '/images/michele-mazzucco-portrait-square.jpg 1x',
+          '/images/michele-mazzucco-portrait-square-2x.jpg 2x',
+          '/images/michele-mazzucco-portrait-square-3x.jpg 3x'
+        ]
+      },{
+        media: 'min-width: 40rem',
+        srcset: [
+          '/images/michele-mazzucco-portrait.jpg 1x',
+          '/images/michele-mazzucco-portrait-2x.jpg 2x',
+          '/images/michele-mazzucco-portrait-3x.jpg 3x'
+        ]       
+      }]}
+    />
   </ProfileWrapper>
 
 export default ProfileIntro
