@@ -5,7 +5,7 @@ exports.onRenderBody = ({ setHeadComponents }) => {
     createElement('link', {
       key: 'fonts',
       href: 'https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400',
-      rel: 'stylesheet' 
+      rel: 'preconnect' 
     })
   ])
 }

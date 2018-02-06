@@ -5,7 +5,7 @@ import Intro from '../components/Intro'
 import Head from '../components/Head'
 import { META } from '../utils/constants'
 
-const IndexPage = () => {
+export default () => {
   return (
     <div>
       <Head 
@@ -17,5 +17,3 @@ const IndexPage = () => {
     </div>
   )
 }
-
-export default IndexPage

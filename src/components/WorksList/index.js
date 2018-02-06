@@ -7,17 +7,13 @@ import { colors, fonts, media } from '../../utils/commonStyles'
 
 const WorksWrapper = styled.div`
   max-width: 80%;
-  margin: 5rem auto 0;
+  margin: 8rem auto 0;
   ${media.lg`
     max-width: 100%;
   `}
-  ${media.md`
-    margin: 5rem auto 0;
-  `}
   ${media.sm`
-    margin: 3rem auto 0;
+    margin: 4rem auto 0;
   `}
-
 `
 
 const WorksTitle = styled.h3`
@@ -59,7 +55,7 @@ const FilterButton = styled.button`
 `
 
 const NDAWrapper = styled.div`
-  padding-top: 4.5rem;
+  padding-top: 4rem;
   text-align: center;
   
   h3 {
@@ -101,8 +97,8 @@ const WorksList = ({
     </ul>
     <NDAWrapper>
       <StyledDivider height={6} width={43} />
-      <h3>Alcuni dei miei lavori sono sotto NDA, vuoi vederne altri?</h3>
-      <StyledEmailMe text='Scrivimi' />
+      <h3>Would you be interested in finding out about my other work?</h3>
+      <StyledEmailMe text='Drop me an email' />
     </NDAWrapper>
   </WorksWrapper>
 

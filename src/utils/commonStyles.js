@@ -9,8 +9,8 @@ export const colors = {
 }
 
 export const fonts = {
-  sansSerif: '\'Roboto\', sans-serif',
-  mono: '\'Roboto Mono\', monospace'
+  sansSerif: '\'Roboto\', stack-sans, sans-serif',
+  mono: '\'Roboto Mono\', stack-mono, monospace'
 }
 
 export const spaces = {

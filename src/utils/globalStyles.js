@@ -4,6 +4,17 @@ import { colors, fonts, media } from './commonStyles'
 
 injectGlobal`
   ${reset}
+
+  @font-face {
+    font-family: stack-mono;
+    src: local(".SFNSText-Light");
+  }
+
+  @font-face {
+    font-family: stack-sans;
+    src: local(".SFNSText-Light");
+  }
+
   html,
   body {
     height: 100%;

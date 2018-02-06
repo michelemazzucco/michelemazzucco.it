@@ -16,10 +16,7 @@ const ListsWrapper = styled.section`
   grid-template-rows: auto auto; 
   grid-column-gap: 3rem;
   grid-row-gap: 5rem;
-  padding: 11rem 0 0;
-  ${media.lg`
-    padding: 8rem 0 0;
-  `} 
+  padding: 8rem 0 0;
   ${media.sm`
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 0;
@@ -47,8 +44,8 @@ const ClientsList = styled(ProfileList)`
   }
 `
 
-const ProfilePage = props => {
-  const { clients, events, mentions, articles } = props.data
+export default ({ data }) => {
+  const { clients, events, mentions, articles } = data
   
   return (
     <ContentWrapper>
@@ -59,12 +56,12 @@ const ProfilePage = props => {
       />
       <ProfileIntro 
         content={() =>
-          <div>
-            <p>Da più di 4 anni lavoro con piccole e grandi aziende in tutto il mondo. 
-            Sono focalizzato principalmente sul costruire interfacce utente usabili, 
-            scalabili e testabili per qualsiasi piattaforma. Mi piace il mondo open source, 
-            <a href="">sperimentare e costruire cose.</a></p>
-            <p>Alle volte posto qualcosa <a>Behance</a>, <a>Twitter</a> o <a>Instagram</a>.</p>  
+          <div>            
+            <p>Over the last 4+ years, I have been working with small and big companies all over the world. 
+            I focus primarily on building, prototyping and implementing user interfaces that are usable and scalable for any web-based platform. 
+            I enjoy <a href="https://dribbble.com/michelemazzucco" target="_blank" rel="noopener">experimenting</a>, building and <a href="github.com/michelemazzucco" target="_blank" rel="noopener">trying</a> out new tools.</p>
+            
+            <p>Sometimes I <a href="https://twitter.com/MicheleMazzucco" target="_blank" rel="noopener">tweet</a> and share photos on <a href="https://www.instagram.com/michele.mazzucco/" target="_blank" rel="noopener">Instagram</a>.</p>
           </div>
         }
       />
@@ -101,7 +98,7 @@ const ProfilePage = props => {
           />}
         {clients.edges.length > 0 && 
           <ClientsList 
-            title='Aziende con cui ho lavorato'
+            title='Companies I have worked with'
             list={() => clients.edges.map(({ client }, i) => (
               <ProfileListItem 
                 key={i}
@@ -113,8 +110,6 @@ const ProfilePage = props => {
     </ContentWrapper>
   )
 }
-
-export default ProfilePage
 
 export const profileQuery = graphql`
   query ProfileQuery {

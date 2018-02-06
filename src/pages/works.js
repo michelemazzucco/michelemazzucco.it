@@ -6,7 +6,7 @@ import WorksFeatured from '../components/WorksFeatured'
 import Head from '../components/Head'
 import { META } from '../utils/constants'
 
-class WorksPage extends Component {
+export default class extends Component {
   constructor() {
     super()
     this.state = { category: null }
@@ -20,13 +20,6 @@ class WorksPage extends Component {
   getData() {
     const { data } = this.props
     return idx(data, _ => _.works.edges) 
-  }
-
-  getWorksList(category) {
-    const { works } = this.props
-    return category 
-      ? works.filter(({ work }) => work.category.includes(category))
-      : works
   }
 
   getWorks() {  
@@ -66,8 +59,6 @@ class WorksPage extends Component {
     )
   }
 }
-
-export default WorksPage
 
 export const worksQuery = graphql`
   query WorksQuery {

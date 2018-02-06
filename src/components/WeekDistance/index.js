@@ -51,11 +51,11 @@ const Kilometers = styled.span`
 `
 
 class WeekDistance extends Component {
-  state = { distance: 0 }
+  state = { distance: null }
 
   componentDidMount() {
-    //getWeekDistance()
-    //  .then(data => this.setState({ distance: data.distance }))
+    getWeekDistance()
+      .then(data => this.setState({ distance: data.distance }))
   }
 
   getEmoji(distance) {
@@ -69,8 +69,8 @@ class WeekDistance extends Component {
     const { className } = this.props
 
     return distance === 0 
-      ? <span><EmojiWrapper>💩</EmojiWrapper>No run this week</span>
-      : <span>{this.getEmoji(distance)}Run <Kilometers>{this.state.distance}km</Kilometers> last week</span>
+      ? <span><EmojiWrapper>💩</EmojiWrapper>No km of running this week</span>
+      : <span>{this.getEmoji(distance)} I've run <Kilometers>{this.state.distance}km</Kilometers> this week</span>
   }
 
   render() {

@@ -5,7 +5,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'data',
-        path: `${__dirname}/src/data/`
+        path: '${__dirname}/src/data/'
       }
     },{
       resolve: 'gatsby-plugin-favicon',
@@ -32,6 +32,30 @@ module.exports = {
         anonymize: true,
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Michele Mazzucco',
+        short_name: 'Michele Mazzucco | In',
+        start_url: '/',
+        background_color: '#f7f0eb',
+        theme_color: '#a2466c',
+        display: 'minimal-ui',
+        icons: [
+          {
+            src: '/favicons/favicon-16x16.png',
+            sizes: '16x16',
+            type: 'image/png'
+          },
+          {
+            src: '/favicons/favicon-32x32.png',
+            sizes: '32x32',
+            type: 'image/png'
+          }
+        ]
+      }
+    },
+    'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-json',
     '@jacobmischka/gatsby-plugin-react-svg',

@@ -23,9 +23,10 @@ const Box = styled.div`
   overflow: hidden;
 
   img {
-    width: 100%;
+    height: 100%;
+    width: auto;
     mix-blend-mode: lighten;
-    opacity: .1;
+    opacity: .15;
     display: block;
     position: absolute;
     top: -100%;
@@ -33,9 +34,10 @@ const Box = styled.div`
     bottom: -100%;
     left: -100%;
     margin: auto;
-    max-width: 100%;
     ${media.sm`
-      opacity: .25;
+      opacity: .30;
+      width: 100%;
+      height: auto;
     `}
   }
 
