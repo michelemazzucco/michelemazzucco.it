@@ -20,7 +20,7 @@
   "dependencies": {
     "@jacobmischka/gatsby-plugin-react-svg": "^1.0.0",
     "file-loader": "^1.1.6",
-    "gatsby": "^1.9.178",
+    "gatsby": "^1.9.183",
     "gatsby-link": "^1.6.36",
     "gatsby-plugin-favicon": "^2.1.1",
     "gatsby-plugin-google-analytics": "^1.0.17",
@@ -28,7 +28,7 @@
     "gatsby-plugin-offline": "^1.0.13",
     "gatsby-plugin-react-helmet": "^2.0.4",
     "gatsby-plugin-styled-components": "^2.0.5",
-    "gatsby-source-filesystem": "^1.5.16",
+    "gatsby-source-filesystem": "^1.5.18",
     "gatsby-transformer-json": "^1.0.14",
     "idx": "^2.2.0",
     "prop-types": "^15.6.0",
