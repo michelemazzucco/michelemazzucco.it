@@ -8,7 +8,7 @@
     "flush-cache": "rimraf ./.cache",
     "build": "npm run clean && gatsby build",
     "dev": "npm run clean && npm run flush-cache && gatsby develop",
-    "lint:css": "stylelint './src/**/*.js'"
+    "lint:css": "stylelint './src/**/*.js' --write"
   },
   "keywords": [
     "react",

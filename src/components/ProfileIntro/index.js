@@ -88,21 +88,21 @@ const ProfileIntro = ({ content }) =>
     </InfoWrapper>
     <StyledWeekDistance />
     <StyledImage 
-      src="/images/michele-mazzucco-portrait.jpg"
+      src="/images/profile/michele-mazzucco-portrait.jpg"
       alt="Michele Mazzucco - Interdiscliplinary Designer"
       sources={[{
         media: 'max-width: 40rem',
         srcset: [
-          '/images/michele-mazzucco-portrait-square.jpg 1x',
-          '/images/michele-mazzucco-portrait-square-2x.jpg 2x',
-          '/images/michele-mazzucco-portrait-square-3x.jpg 3x'
+          '/images/profile/michele-mazzucco-portrait-square.jpg 1x',
+          '/images/profile/michele-mazzucco-portrait-square-2x.jpg 2x',
+          '/images/profile/michele-mazzucco-portrait-square-3x.jpg 3x'
         ]
       },{
         media: 'min-width: 40rem',
         srcset: [
-          '/images/michele-mazzucco-portrait.jpg 1x',
-          '/images/michele-mazzucco-portrait-2x.jpg 2x',
-          '/images/michele-mazzucco-portrait-3x.jpg 3x'
+          '/images/profile/michele-mazzucco-portrait.jpg 1x',
+          '/images/profile/michele-mazzucco-portrait-2x.jpg 2x',
+          '/images/profile/michele-mazzucco-portrait-3x.jpg 3x'
         ]       
       }]}
     />
