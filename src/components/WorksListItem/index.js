@@ -2,20 +2,20 @@ import React from 'react'
 import styled, { css } from 'styled-components'
 import { fonts, colors } from '../../utils/commonStyles'
 
-const WorkWrapper = styled.li`
+const WorkWrapper = styled.article`
   padding: 1.3rem 0;
   border-bottom: 1px dotted #2f3743;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
-  position: relative;  
+  position: relative;
 
   > header {
     transform: translateX(0);
-    transition: transform .5s cubic-bezier(0.5, 0.1, 0, 1.15);
+    transition: transform .5s cubic-bezier(.5, .1, 0, 1.15);
   }
-  
+
   &:last-child {
     border-bottom: 0;
   }
@@ -32,14 +32,14 @@ const WorkWrapper = styled.li`
     &:hover {
       > header {
         transform: translateX(-.75rem);
-      }    
+      }
     }
   `}
 `
 
 const WorkTitle = styled.h3`
   font-size: 1.1rem;
-  color: #FFF;
+  color: #fff;
   font-weight: 400;
 `
 
@@ -51,8 +51,9 @@ const WorkInfos = styled.div`
 `
 
 const WorkYear = styled.span`
-  color: #FFF;
-  &:before {
+  color: #fff;
+
+  &::before {
     content: '';
     display: inline-block;
     vertical-align: middle;

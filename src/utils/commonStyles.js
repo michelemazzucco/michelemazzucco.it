@@ -53,7 +53,7 @@ export const media = {
     }
   `,
   xl: (...a) => css`
-  @media (max-width: ${mq.xl}) {
+    @media (max-width: ${mq.xl}) {
       ${css(...a)}
     }
   `
@@ -66,7 +66,7 @@ export const getOuterSpace = p =>
     ${rule(p, spaces.p500)}
     ${media.lg`
       ${rule(p, spaces.p300)}
-    `}  
+    `}
     ${media.md`
       ${rule(p, spaces.p300)}
     `}

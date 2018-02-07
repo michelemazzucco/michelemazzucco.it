@@ -10,31 +10,41 @@ const ToggleMenuWrapper = styled.div`
   justify-content: space-between;
   align-items: flex-end;
   backface-visibility: hidden;
-  transition: transform .45s cubic-bezier(0.41, 0, 0.07, 1);
+  transition: transform .45s cubic-bezier(.45, 0, .07, 1);
+
+  span {
+    display: inline-block;
+    height: 1px;
+    background: #fff;
+  }
 
   ${props => props.open 
     ? css`
       transform: rotate(90deg);
       align-items: center;
+      
       span {
-        &:nth-child(1),
-        &:nth-child(3) {
+        &:nth-child(1), &:nth-child(3) {
           width: 60%;
         }
+        
         &:nth-child(2) {
           width: 100%;
-        }        
+        }
       }
     `
     : css`
       transform: rotate(0);
+      
       span {
         &:nth-child(1) {
           width: 100%;
         }
+        
         &:nth-child(2) {
           width: 60%;
         }
+        
         &:nth-child(3) {
           width: 80%;
         }
@@ -44,12 +54,6 @@ const ToggleMenuWrapper = styled.div`
   ${media.md`
     display: flex;
   `}
-
-  span {
-    display: inline-block;
-    height: 1px;
-    background: #FFF;
-  }
 `
 
 const ToggleMenu = props => 

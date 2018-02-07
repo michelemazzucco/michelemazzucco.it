@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import Helmet from 'react-helmet'
 import ContentWrapper from '../components/ContentWrapper'
-import ProfileIntro from '../components/ProfileIntro'
+import ProfileIntroSection from '../components/ProfileIntroSection'
 import ProfileList from '../components/ProfileList'
 import ProfileListItem from '../components/ProfileListItem'
 import EventListItem from '../components/EventListItem'
@@ -10,10 +10,10 @@ import Head from '../components/Head'
 import { media } from '../utils/commonStyles'
 import { META } from '../utils/constants'
 
-const ListsWrapper = styled.section`
+const ListsSection = styled.section`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto auto; 
+  grid-template-rows: auto auto;
   grid-column-gap: 3rem;
   grid-row-gap: 5rem;
   padding: 8rem 0 0;
@@ -22,7 +22,7 @@ const ListsWrapper = styled.section`
     grid-column-gap: 0;
     grid-row-gap: 3rem;
     padding: 4rem 0 0;
-  `} 
+  `}
 `
 
 const ClientsList = styled(ProfileList)`
@@ -35,12 +35,13 @@ const ClientsList = styled(ProfileList)`
     ${media.sm`
       grid-column-gap: 3rem;
     `}
+
     ${media.sm`
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: auto;
       grid-auto-flow: unset;
       grid-column-gap: 0;
-    `} 
+    `}
   }
 `
 
@@ -54,7 +55,7 @@ export default ({ data }) => {
         description={META.profile.description}
         image={META.common.image}
       />
-      <ProfileIntro 
+      <ProfileIntroSection 
         content={() =>
           <div>            
             <p>Over the last 4+ years, I have been working with small and big companies all over the world. 
@@ -65,7 +66,7 @@ export default ({ data }) => {
           </div>
         }
       />
-      <ListsWrapper>
+      <ListsSection>
         {events.edges.length > 0 && 
           <ProfileList 
             title='Timeline'
@@ -106,7 +107,7 @@ export default ({ data }) => {
               />
             ))}
           />}
-      </ListsWrapper>
+      </ListsSection>
     </ContentWrapper>
   )
 }

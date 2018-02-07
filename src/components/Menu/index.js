@@ -15,32 +15,35 @@ const NavWrapper = styled.nav`
   justify-content: space-between;
   pointer-events: none;
   ${getOuterSpace('padding')};
+  
   ul:last-child li a {
     justify-content: flex-end;
-    &:before {
+    
+    &::before {
       background: ${colors.yellow500};
       border-radius: 100%;
       content: '';
       display: block;
-      height: .35rem;  
+      height: .35rem;
       margin-right: .75rem;
       vertical-align: middle;
       width: .35rem;
-      transition: transform .3s cubic-bezier(0.45, 0, .1, 1), opacity .1s ease;
+      transition: transform .3s cubic-bezier(.45, 0, .1, 1), opacity .1s ease;
     }
 
-    &:not(.active):before {
+    &:not(.active)::before {
       opacity: 0;
       transform: translateX(-1rem);
     }
 
     &:hover {
-      &:before {
+      &::before {
         transform: translateX(0);
         opacity: 1;
       }
     }
   }
+  
   ${media.md`
     position: static;
     padding: 0;
@@ -76,8 +79,9 @@ const NavItem = styled.li`
       `
       : css`
         color: ${colors.gray500};
+        
         &:hover {
-          color: #FFF;
+          color: #fff;
         }
       `}
   }
@@ -87,9 +91,10 @@ const NavLink = styled(Link).attrs({
   activeClassName: 'active'
 })`
   &.active {
-    color: #FFF;
-    &:before {
-      transform:translateX(0);
+    color: #fff;
+    
+    &::before {
+      transform: translateX(0);
       opacity: 1;
     }
   }

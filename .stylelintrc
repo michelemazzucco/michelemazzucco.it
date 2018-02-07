@@ -6,6 +6,15 @@
   ],
   "syntax": "scss",
   "rules": {
-    "comment-empty-line-before": null
+    "comment-empty-line-before": null,
+    "selector-list-comma-newline-after": "never-multi-line",
+    "number-leading-zero": "never",
+    "no-eol-whitespace": [ true,
+      "ignore": ["empty-lines"]
+    ],
+    "property-no-unknown": [ true, 
+      ignoreProperties: ["appearance"]
+    ],
+    no-descending-specificity: null
   }
 }

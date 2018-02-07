@@ -17,7 +17,7 @@ const NavWrapper = styled.div`
     right: 0;
     width: 100%;
     z-index: 10;
-  `} 
+  `}
 `
 
 const Shoable = styled.div`
@@ -35,12 +35,13 @@ const Shoable = styled.div`
       : css`
         max-height: 0;
       `}
-  `} 
+  `}
+
   ${media.sm`
     > div {
       padding: 0 2rem 2rem;
     }
-  `} 
+  `}
 `
 
 const Header = styled.header`
@@ -79,7 +80,7 @@ class Layout extends Component {
     const { children } = this.props
 
     return(
-      <div>
+      <main>
         <div>{children()}</div>
         <NavWrapper>
           <Header>
@@ -96,7 +97,7 @@ class Layout extends Component {
             </div>
           </Shoable>
         </NavWrapper>
-      </div>      
+      </main>      
     )
   }
 }

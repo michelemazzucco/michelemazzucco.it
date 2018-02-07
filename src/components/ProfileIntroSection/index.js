@@ -23,14 +23,13 @@ const StyledImage = styled(Image)`
 
   img {
     mix-blend-mode: lighten;
-    opacity: .1;   
+    opacity: .1;
     width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
-    
     ${media.sm`
-      opacity: .25;
+      opacity: .2;
     `}
   }
 
@@ -75,12 +74,12 @@ const Content = styled.main`
   }
 
   a {
-    color: #FFF;
+    color: #fff;
     border-bottom: 1px dotted ${colors.gray500};
   }
 `
 
-const ProfileIntro = ({ content }) => 
+const ProfileIntroSection = ({ content }) => 
   <ProfileWrapper>
     <InfoWrapper>
       <Intro fixed={false} />
@@ -98,7 +97,6 @@ const ProfileIntro = ({ content }) =>
           '/images/profile/michele-mazzucco-portrait-square-3x.jpg 3x'
         ]
       },{
-        media: 'min-width: 40rem',
         srcset: [
           '/images/profile/michele-mazzucco-portrait.jpg 1x',
           '/images/profile/michele-mazzucco-portrait-2x.jpg 2x',
@@ -108,4 +106,4 @@ const ProfileIntro = ({ content }) =>
     />
   </ProfileWrapper>
 
-export default ProfileIntro
+export default ProfileIntroSection

@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import idx from 'idx'
 import ContentWrapper from '../components/ContentWrapper'
-import WorksList from '../components/WorksList'
-import WorksFeatured from '../components/WorksFeatured'
+import WorksListSection from '../components/WorksListSection'
+import WorksFeaturedSection from '../components/WorksFeaturedSection'
 import Head from '../components/Head'
 import { META } from '../utils/constants'
 
@@ -49,8 +49,8 @@ export default class extends Component {
           description={META.works.description}
           image={META.common.image}
         />
-        <WorksFeatured works={this.getFeaturedWorks()} />
-        <WorksList 
+        <WorksFeaturedSection works={this.getFeaturedWorks()} />
+        <WorksListSection 
           works={this.getWorks()} 
           category={category}
           setCategory={this.setCategory} 

@@ -3,12 +3,12 @@ import styled from 'styled-components'
 import { colors } from '../../utils/commonStyles'
 
 const ListTitle = styled.h3`
-  color: #FFF;
+  color: #fff;
   font-size: 1.1rem;
   font-weight: 400;
   margin-bottom: 1rem;
 
-  &:after {
+  &::after {
     content: '';
     width: 1rem;
     height: 1px;

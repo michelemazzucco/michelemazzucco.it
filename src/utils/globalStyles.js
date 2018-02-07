@@ -15,8 +15,7 @@ injectGlobal`
     src: local(".SFNSText-Light");
   }
 
-  html,
-  body {
+  html, body {
     height: 100%;
     font-size: 16px;
     ${media.xl`
@@ -26,7 +25,7 @@ injectGlobal`
 
   body {
     background: ${colors.blue900};
-    color: #FFF;
+    color: #fff;
     font-family: ${fonts.sansSerif};
     backface-visibility: hidden;
   }

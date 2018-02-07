@@ -16,7 +16,7 @@ const Wrapper = styled.div`
   overflow: hidden;
 
   div {
-    transition: transform .3s cubic-bezier(0.45, 0, .1, 1);
+    transition: transform .3s cubic-bezier(.45, 0, .1, 1);
   }
 
   .position {
@@ -30,18 +30,18 @@ const Wrapper = styled.div`
     left: 0;
     bottom: 0;
     transform: translateY(100%);
-    color: #FFF;
+    color: #fff;
   }
 
   &:hover {
     .position {
       transform: translateY(-100%);
-    }    
+    }
+
     .year {
       transform: translateY(0);
     }
   }
-
 `
 
 const EventListItem = ({ year, position, company }) =>

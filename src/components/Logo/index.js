@@ -5,12 +5,16 @@ import styled from 'styled-components'
 import { colors, fonts, media, getOuterSpace } from '../../utils/commonStyles'
 
 const LogoWrapper = styled.div`
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
   max-width: 18rem;
   ${getOuterSpace('padding')}
-
+  ${media.md`
+    position: static;
+    padding: 0;
+  `}
+  
   > div {
     position: relative;
   }
@@ -23,18 +27,13 @@ const LogoWrapper = styled.div`
     width: 1.65rem;
     ${media.lg`
       width: 1.45rem;
-    `} 
+    `}
   }
 
   svg {
     width: 100%;
     height: auto;
   }
-
-  ${media.md`
-    position: static;
-    padding: 0;
-  `} 
 
   .circle {
     position: absolute;
@@ -52,7 +51,7 @@ const LogoWrapper = styled.div`
   a:hover + .circle {
     opacity: 0;
     transform: translate(-50%, -50%) scale(7.5);
-    transition: transform 1s cubic-bezier(0.45, 0, .1, 1), opacity .8s ease;
+    transition: transform 1s cubic-bezier(.45, 0, .1, 1), opacity .8s ease;
   }
 `
 

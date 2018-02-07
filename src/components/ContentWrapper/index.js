@@ -14,12 +14,12 @@ const ContentWrapper = styled.div`
     width: 100%;
     margin: 4rem auto 0;
     padding: 0 3rem 6rem;
-  `} 
+  `}
   
   ${media.sm`
     margin: 2rem auto 0;
     padding: 0 2rem 6rem;
-  `} 
+  `}
 `
 
 export default ContentWrapper

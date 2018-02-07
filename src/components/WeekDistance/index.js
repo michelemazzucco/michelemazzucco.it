@@ -4,11 +4,12 @@ import { fonts, colors } from '../../utils/commonStyles'
 import { getWeekDistance } from '../../utils/api'
 
 const loading = keyframes`
-  0%{
-    background-position: -20rem 0
+  0% {
+    background-position: -20rem 0;
   }
-  100%{
-    background-position: 20rem 0
+  
+  100% {
+    background-position: 20rem 0;
   }
 `
 
@@ -16,13 +17,11 @@ const DistanceLoader = styled.div`
   display: inline-block;
   height: 1rem;
   width: 10rem;
-  background: #273240;
   animation-duration: .75s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   animation-name: ${loading};
   animation-timing-function: linear;
-  background: #273240;
   background: linear-gradient(to right, #273240 8%, #2c3644 18%, #273240 33%);
   background-size: 800px 104px;
   border-radius: 2px;
@@ -47,7 +46,7 @@ const Kilometers = styled.span`
   padding: 0 0 .3rem;
   display: inline-block;
   vertical-align: top;
-  color: #FFF;
+  color: #fff;
 `
 
 class WeekDistance extends Component {
