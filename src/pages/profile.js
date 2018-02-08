@@ -1,6 +1,5 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styled from 'styled-components'
-import Helmet from 'react-helmet'
 import ContentWrapper from '../components/ContentWrapper'
 import ProfileIntroSection from '../components/ProfileIntroSection'
 import ProfileList from '../components/ProfileList'
@@ -60,9 +59,9 @@ export default ({ data }) => {
           <div>            
             <p>Over the last 4+ years, I have been working with small and big companies all over the world. 
             I focus primarily on building, prototyping and implementing user interfaces that are usable and scalable for any web-based platform. 
-            I enjoy <a href="https://dribbble.com/michelemazzucco" target="_blank" rel="noopener">experimenting</a>, building and <a href="github.com/michelemazzucco" target="_blank" rel="noopener">trying</a> out new tools.</p>
+            I enjoy <a href="https://dribbble.com/michelemazzucco" target="_blank" rel="noopener noreferrer">experimenting</a>, building and <a href="github.com/michelemazzucco" target="_blank" rel="noopener noreferrer">trying</a> out new tools.</p>
             
-            <p>Sometimes I <a href="https://twitter.com/MicheleMazzucco" target="_blank" rel="noopener">tweet</a> and share photos on <a href="https://www.instagram.com/michele.mazzucco/" target="_blank" rel="noopener">Instagram</a>.</p>
+            <p>Sometimes I <a href="https://twitter.com/MicheleMazzucco" target="_blank" rel="noopener noreferrer">tweet</a> and share photos on <a href="https://www.instagram.com/michele.mazzucco/" target="_blank" rel="noopener noreferrer">Instagram</a>.</p>
           </div>
         }
       />
@@ -111,6 +110,7 @@ export default ({ data }) => {
     </ContentWrapper>
   )
 }
+
 
 export const profileQuery = graphql`
   query ProfileQuery {

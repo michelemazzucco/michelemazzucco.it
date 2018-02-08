@@ -1,12 +1,10 @@
 import React, { Component } from 'react'
 import styled, { css } from 'styled-components'
-import Helmet from 'gatsby-plugin-react-helmet'
 import Logo from '../components/Logo'
 import Footer from '../components/Footer'
 import Menu from '../components/Menu'
 import ToggleMenu from '../components/ToggleMenu'
 import { colors, media, getOuterSpace } from '../utils/commonStyles'
-import { META } from '../utils/constants'
 import '../utils/globalStyles'
 
 const NavWrapper = styled.div`

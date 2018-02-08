@@ -26,6 +26,8 @@ const WorkWrapper = styled.article`
     right: 0;
     bottom: 0;
     left: 0;
+    font-size: 0;
+    line-height: 0;
   }
 
   ${props => props.hasLink && css`
@@ -79,7 +81,7 @@ const WorksListItem = props =>  {
       <WorkInfos>
         <WorkYear>{year}</WorkYear>
       </WorkInfos>
-      {url && <a href={url} target="_blank" rel="noopener" />}
+      {url && <a href={url} target="_blank" rel="noopener">More Info</a>}
     </WorkWrapper>
   )
 }

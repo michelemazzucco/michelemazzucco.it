@@ -1,11 +1,11 @@
 import React from 'react'
 import { withPrefix } from 'gatsby-link'
 import styled from 'styled-components'
-import withSizes from 'react-sizes'
+// eslint-disable-next-line import/no-unresolved, import/extensions
+import withSizes from 'react-sizes' 
 import { Carousel } from 'react-responsive-carousel'
-import { media } from '../../utils/commonStyles'
-
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import { media } from '../../utils/commonStyles'
 
 const WorkFeatured = styled.article`
   border-radius: 2px;
@@ -43,6 +43,8 @@ const WorkFeatured = styled.article`
     right: 0;
     bottom: 0;
     left: 0;
+    font-size: 0;
+    line-height: 0;
   }
 
   ${media.sm`
@@ -81,11 +83,11 @@ const StyledCarousel = styled(Carousel)`
 
 const WorksFeaturedSection = ({ works, isMobile }) => {
   const worksList = works.map(({ work }, i) => {
-    const { image, url } = work
+    const { image, url, title } = work
     return (
       <WorkFeatured key={i}>
-        <img width={500} height={360} src={withPrefix(image)} />
-        {url && <a href={url} target="_blank" rel="noopener" />}
+        <img width={500} height={360} alt={title} src={withPrefix(image)} />
+        {url && <a href={url} target="_blank" rel="noopener">More Info</a>}
       </WorkFeatured>
     )
   })

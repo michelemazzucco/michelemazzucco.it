@@ -3,10 +3,6 @@ import styled from 'styled-components'
 import ListItem from '../ListItem'
 import { colors } from '../../utils/commonStyles'
 
-const Divider = styled.span`
-  color: ${colors.yellow500};
-`
-
 const Position = styled.span`
   border-bottom: 1px dotted ${colors.gray700};
 `

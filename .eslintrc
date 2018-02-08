@@ -1,0 +1,41 @@
+{
+  "extends": [
+    "airbnb-base",
+    "react-app",
+    "prettier"
+  ],
+  "parser": "babel-eslint",
+  "rules": {
+    "comma-dangle": 0,
+    "semi": 0,
+    "spaced-comment": 0,
+    "no-param-reassign": [2, {
+      "props": false
+    }],
+    "no-underscore-dangle": 0,
+    "import/export": 0,
+    "array-bracket-spacing": 0,
+    "no-confusing-arrow": 0,
+    "arrow-parens": 0,
+    "no-trailing-spaces": 0,
+    "react/jsx-wrap-multilines": 0,
+    "jsx-a11y/accessible-emoji": 0,
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }]
+  },
+  "env": {
+    "jest": true
+  },
+  "globals": {
+    "window": true,
+    "document": true,
+    "localStorage": true,
+    "Request": true,
+    "fetch": true,
+    "Blob": true,
+    "graphql": true
+  }, 
+  "settings": {
+    "import/core-modules": ["react"]
+  }
+}

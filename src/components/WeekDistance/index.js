@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled, { keyframes } from 'styled-components'
 import { fonts, colors } from '../../utils/commonStyles'
-import { getWeekDistance } from '../../utils/api'
+import getWeekDistance from '../../utils/api'
 
 const loading = keyframes`
   0% {
@@ -57,18 +57,19 @@ class WeekDistance extends Component {
       .then(data => this.setState({ distance: data.distance }))
   }
 
-  getEmoji(distance) {
+  getEmoji() {
+    const { distance } = this.state
+    
     return distance >= 40 
-      ? <EmojiWrapper>🔥</EmojiWrapper> 
-      : <EmojiWrapper>⚡️</EmojiWrapper>
+      ? <EmojiWrapper role="img" aria-label="fire">🔥</EmojiWrapper> 
+      : <EmojiWrapper role="img" aria-label="lighting">⚡️</EmojiWrapper>
   }
 
   renderDistance() {
     const { distance } = this.state
-    const { className } = this.props
 
     return distance === 0 
-      ? <span><EmojiWrapper>💩</EmojiWrapper>No km of running this week</span>
+      ? <span><EmojiWrapper role="img" aria-label="poop">💩</EmojiWrapper>No km of running this week</span>
       : <span>{this.getEmoji(distance)} I've run <Kilometers>{this.state.distance}km</Kilometers> this week</span>
   }
 

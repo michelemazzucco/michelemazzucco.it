@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
-import { colors, fonts, media, getOuterSpace } from '../../utils/commonStyles'
+import { colors, media, getOuterSpace } from '../../utils/commonStyles'
 
 const IntroWrapper = styled.div`
   font-size: 1.7rem;

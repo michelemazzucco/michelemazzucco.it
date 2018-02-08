@@ -1,6 +1,5 @@
-import React from 'react'
 import styled from 'styled-components'
-import { colors, fonts } from '../../utils/commonStyles'
+import { colors } from '../../utils/commonStyles'
 
 const ListItem = styled.li`
   font-size: 1rem;

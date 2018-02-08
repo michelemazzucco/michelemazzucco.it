@@ -1,8 +1,8 @@
 import React from 'react'
+import styled from 'styled-components'
 import Link from 'gatsby-link'
 import Circle from './circle.svg'
-import styled from 'styled-components'
-import { colors, fonts, media, getOuterSpace } from '../../utils/commonStyles'
+import { media, getOuterSpace } from '../../utils/commonStyles'
 
 const LogoWrapper = styled.div`
   position: fixed;

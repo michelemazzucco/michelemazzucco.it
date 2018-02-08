@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import WeekDistance from '../WeekDistance'
 import Intro from '../Intro'
 import Image from '../Image'
-import { fonts, colors, media } from '../../utils/commonStyles'
+import { colors, media } from '../../utils/commonStyles'
 
 const ProfileWrapper = styled.section`
   display: grid;

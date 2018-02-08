@@ -6,14 +6,14 @@ export const META = {
   },
   index: {
     title: 'Michele Mazzucco | Interdiscliplinary designer',
-    description: 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros.'
+    description: 'Michele Mazzucco, interdisciplinary designer based in Brescia, Italy. I focus primarily on building, prototyping and implementing user interfaces that are usable and scalable for any web-based platform.'
   },
   profile: {
     title: 'Michele Mazzucco | Profile',
-    description: 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros.'
+    description: 'Over the last 4+ years, I have been working with small- and medium-size companies all over the world.'
   },
   works: {
     title: 'Michele Mazzucco | Works',
-    description: 'Morbi leo risus, porta ac consectetur ac, vestibulum at eros.'
+    description: 'A selection of the work carried out over 4+ years of work. Among which: Websites, Web applications, coordinated images and more.'
   }
 }

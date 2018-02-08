@@ -7,8 +7,10 @@
     "clean": "rimraf ./public",
     "flush-cache": "rimraf ./.cache",
     "build": "npm run clean && gatsby build",
-    "dev": "npm run clean && npm run flush-cache && gatsby develop",
-    "lint:css": "stylelint './src/**/*.js'"
+    "dev": "npm run flush-cache && gatsby develop",
+    "lint:css": "stylelint './src/**/*.js'",
+    "lint:js": "eslint './src/**/*.js'",
+    "precommit": "npm run lint:css && npm run lint:js"
   },
   "keywords": [
     "react",
@@ -20,7 +22,7 @@
   "dependencies": {
     "@jacobmischka/gatsby-plugin-react-svg": "^1.0.0",
     "file-loader": "^1.1.6",
-    "gatsby": "^1.9.183",
+    "gatsby": "^1.9.184",
     "gatsby-link": "^1.6.36",
     "gatsby-plugin-favicon": "^2.1.1",
     "gatsby-plugin-google-analytics": "^1.0.17",
@@ -35,12 +37,22 @@
     "prop-types": "^15.6.0",
     "react-helmet": "^5.2.0",
     "react-responsive-carousel": "^3.1.33",
-    "react-sizes": "^1.0.0",
+    "react-sizes": "git+https://github.com/michelemazzucco/react-sizes.git",
     "styled-components": "2.4.0",
     "styled-reset": "^1.0.1",
     "url-loader": "^0.6.2"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-react-app": "^2.0.0",
+    "eslint-plugin-flowtype": "^2.35.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.2.1",
+    "husky": "^0.14.3",
     "rimraf": "^2.6.2",
     "stylelint": "^8.4.0",
     "stylelint-config-standard": "^18.0.0",
