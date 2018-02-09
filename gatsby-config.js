@@ -24,6 +24,7 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: manifest
     },
+    'gatsby-plugin-react-next',
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',

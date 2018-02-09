@@ -81,7 +81,7 @@ const WorksListItem = props =>  {
       <WorkInfos>
         <WorkYear>{year}</WorkYear>
       </WorkInfos>
-      {url && <a href={url} target="_blank" rel="noopener">More Info</a>}
+      {url && <a href={url} target="_blank" rel="noopener noreferrer">More Info</a>}
     </WorkWrapper>
   )
 }

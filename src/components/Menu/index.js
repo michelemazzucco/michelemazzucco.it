@@ -60,10 +60,7 @@ const Nav = styled.ul`
 
 const NavItem = styled.li`
   list-style: none;
-  padding: .6rem 0;
-  ${media.xl`
-    padding: .3rem 0;
-  `}
+  padding: .3rem 0;
   
   &:last-child {
     padding-bottom: 0;

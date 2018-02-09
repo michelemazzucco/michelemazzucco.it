@@ -1,7 +1,6 @@
 import React from 'react'
 import { withPrefix } from 'gatsby-link'
 import styled from 'styled-components'
-// eslint-disable-next-line import/no-unresolved, import/extensions
 import withSizes from 'react-sizes' 
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
@@ -87,7 +86,7 @@ const WorksFeaturedSection = ({ works, isMobile }) => {
     return (
       <WorkFeatured key={i}>
         <img width={500} height={360} alt={title} src={withPrefix(image)} />
-        {url && <a href={url} target="_blank" rel="noopener">More Info</a>}
+        {url && <a href={url} target="_blank" rel="noopener noreferrer">More Info</a>}
       </WorkFeatured>
     )
   })
