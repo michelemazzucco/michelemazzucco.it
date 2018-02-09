@@ -46,6 +46,7 @@ const LogoWrapper = styled.div`
     border-radius: 100%;
     pointer-events: none;
     opacity: 1;
+    will-change: transform;
   }
 
   a:hover + .circle {

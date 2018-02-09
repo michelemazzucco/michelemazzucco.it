@@ -13,6 +13,7 @@ const Wrapper = styled.div`
 
   div {
     transition: transform .3s cubic-bezier(.45, 0, .1, 1);
+    will-change: transform;
   }
 
   .position {

@@ -16,6 +16,7 @@ const WorkFeatured = styled.article`
   transition: all .3s cubic-bezier(.45, 0, .1, 1);
   transform-style: preserve-3d;
   backface-visibility: hidden;
+  will-change: box-shadow, transform;
   ${media.sm`
     padding-top: 100% !important;
   `}

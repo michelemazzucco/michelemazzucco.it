@@ -29,6 +29,7 @@ const NavWrapper = styled.nav`
       vertical-align: middle;
       width: .35rem;
       transition: transform .3s cubic-bezier(.45, 0, .1, 1), opacity .1s ease;
+      will-change: transform, opacity;
     }
 
     &:not(.active)::before {

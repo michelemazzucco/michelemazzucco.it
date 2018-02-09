@@ -14,6 +14,8 @@ const WorkWrapper = styled.article`
   > header {
     transform: translateX(0);
     transition: transform .5s cubic-bezier(.5, .1, 0, 1.15);
+    backface-visibility: hidden;
+    will-change: transform;
   }
 
   &:last-child {

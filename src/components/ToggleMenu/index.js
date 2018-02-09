@@ -11,6 +11,7 @@ const ToggleMenuWrapper = styled.div`
   align-items: flex-end;
   backface-visibility: hidden;
   transition: transform .45s cubic-bezier(.45, 0, .07, 1);
+  will-change: transform;
 
   span {
     display: inline-block;
