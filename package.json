@@ -10,7 +10,9 @@
     "dev": "npm run flush-cache && gatsby develop",
     "lint:css": "stylelint './src/**/*.js'",
     "lint:js": "eslint './src/**/*.js'",
-    "precommit": "npm run lint:css && npm run lint:js"
+    "precommit": "npm run lint:css && npm run lint:js",
+    "deploy": "s3-deploy './dist/**' --cwd './dist/' --region AWS_REGION --bucket SOME_BUCKET_NAME",
+    "pubblish": "npm run build && npm run deploy"
   },
   "keywords": [
     "react",
