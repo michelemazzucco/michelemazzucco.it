@@ -1,36 +1,21 @@
 import React from 'react'
-import { withPrefix } from 'gatsby-link'
 import styled from 'styled-components'
-import withSizes from 'react-sizes' 
+import withSizes from 'react-sizes'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import Image from '../Image'
 import { media } from '../../utils/commonStyles'
 
 const WorkFeatured = styled.article`
   border-radius: 2px;
   overflow: hidden;
   position: relative;
-  padding-top: 74% !important;
   box-shadow: 0 10px 30px rgba(19, 27, 37, .4);
   transform: translateY(0);
   transition: all .3s cubic-bezier(.45, 0, .1, 1);
   transform-style: preserve-3d;
   backface-visibility: hidden;
   will-change: box-shadow, transform;
-  ${media.sm`
-    padding-top: 100% !important;
-  `}
-  
-  img {
-    position: absolute;
-    top: -100%;
-    right: -100%;
-    bottom: -100%;
-    left: -100%;
-    height: 100%;
-    width: auto;
-    margin: auto;
-  }
 
   &:hover {
     transform: translateY(-.5rem);
@@ -47,9 +32,14 @@ const WorkFeatured = styled.article`
     line-height: 0;
   }
 
+  img {
+    display: block;
+  }
+
   ${media.sm`
     box-shadow: none;
     transform: translateY(0);
+    
     &:hover {
       box-shadow: none;
       transform: translateY(0);     
@@ -86,7 +76,10 @@ const WorksFeaturedSection = ({ works, isMobile }) => {
     const { image, url, title } = work
     return (
       <WorkFeatured key={i}>
-        <img width={500} height={360} alt={title} src={withPrefix(image)} />
+        <Image 
+          alt={title} 
+          {...image} 
+        />
         {url && <a href={url} target="_blank" rel="noopener noreferrer">More Info</a>}
       </WorkFeatured>
     )

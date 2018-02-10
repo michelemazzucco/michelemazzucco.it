@@ -6,7 +6,23 @@
   "year": "2015",
   "url": "http://wwww.google.com",
   "featured": true,
-  "image": "/images/works/work-image-example-01.png"
+  "image": {
+    "src": "/images/works/work-image-example.png",
+    "sources": [{
+      "media": "max-width: 40rem",
+      "srcset": [
+        "/images/works/work-image-example-square.jpg 1x",
+        "/images/works/work-image-example-square-2x.jpg 2x",
+        "/images/works/work-image-example-square-3x.jpg 3x"
+      ]      
+    },{
+      "srcset": [
+        "/images/works/work-image-example.jpg 1x",
+        "/images/works/work-image-example-2x.jpg 2x",
+        "/images/works/work-image-example-3x.jpg 3x"
+      ]      
+    }]
+  }
 },{
   "title": "Cum sociis natoque",
   "category": [ "design" ],
@@ -14,7 +30,23 @@
   "client": "Name of client",
   "year": "2015",
   "featured": true,
-  "image": "/images/works/work-image-example-01.png"
+  "image": {
+    "src": "/images/works/work-image-example.png",
+    "sources": [{
+      "media": "max-width: 40rem",
+      "srcset": [
+        "/images/works/work-image-example-square.jpg 1x",
+        "/images/works/work-image-example-square-2x.jpg 2x",
+        "/images/works/work-image-example-square-3x.jpg 3x"
+      ]      
+    },{
+      "srcset": [
+        "/images/works/work-image-example.jpg 1x",
+        "/images/works/work-image-example-2x.jpg 2x",
+        "/images/works/work-image-example-3x.jpg 3x"
+      ]      
+    }]
+  }
 },{
   "title": "Cum sociis natoque",
   "category": [ "design" ],
@@ -23,7 +55,23 @@
   "year": "2015",
   "url": "http://wwww.google.com",
   "featured": true,
-  "image": "/images/works/work-image-example-02.png"
+  "image": {
+    "src": "/images/works/work-image-example.png",
+    "sources": [{
+      "media": "max-width: 40rem",
+      "srcset": [
+        "/images/works/work-image-example-square.jpg 1x",
+        "/images/works/work-image-example-square-2x.jpg 2x",
+        "/images/works/work-image-example-square-3x.jpg 3x"
+      ]      
+    },{
+      "srcset": [
+        "/images/works/work-image-example.jpg 1x",
+        "/images/works/work-image-example-2x.jpg 2x",
+        "/images/works/work-image-example-3x.jpg 3x"
+      ]      
+    }]
+  }
 },{
   "title": "Cum sociis natoque",
   "category": [ "design" ],
@@ -32,7 +80,23 @@
   "year": "2015",
   "url": "http://wwww.google.com",
   "featured": true,
-  "image": "/images/works/work-image-example-03.png"
+  "image": {
+    "src": "/images/works/work-image-example.png",
+    "sources": [{
+      "media": "max-width: 40rem",
+      "srcset": [
+        "/images/works/work-image-example-square.jpg 1x",
+        "/images/works/work-image-example-square-2x.jpg 2x",
+        "/images/works/work-image-example-square-3x.jpg 3x"
+      ]      
+    },{
+      "srcset": [
+        "/images/works/work-image-example.jpg 1x",
+        "/images/works/work-image-example-2x.jpg 2x",
+        "/images/works/work-image-example-3x.jpg 3x"
+      ]      
+    }]
+  }
 },{
   "title": "Fifty Finance - website",
   "category": [ "design" ],

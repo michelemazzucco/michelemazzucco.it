@@ -38,6 +38,11 @@ injectGlobal`
   a {
     color: inherit;
     text-decoration: none;
+    transition: color ease-in .2s;
+    
+    &:hover {
+      color: #fff;
+    }
   }
 
   * {

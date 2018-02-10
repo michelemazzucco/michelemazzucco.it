@@ -75,8 +75,8 @@ const StyledEmailMe = styled(EmailMe)`
   color: ${colors.yellow500};
   font-family: ${fonts.mono};
   font-size: .9rem;
-  border-bottom: 1px dotted ${colors.yellow700};
-  padding: 0 0 .3rem;
+  border-bottom: 1px dotted ${colors.yellow500};
+  padding: 0 0 .1rem;
   display: inline-block;
 `
 

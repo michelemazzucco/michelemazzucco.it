@@ -72,7 +72,13 @@ export const worksQuery = graphql`
           year,
           url,
           featured,
-          image
+          image {
+            src
+            sources {
+              media
+              srcset
+            }
+          }
         }
       }
     }

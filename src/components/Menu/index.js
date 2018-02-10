@@ -18,6 +18,8 @@ const NavWrapper = styled.nav`
   
   ul:last-child li a {
     justify-content: flex-end;
+    transition: color .4s ease;
+    will-change: color;
     
     &::before {
       background: ${colors.yellow500};
@@ -38,6 +40,8 @@ const NavWrapper = styled.nav`
     }
 
     &:hover {
+      color: #fff;
+      
       &::before {
         transform: translateX(0);
         opacity: 1;
@@ -80,10 +84,6 @@ const NavItem = styled.li`
       `
       : css`
         color: ${colors.gray500};
-        
-        &:hover {
-          color: #fff;
-        }
       `}
   }
 `
@@ -104,16 +104,31 @@ const NavLink = styled(Link).attrs({
 const Menu = () =>
   <NavWrapper>
     <Nav>
-      <NavItem><a href="https://twitter.com/MicheleMazzucco" rel="noopener noreferrer" target="_blank">Twitter</a></NavItem>
-      <NavItem><a href="https://dribbble.com/michelemazzucco" rel="noopener noreferrer" target="_blank">Dribbble</a></NavItem>
-      <NavItem><a href="https://www.instagram.com/michele.mazzucco/" rel="noopener noreferrer" target="_blank">Instagram</a></NavItem>
-      <NavItem><a href="https://github.com/michelemazzucco" rel="noopener noreferrer" target="_blank">Github</a></NavItem>
+      <NavItem>
+        <a href="https://twitter.com/MicheleMazzucco" rel="noopener noreferrer" target="_blank">Twitter</a>
+      </NavItem>
+      <NavItem>
+        <a href="https://dribbble.com/michelemazzucco" rel="noopener noreferrer" target="_blank">Dribbble</a>
+      </NavItem>
+      <NavItem>
+        <a href="https://www.instagram.com/michele.mazzucco/" rel="noopener noreferrer" target="_blank">Instagram</a>
+      </NavItem>
+      <NavItem>
+        <a href="https://github.com/michelemazzucco" rel="noopener noreferrer" target="_blank">Github</a>
+      </NavItem>
     </Nav>
     <Nav>
-      <NavItem><NavLink exact to='/'>Index</NavLink></NavItem>
-      <NavItem><NavLink exact to='/works'>Works</NavLink></NavItem>
-      <NavItem><NavLink exact to='/profile'>Profile</NavLink></NavItem>
-      <NavItem highlight><EmailMe text="Contact"/></NavItem>
+      <NavItem>
+        <NavLink exact to='/'>Index</NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink exact to='/works'>Works</NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink exact to='/profile'>Profile</NavLink>
+      </NavItem>
+      <NavItem highlight><EmailMe text="Contact"/>
+    </NavItem>
     </Nav>
   </NavWrapper>
 

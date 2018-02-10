@@ -30,11 +30,6 @@ const FooterItem = styled.div`
       ${getOuterSpace('right')}
     ` }
   
-  a:hover {
-    color: ${colors.gray500};
-    line-height: 1em;
-  }
-  
   ${media.md`
     position: static;
     transform: rotate(0) translateX(0);

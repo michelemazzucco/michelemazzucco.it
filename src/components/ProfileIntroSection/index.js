@@ -76,6 +76,10 @@ const Content = styled.main`
   a {
     color: #fff;
     border-bottom: 1px dotted ${colors.gray500};
+    
+    &:hover {
+      border-bottom-color: ${colors.yellow500};
+    }
   }
 `
 
