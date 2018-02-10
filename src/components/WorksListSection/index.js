@@ -16,7 +16,7 @@ const WorksWrapper = styled.section`
   `}
 `
 
-const WorksTitle = styled.h3`
+const WorksTitle = styled.h1`
   font-size: 1.6rem;
 `
 
@@ -99,7 +99,7 @@ const WorksListSection = ({
     </main>
     <NDAWrapper>
       <StyledDivider height={6} width={43} />
-      <h3>Would you be interested in finding out about my other work?</h3>
+      <h2>Would you be interested in finding out about my other work?</h2>
       <StyledEmailMe text='Drop me an email' />
     </NDAWrapper>
   </WorksWrapper>

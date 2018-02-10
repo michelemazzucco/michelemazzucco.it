@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { colors } from '../../utils/commonStyles'
 
-const ListTitle = styled.h3`
+const ListTitle = styled.h2`
   color: #fff;
   font-size: 1.1rem;
   font-weight: 400;
