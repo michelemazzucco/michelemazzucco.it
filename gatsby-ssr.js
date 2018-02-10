@@ -1,4 +1,4 @@
-import React, { createElement } from 'react'
+const { createElement } = require('react')
 
 exports.onRenderBody = ({ setHeadComponents }) => {
   setHeadComponents([

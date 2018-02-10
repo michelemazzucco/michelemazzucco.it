@@ -34,6 +34,8 @@ const WorkFeatured = styled.article`
 
   img {
     display: block;
+    width: 100%;
+    height: auto;
   }
 
   ${media.sm`
