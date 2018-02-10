@@ -10,7 +10,7 @@ const WorkFeatured = styled.article`
   border-radius: 2px;
   overflow: hidden;
   position: relative;
-  box-shadow: 0 10px 30px rgba(19, 27, 37, .4);
+  box-shadow: 0 15px 30px -5px rgba(0, 0, 0, .35);
   transform: translateY(0);
   transition: all .3s cubic-bezier(.45, 0, .1, 1);
   transform-style: preserve-3d;
@@ -19,7 +19,7 @@ const WorkFeatured = styled.article`
 
   &:hover {
     transform: translateY(-.5rem);
-    box-shadow: 0 20px 52px rgba(19, 27, 37, .6);
+    box-shadow: 0 20px 30px -10px rgba(0, 0, 0, .35);
   }
 
   a {

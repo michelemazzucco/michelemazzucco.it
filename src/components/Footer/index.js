@@ -47,7 +47,7 @@ const Footer = () =>
     </FooterItem>
     <FooterItem position='right'>
       P.I. 03671100984&nbsp;-&nbsp;
-      <a target="_blank" rel="noopener noreferrer" href='https://github.com/'>Source code</a>
+      <a target="_blank" rel="noopener noreferrer" href='https://github.com/michelemazzucco/michelemazzucco.it'>Source code</a>
     </FooterItem>
   </FooterWrapper>
 

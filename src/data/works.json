@@ -1,99 +1,94 @@
 [{
-  "title": "Cum sociis natoque",
-  "category": [ "design" ],
-  "collaborators": [ "Incode" ],
-  "client": "Name of client",
-  "year": "2015",
-  "url": "http://wwww.google.com",
+  "title": "Agata - Home Assistant",
+  "category": [ "design", "code" ],
+  "client": "Agata",
+  "year": "2017",
   "featured": true,
   "image": {
-    "src": "/images/works/work-image-example.png",
+    "src": "/images/works/agata/agata-home-assistant.png",
     "sources": [{
       "media": "max-width: 40rem",
       "srcset": [
-        "/images/works/work-image-example-square.jpg 1x",
-        "/images/works/work-image-example-square-2x.jpg 2x",
-        "/images/works/work-image-example-square-3x.jpg 3x"
+        "/images/works/agata/agata-home-assistant-square.jpg 1x",
+        "/images/works/agata/agata-home-assistant-square-2x.jpg 2x",
+        "/images/works/agata/agata-home-assistant-square-3x.jpg 3x"
       ]      
     },{
       "srcset": [
-        "/images/works/work-image-example.jpg 1x",
-        "/images/works/work-image-example-2x.jpg 2x",
-        "/images/works/work-image-example-3x.jpg 3x"
+        "/images/works/agata/agata-home-assistant.jpg 1x",
+        "/images/works/agata/agata-home-assistant-2x.jpg 2x",
+        "/images/works/agata/agata-home-assistant-3x.jpg 3x"
       ]      
     }]
   }
 },{
-  "title": "Cum sociis natoque",
+  "title": "App Quality",
   "category": [ "design" ],
   "collaborators": [ "Incode" ],
-  "client": "Name of client",
-  "year": "2015",
+  "client": "App Quality",
+  "year": "2017",
   "featured": true,
   "image": {
-    "src": "/images/works/work-image-example.png",
+    "src": "/images/works/app-quality/app-quality-website.png",
     "sources": [{
       "media": "max-width: 40rem",
       "srcset": [
-        "/images/works/work-image-example-square.jpg 1x",
-        "/images/works/work-image-example-square-2x.jpg 2x",
-        "/images/works/work-image-example-square-3x.jpg 3x"
+        "/images/works/app-quality/app-quality-website-square.jpg 1x",
+        "/images/works/app-quality/app-quality-website-square-2x.jpg 2x",
+        "/images/works/app-quality/app-quality-website-square-3x.jpg 3x"
       ]      
     },{
       "srcset": [
-        "/images/works/work-image-example.jpg 1x",
-        "/images/works/work-image-example-2x.jpg 2x",
-        "/images/works/work-image-example-3x.jpg 3x"
+        "/images/works/app-quality/app-quality-website.jpg 1x",
+        "/images/works/app-quality/app-quality-website-2x.jpg 2x",
+        "/images/works/app-quality/app-quality-website-3x.jpg 3x"
       ]      
     }]
   }
 },{
-  "title": "Cum sociis natoque",
+  "title": "Enco Website",
   "category": [ "design" ],
-  "collaborators": [ "Incode" ],
-  "client": "Name of client",
-  "year": "2015",
-  "url": "http://wwww.google.com",
+  "client": "Net Magazine",
+  "year": "2016",
   "featured": true,
+  "url": "https://dribbble.com/shots/3142361-Enco-Extreme-climbing-centers",
   "image": {
-    "src": "/images/works/work-image-example.png",
+    "src": "/images/works/enco/enco-website.png",
     "sources": [{
       "media": "max-width: 40rem",
       "srcset": [
-        "/images/works/work-image-example-square.jpg 1x",
-        "/images/works/work-image-example-square-2x.jpg 2x",
-        "/images/works/work-image-example-square-3x.jpg 3x"
+        "/images/works/enco/enco-website-square.jpg 1x",
+        "/images/works/enco/enco-website-square-2x.jpg 2x",
+        "/images/works/enco/enco-website-square-3x.jpg 3x"
       ]      
     },{
       "srcset": [
-        "/images/works/work-image-example.jpg 1x",
-        "/images/works/work-image-example-2x.jpg 2x",
-        "/images/works/work-image-example-3x.jpg 3x"
+        "/images/works/enco/enco-website.jpg 1x",
+        "/images/works/enco/enco-website-2x.jpg 2x",
+        "/images/works/enco/enco-website-3x.jpg 3x"
       ]      
     }]
   }
 },{
-  "title": "Cum sociis natoque",
+  "title": "Kenzai's Mobile Apps",
   "category": [ "design" ],
-  "collaborators": [ "Incode" ],
-  "client": "Name of client",
-  "year": "2015",
-  "url": "http://wwww.google.com",
+  "client": "Kenzai Inc.",
+  "year": "2016",
   "featured": true,
   "image": {
-    "src": "/images/works/work-image-example.png",
+    "src": "/images/works/kenzai/kenzai-mobile-apps.png",
     "sources": [{
       "media": "max-width: 40rem",
       "srcset": [
-        "/images/works/work-image-example-square.jpg 1x",
-        "/images/works/work-image-example-square-2x.jpg 2x",
-        "/images/works/work-image-example-square-3x.jpg 3x"
+        "/images/works/kenzai/kenzai-mobile-apps-square.jpg 1x",
+        "/images/works/kenzai/kenzai-mobile-apps-square-2x.jpg 2x",
+        "/images/works/kenzai/kenzai-mobile-apps-square-3x.jpg 3x"
       ]      
     },{
       "srcset": [
-        "/images/works/work-image-example.jpg 1x",
-        "/images/works/work-image-example-2x.jpg 2x",
-        "/images/works/work-image-example-3x.jpg 3x"
+        "/images/works/kenzai/kenzai-mobile-apps.jpg 1x",
+        "/images/works/kenzai/kenzai-mobile-apps-2x.jpg 2x",
+        "/images/works/kenzai/kenzai-mobile-apps-3x.jpg 3x"
       ]      
     }]
   }
@@ -121,10 +116,11 @@
   "year": "2017",
   "featured": false
 },{
-  "title": "Kenzai's Mobile apps",
+  "title": "Kenzai's Website",
   "category": [ "design" ],
-  "client": "Kenzai",
-  "year": "2016",
+  "client": "Kenzai Inc.",
+  "year": "2015",
+  "url": "https://dribbble.com/shots/2714698-Health-service-website/attachments/549057",
   "featured": false
 },{
   "title": "BEE pro",
