@@ -81,6 +81,10 @@ const NavItem = styled.li`
     ${props => props.highlight 
       ? css`
         color: ${colors.yellow500};
+        
+        &:hover::before {
+          display: none !important;
+        }
       `
       : css`
         color: ${colors.gray500};
