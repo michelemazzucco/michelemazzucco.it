@@ -43,7 +43,6 @@ const EmojiWrapper = styled.span`
 
 const Kilometers = styled.span`
   border-bottom: 1px dotted ${colors.gray700};
-  padding: 0 0 .3rem;
   display: inline-block;
   vertical-align: top;
   color: #fff;
