@@ -21,7 +21,8 @@
     "react/jsx-wrap-multilines": 0,
     "jsx-a11y/accessible-emoji": 0,
     "jsx-a11y/href-no-hash": "off",
-    "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }]
+    "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }],
+    "class-methods-use-this": 0
   },
   "env": {
     "jest": true

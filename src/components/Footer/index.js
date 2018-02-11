@@ -34,7 +34,7 @@ const FooterItem = styled.div`
     position: static;
     transform: rotate(0) translateX(0);
     transform-origin: 0;
-    padding: .5rem 0 0;
+    padding: .3rem 0 0;
     text-align: center;
     font-size: .8rem;
   `}

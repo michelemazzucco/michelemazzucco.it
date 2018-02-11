@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { Component } from 'react'
 import styled from 'styled-components'
-import withSizes from 'react-sizes'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import Image from '../Image'
@@ -61,23 +60,58 @@ const StyledCarousel = styled(Carousel)`
   overflow: hidden;
   border-radius: 2px;
   
-  .carousel .control-dots {
-    margin: 0 0 1rem;
-    
-    .dot {
-      box-shadow: none;
-      height: 1px;
-      width: 1.5rem;
-      margin: 0 .25rem;
+  .carousel {
+    .slide {
+      background: transparent;
+    }
+
+    .control-dots {
+      margin: 0 0 1rem;
+      
+      .dot {
+        box-shadow: none;
+        height: 1px;
+        width: 1.5rem;
+        margin: 0 .25rem;
+        border-radius: 0;
+      }
     }
   }
 `
 
-const WorksFeaturedSection = ({ works, isMobile }) => {
-  const worksList = works.map(({ work }, i) => {
-    const { image, url, title } = work
+class WorksFeaturedSection extends Component {
+  constructor() {
+    super()
+    this.state =  { widthLoaded: false, isMobile: false }
+    this.setMobile = this.setMobile.bind(this)
+  }
+
+  componentDidMount() {
+    if (typeof window !== 'undefined') {
+      this.setMobile()
+      window.addEventListener('resize', this.setMobile)
+    }
+  }
+
+  componentWillUnmount() {
+    typeof window !== 'undefined' &&
+    window.removeEventListener('resize', this.setMobile);
+  }
+
+  setWidthLoaded() {
+    this.setState({ widthLoaded: true })
+  }
+
+  setMobile() {
+    this.setState({ 
+      isMobile: window.innerWidth < 480 
+    }, () => this.setWidthLoaded())
+  }
+
+  renderWorksList({ work }) {
+    const { title, image, url } = work
     return (
-      <WorkFeatured key={i}>
+      <WorkFeatured key={title}>
         <Image 
           alt={title} 
           {...image} 
@@ -85,26 +119,31 @@ const WorksFeaturedSection = ({ works, isMobile }) => {
         {url && <a href={url} target="_blank" rel="noopener noreferrer">More Info</a>}
       </WorkFeatured>
     )
-  })
+  }
 
-  return (
-    isMobile 
-    ? <StyledCarousel 
-        showArrows={false}
-        showThumbs={false}
-        showStatus={false}
-        interval={10000}
-        infiniteLoop
-        autoPlay
-      >
-        {worksList}
-      </StyledCarousel>
-    : <WorksFeaturedWrapper>{worksList}</WorksFeaturedWrapper>
-  )
+  renderWorksWrapper() {
+    const { works } = this.props
+    const { isMobile } = this.state
+    const worksList = works.map(this.renderWorksList)
+    return (
+      isMobile 
+      ? <StyledCarousel 
+          showArrows={false}
+          showThumbs={false}
+          showStatus={false}
+          interval={10000}
+          autoPlay
+        >
+          {worksList}
+        </StyledCarousel>
+      : <WorksFeaturedWrapper>{worksList}</WorksFeaturedWrapper>
+    )
+  }
+
+  render() {
+    const { widthLoaded } = this.state
+    return widthLoaded && this.renderWorksWrapper()
+  }
 }
 
-const mapSizesToProps = ({ width }) => ({
-  isMobile: width <= 640,
-})
-
-export default withSizes(mapSizesToProps)(WorksFeaturedSection)
+export default WorksFeaturedSection

@@ -6,4 +6,4 @@ export default ({ children, location }) =>
   <main>
     {children()}
     <Navigation location={location}/>
-  </main>      
+  </main>    
