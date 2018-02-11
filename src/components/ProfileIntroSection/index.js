@@ -92,7 +92,7 @@ const ProfileIntroSection = ({ content }) =>
     <StyledWeekDistance />
     <StyledImage 
       src="/images/profile/michele-mazzucco-portrait.jpg"
-      alt="Michele Mazzucco - Interdiscliplinary Designer"
+      alt="Michele Mazzucco - Interdisciplinary Designer"
       sources={[{
         media: 'max-width: 40rem',
         srcset: [

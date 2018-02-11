@@ -5,7 +5,7 @@ export const META = {
     image: '/images/michele-mazzucco-meta-image.jpg',
   },
   index: {
-    title: 'Michele Mazzucco | Interdiscliplinary designer',
+    title: 'Michele Mazzucco | Interdisciplinary designer',
     description: 'Michele Mazzucco, interdisciplinary designer based in Brescia, Italy. I focus primarily on building user interfaces that are usable and scalable.'
   },
   profile: {

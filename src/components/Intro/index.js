@@ -45,7 +45,7 @@ const Intro = props =>
   <IntroWrapper {...props} >
     <h1>
       Hi, my name is Michele Mazzucco,
-      an <span>interdiscliplinary</span> designer
+      an <span>interdisciplinary</span> designer
       based in Brescia, Italy
     </h1>
   </IntroWrapper>
