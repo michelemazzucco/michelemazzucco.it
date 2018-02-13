@@ -26,7 +26,7 @@ const favicon = {
 
 const manifest = {
   name: 'Michele Mazzucco',
-  short_name: 'Michele Mazzucco | In',
+  short_name: 'MHL MZZ',
   start_url: '/',
   background_color: '#f7f0eb',
   theme_color: '#a2466c',

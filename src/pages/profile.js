@@ -59,9 +59,9 @@ export default ({ data }) => {
           <div>            
             <p>Over the last 4+ years, I have been working with small and big companies all over the world. 
             I focus primarily on building, prototyping and implementing user interfaces that are usable and scalable for any web-based platform. 
-            I enjoy <a href="https://dribbble.com/michelemazzucco" target="_blank" rel="noopener noreferrer">experimenting</a>, building and <a href="github.com/michelemazzucco" target="_blank" rel="noopener noreferrer">trying</a> out new tools.</p>
+            <a href="https://dribbble.com/michelemazzucco" target="_blank" rel="noopener noreferrer">I enjoy experimenting</a>, <a href="https://github.com/michelemazzucco" target="_blank" rel="noopener noreferrer">building and trying</a> out new tools.</p>
             
-            <p>Sometimes I <a href="https://twitter.com/MicheleMazzucco" target="_blank" rel="noopener noreferrer">tweet</a> and share photos on <a href="https://www.instagram.com/michele.mazzucco/" target="_blank" rel="noopener noreferrer">Instagram</a>.</p>
+            <p>Sometimes <a href="https://twitter.com/MicheleMazzucco" target="_blank" rel="noopener noreferrer">I tweet</a> and share photos on <a href="https://www.instagram.com/michele.mazzucco/" target="_blank" rel="noopener noreferrer">Instagram</a>.</p>
           </div>
         }
       />
