@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../utils/commonStyles'
+import { colors } from '../../style/commons'
 
 const ListItem = styled.li`
   font-size: 1rem;

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { fonts, colors, media } from '../utils/commonStyles'
+import { fonts, colors, media } from '../style/commons'
 
 const NotFoundTitle = styled.h1`
   font-size: 2.2rem;

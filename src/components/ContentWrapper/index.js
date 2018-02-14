@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { media } from '../../utils/commonStyles'
+import { media } from '../../style/commons'
 
 const ContentWrapper = styled.div`
   max-width: 68rem;

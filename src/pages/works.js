@@ -45,8 +45,7 @@ export default class extends Component {
     return (
       <ContentWrapper>
         <Head 
-          title={META.works.title}
-          description={META.works.description}
+          {...META.works}
           image={META.common.image}
         />
         <WorksFeaturedSection works={this.getFeaturedWorks()} />
