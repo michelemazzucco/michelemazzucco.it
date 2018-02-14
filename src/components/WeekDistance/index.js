@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import getWeekDistance from '../../utils/api'
+import getWeekDistance from '../../utils/functions'
 import { DistanceWrapper, DistanceLoader, EmojiWrapper, Kilometers } from './style'
 
 class WeekDistance extends Component {

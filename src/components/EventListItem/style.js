@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../utils/commonStyles'
+import { colors } from '../../style/commons'
 
 export const Position = styled.span`
   border-bottom: 1px dotted ${colors.gray700};

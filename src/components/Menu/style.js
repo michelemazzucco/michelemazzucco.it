@@ -1,6 +1,6 @@
 import Link from 'gatsby-link'
 import styled, { css } from 'styled-components'
-import { colors, fonts, media, getOuterSpace } from '../../utils/commonStyles'
+import { colors, fonts, media, getOuterSpace } from '../../style/commons'
 
 export const Wrapper = styled.nav`
   position: fixed;
@@ -14,35 +14,41 @@ export const Wrapper = styled.nav`
   pointer-events: none;
   ${getOuterSpace('padding')};
   
-  ul:last-child li a {
-    justify-content: flex-end;
-    transition: color .4s ease;
-    will-change: color;
+  ul:last-child li {
+    text-align: right;
     
-    &::before {
-      background: ${colors.yellow500};
-      border-radius: 100%;
-      content: '';
-      display: block;
-      height: .35rem;
-      margin-right: .75rem;
-      vertical-align: middle;
-      width: .35rem;
-      transition: transform .3s cubic-bezier(.45, 0, .1, 1), opacity .1s ease;
-      will-change: transform, opacity;
-    }
-
-    &:not(.active)::before {
-      opacity: 0;
-      transform: translateX(-1rem);
-    }
-
-    &:hover {
-      color: #fff;
+    a {
+      transition: color .4s ease;
+      will-change: color;
+      line-height: 1em;
+      position: relative;
       
       &::before {
-        transform: translateX(0);
-        opacity: 1;
+        position: absolute;
+        left: -1.1rem;
+        top: 50%;
+        background: ${colors.yellow500};
+        border-radius: 100%;
+        content: '';
+        display: block;
+        height: .3rem;
+        width: .3rem;
+        transition: transform .3s cubic-bezier(.45, 0, .1, 1), opacity .1s ease;
+        will-change: transform, opacity;
+      }
+
+      &:not(.active)::before {
+        opacity: 0;
+        transform: translate(-1rem, -50%);
+      }
+
+      &:hover {
+        color: #fff;
+        
+        &::before {
+          transform: translate(0, -50%);
+          opacity: 1;
+        }
       }
     }
   }
@@ -73,8 +79,6 @@ export const NavItem = styled.li`
     font-size: .9rem;
     font-family: ${fonts.mono};
     pointer-events: all;
-    display: flex;
-    align-items: center;
     transition: color .1s ease;
     ${props => props.highlight 
       ? css`
@@ -97,7 +101,7 @@ export const NavLink = styled(Link).attrs({
     color: #fff;
     
     &::before {
-      transform: translateX(0);
+      transform: translate(0, -50%);
       opacity: 1;
     }
   }

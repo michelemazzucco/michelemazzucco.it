@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { media } from '../../utils/commonStyles'
+import { media } from '../../style/commons'
 
 export const Wrapper = styled.div`
   display: none;

@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { colors, media, getOuterSpace } from '../../utils/commonStyles'
+import { colors, media, getOuterSpace } from '../../style/commons'
 
 export const Wrapper = styled.div`
   font-size: 1.7rem;

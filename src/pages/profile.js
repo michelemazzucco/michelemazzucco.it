@@ -6,7 +6,7 @@ import ProfileList from '../components/ProfileList'
 import ProfileListItem from '../components/ProfileListItem'
 import EventListItem from '../components/EventListItem'
 import Head from '../components/Head'
-import { media } from '../utils/commonStyles'
+import { media } from '../style/commons'
 import { META } from '../utils/constants'
 
 const ListsSection = styled.section`
@@ -50,8 +50,7 @@ export default ({ data }) => {
   return (
     <ContentWrapper>
       <Head 
-        title={META.profile.title}
-        description={META.profile.description}
+        {...META.profile}
         image={META.common.image}
       />
       <ProfileIntroSection 

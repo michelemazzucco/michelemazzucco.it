@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { media, getOuterSpace } from '../../utils/commonStyles'
+import { media, getOuterSpace } from '../../style/commons'
 
 export const Wrapper = styled.div`
   position: fixed;

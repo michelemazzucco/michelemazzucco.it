@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 import EmailMe from '../EmailMe'
 import Divider from './divider.svg'
-import { colors, fonts, media } from '../../utils/commonStyles'
+import { colors, fonts, media } from '../../style/commons'
 
 export const Wrapper = styled.section`
   max-width: 80%;
@@ -56,13 +56,11 @@ export const NDAWrapper = styled.footer`
   padding-top: 4rem;
   text-align: center;
   
-  h3 {
-    font-size: 1rem;
-    font-weight: 400;
+  h2 {
+    font-size: 1.1rem;
     color: #fff;
-    margin-bottom: 1rem;
+    margin-bottom: .75rem;
     line-height: 1.4em;
-    font-weight: 600;
   }
 `
 

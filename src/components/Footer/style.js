@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { colors, fonts, media, getOuterSpace } from '../../utils/commonStyles'
+import { colors, fonts, media, getOuterSpace } from '../../style/commons'
 
 export const Wrapper = styled.footer`
   width: 100%;

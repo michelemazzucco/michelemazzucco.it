@@ -1,6 +1,6 @@
 import React from 'react'
 import Navigation from '../components/Navigation'
-import '../utils/globalStyles'
+import '../style/global'
 
 export default ({ children, location }) =>
   <main>

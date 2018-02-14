@@ -20,7 +20,7 @@ class Navigation extends Component {
     const { location } = this.props
 
     if (location.pathname !== prevProps.location.pathname) {
-      this.toggleMenu()
+      this.setState({ open: false })
     }
   }
 
