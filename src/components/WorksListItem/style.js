@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { fonts, colors } from '../../style/commons'
+import { fonts, colors, media } from '../../style/commons'
 
 export const Wrapper = styled.article`
   padding: 1.3rem 0;
@@ -32,11 +32,13 @@ export const Wrapper = styled.article`
   }
 
   ${props => props.hasLink && css`
-    &:hover {
-      > header {
-        transform: translateX(-.75rem);
+    ${media.hover`
+      &:hover {
+        > header {
+          transform: translateX(-.75rem);
+        }
       }
-    }
+    `}
   `}
 `
 

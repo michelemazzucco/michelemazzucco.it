@@ -1,4 +1,4 @@
-const filesystem = {
+const fs = {
   name: 'data',
   path: './src/data/'
 }
@@ -8,7 +8,7 @@ const ga = {
   anonymize: true,
 }
 
-const favicon = {
+const fv = {
   logo: './src/assets/favicon.png',
   injectHTML: true,
   icons: {
@@ -24,7 +24,7 @@ const favicon = {
   }
 }
 
-const manifest = {
+const mf = {
   name: 'Michele Mazzucco',
   short_name: 'MHL MZZ',
   start_url: '/',
@@ -45,9 +45,4 @@ const manifest = {
   ]
 }
 
-module.exports = { 
-  filesystem, 
-  ga, 
-  favicon, 
-  manifest 
-}
+module.exports = { fs, ga, fv, mf }

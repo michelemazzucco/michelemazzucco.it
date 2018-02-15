@@ -75,4 +75,8 @@ export const StyledEmailMe = styled(EmailMe)`
   border-bottom: 1px dotted ${colors.yellow500};
   padding: 0 0 .1rem;
   display: inline-block;
+  
+  &:hover {
+    color: ${colors.yellow500};
+  }
 `

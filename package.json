@@ -21,6 +21,11 @@
   ],
   "author": "Michele Mazzucco <hello@michelemazzucco.it>",
   "license": "MIT",
+  "browserslist": [
+    "last 5 versions",
+    "Edge >= 12",
+    "IE >= 9"
+  ],
   "dependencies": {
     "@jacobmischka/gatsby-plugin-react-svg": "^1.0.0",
     "file-loader": "^1.1.6",
