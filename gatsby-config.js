@@ -1,9 +1,4 @@
-const { 
-  filesystem, 
-  ga, 
-  favicon, 
-  manifest 
-} = require('./gatsby-plugins-opts.js')
+const { fs, ga, fv, mf } = require('./gatsby-plugins-opts.js')
 
 module.exports = {
   pathPrefix: '/',
@@ -13,16 +8,16 @@ module.exports = {
   plugins: [
     {
       resolve: 'gatsby-source-filesystem',
-      options: filesystem
+      options: fs
     },{
       resolve: 'gatsby-plugin-google-analytics',
       options: ga
     },{
       resolve: 'gatsby-plugin-favicon',
-      options: favicon
+      options: fv
     },{
       resolve: 'gatsby-plugin-manifest',
-      options: manifest
+      options: mf
     },
     'gatsby-plugin-react-next',
     'gatsby-plugin-react-helmet',

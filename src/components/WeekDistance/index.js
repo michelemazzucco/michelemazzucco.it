@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import getWeekDistance from '../../utils/functions'
 import { DistanceWrapper, DistanceLoader, EmojiWrapper, Kilometers } from './style'
 
@@ -22,8 +22,8 @@ class WeekDistance extends Component {
     const { distance } = this.state
 
     return distance === 0 
-      ? <span><EmojiWrapper role="img" aria-label="poop">💩</EmojiWrapper>No km of running this week</span>
-      : <span>{this.getEmoji(distance)} I've run <Kilometers>{this.state.distance}km</Kilometers> this week</span>
+      ? <Fragment><EmojiWrapper role="img" aria-label="poop">💩</EmojiWrapper>No km of running this week</Fragment>
+      : <Fragment>{this.getEmoji(distance)} I've run <Kilometers>{this.state.distance}km</Kilometers> this week</Fragment>
   }
 
   render() {

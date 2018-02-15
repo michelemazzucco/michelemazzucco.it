@@ -56,6 +56,11 @@ export const media = {
     @media (max-width: ${mq.xl}) {
       ${css(...a)}
     }
+  `,
+  hover: (...a) => css`
+    @media not all and (hover: none) {
+      ${css(...a)}
+    }
   `
 }
 

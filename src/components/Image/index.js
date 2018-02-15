@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { string, arrayOf, shape } from 'prop-types'
 
 const Image = ({ src, alt, sources, className }) => {
   const renderSource = ({ media, srcset }, i) => (
@@ -18,11 +18,11 @@ const Image = ({ src, alt, sources, className }) => {
 }
 
 Image.propTypes = {
-  src: PropTypes.string.isRequired,
-  alt: PropTypes.string,
-  sources: PropTypes.arrayOf(PropTypes.shape({
-    media: PropTypes.string,
-    srcset: PropTypes.arrayOf(PropTypes.string).isRequired
+  src: string.isRequired,
+  alt: string,
+  sources: arrayOf(shape({
+    media: string,
+    srcset: arrayOf(string).isRequired
   }))
 }
 
