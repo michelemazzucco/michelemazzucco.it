@@ -1,6 +1,6 @@
 import { injectGlobal } from 'styled-components'
 import reset from 'styled-reset'
-import { colors, fonts, media } from './commons'
+import { colors, fonts, media } from './constants'
 
 injectGlobal`
   ${reset}

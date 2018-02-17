@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Carousel } from 'react-responsive-carousel'
-import { media } from '../../style/commons'
+import { media } from '../../style/constants'
 
 
 export const WorkFeatured = styled.article`

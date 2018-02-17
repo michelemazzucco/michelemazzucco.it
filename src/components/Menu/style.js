@@ -1,6 +1,6 @@
 import Link from 'gatsby-link'
 import styled, { css } from 'styled-components'
-import { colors, fonts, media, getOuterSpace } from '../../style/commons'
+import { colors, fonts, media, getOuterSpace } from '../../style/constants'
 
 export const Wrapper = styled.nav`
   position: fixed;
@@ -20,7 +20,6 @@ export const Wrapper = styled.nav`
     a {
       transition: color .4s ease;
       will-change: color;
-      line-height: 1em;
       position: relative;
       
       &::before {
@@ -69,7 +68,8 @@ export const Nav = styled.ul`
 
 export const NavItem = styled.li`
   list-style: none;
-  padding: .3rem 0;
+  padding: .5rem 0;
+  line-height: 1em;
   
   &:last-child {
     padding-bottom: 0;
@@ -80,6 +80,7 @@ export const NavItem = styled.li`
     font-family: ${fonts.mono};
     pointer-events: all;
     transition: color .1s ease;
+    line-height: 1em;
     ${props => props.highlight 
       ? css`
         color: ${colors.yellow500};

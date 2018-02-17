@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components'
-import { fonts, colors } from '../../style/commons'
+import { fonts, colors } from '../../style/constants'
 
 export const loading = keyframes`
   0% {

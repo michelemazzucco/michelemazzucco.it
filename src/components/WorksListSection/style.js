@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 import EmailMe from '../EmailMe'
 import Divider from './divider.svg'
-import { colors, fonts, media } from '../../style/commons'
+import { colors, fonts, media } from '../../style/constants'
 
 export const Wrapper = styled.section`
   max-width: 80%;

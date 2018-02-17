@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import WeekDistance from '../WeekDistance'
 import Image from '../Image'
-import { colors, media } from '../../style/commons'
+import { colors, media } from '../../style/constants'
 
 export const Wrapper = styled.section`
   display: grid;
