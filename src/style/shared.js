@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import { media } from '../../style/commons'
+import { media, colors } from './constants'
 
-const ContentWrapper = styled.div`
+export const ContentWrapper = styled.div`
   max-width: 68rem;
   width: calc(100% - 9.25rem * 2);
   margin: 11rem auto 5rem;
@@ -22,4 +22,9 @@ const ContentWrapper = styled.div`
   `}
 `
 
-export default ContentWrapper
+export const ListItem = styled.li`
+  font-size: 1rem;
+  color: ${colors.gray500};
+  padding: .3rem 0;
+  line-height: 1.6em;
+`

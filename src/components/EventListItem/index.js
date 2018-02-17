@@ -1,5 +1,5 @@
 import React from 'react'
-import ListItem from '../ListItem'
+import { ListItem } from '../../style/shared'
 import { Wrapper, Position } from './style'
 
 const EventListItem = ({ year, position, company }) =>

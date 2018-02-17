@@ -1,5 +1,5 @@
 import React from 'react'
-import ListItem from '../ListItem'
+import { ListItem } from '../../style/shared'
 
 const ProfileListItem = ({ name, url }) =>
   <ListItem>

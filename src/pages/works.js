@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import idx from 'idx'
-import ContentWrapper from '../components/ContentWrapper'
+import { ContentWrapper } from '../style/shared'
 import WorksListSection from '../components/WorksListSection'
 import WorksFeaturedSection from '../components/WorksFeaturedSection'
 import Head from '../components/Head'

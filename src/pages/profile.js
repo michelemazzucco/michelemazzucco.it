@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react'
 import styled from 'styled-components'
-import ContentWrapper from '../components/ContentWrapper'
 import ProfileIntroSection from '../components/ProfileIntroSection'
 import ProfileList from '../components/ProfileList'
 import ProfileListItem from '../components/ProfileListItem'
 import EventListItem from '../components/EventListItem'
 import Head from '../components/Head'
-import { media } from '../style/commons'
+import { media } from '../style/constants'
 import { META } from '../utils/constants'
+import { ContentWrapper } from '../style/shared'
 
 const ListsSection = styled.section`
   display: grid;

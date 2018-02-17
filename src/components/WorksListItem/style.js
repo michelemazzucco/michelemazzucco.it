@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { fonts, colors, media } from '../../style/commons'
+import { fonts, colors, media } from '../../style/constants'
 
 export const Wrapper = styled.article`
   padding: 1.3rem 0;
