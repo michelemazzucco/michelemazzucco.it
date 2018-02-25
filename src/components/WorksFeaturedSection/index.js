@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import Image from '../Image'
-import { Wrapper, WorkFeatured, StyledCarousel } from './style'
+import { Wrapper, WorkFeatured, StyledCarousel, StyledImage } from './style'
 
 class WorksFeaturedSection extends Component {
   constructor() {
@@ -36,7 +35,7 @@ class WorksFeaturedSection extends Component {
     const { title, image, url } = work
     return (
       <WorkFeatured key={title}>
-        <Image 
+        <StyledImage 
           alt={title} 
           {...image} 
         />

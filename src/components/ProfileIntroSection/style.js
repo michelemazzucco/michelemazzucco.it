@@ -18,12 +18,24 @@ export const Wrapper = styled.section`
 export const StyledImage = styled(Image)`
   grid-area: 1 / 4 / last-line / end;
   background: ${colors.blue900};
+  position: relative;
+  padding-top: 150%;
+  overflow: hidden;
+  ${media.sm`
+    padding-top: 100%;
+  `}
 
   img {
-    mix-blend-mode: lighten;
-    opacity: .1;
+    position: absolute;
     width: 100%;
     height: 100%;
+    margin: auto;
+    top: -100%;
+    right: -100%;
+    bottom: -100%;
+    left: -100%;
+    mix-blend-mode: lighten;
+    opacity: .1;
     display: block;
     object-fit: cover;
     ${media.sm`

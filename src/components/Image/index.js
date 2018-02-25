@@ -8,7 +8,6 @@ const Image = ({ src, alt, sources, className }) => {
       : <source key={i} srcSet={srcset.join(', ')} />
   )
     
-
   return (
     <picture className={className}>
       {sources && sources.map(renderSource)}
@@ -23,14 +22,14 @@ Image.propTypes = {
   sources: arrayOf(shape({
     media: string,
     srcset: arrayOf(string).isRequired
-  }))
+  })),
+  className: string
 }
 
 Image.defaultProps = {
   alt: '',
-  sources: {
-    media: null
-  }
+  sources: { media: null },
+  className: null
 }
 
 export default Image

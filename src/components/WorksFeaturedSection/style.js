@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { Carousel } from 'react-responsive-carousel'
+import Image from '../Image'
 import { media } from '../../style/constants'
-
 
 export const WorkFeatured = styled.article`
   border-radius: 2px;
@@ -29,12 +29,6 @@ export const WorkFeatured = styled.article`
     line-height: 0;
   }
 
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
   ${media.sm`
     box-shadow: none;
     transform: translateY(0);
@@ -44,6 +38,29 @@ export const WorkFeatured = styled.article`
       transform: translateY(0);     
     }
   `}
+`
+
+export const StyledImage = styled(Image)`
+  display: block;
+  position: relative;
+  padding-top: 74%;
+  background: #242e3a;
+  ${media.sm`
+    padding-top: 100%;
+  `}
+
+  img {
+    position: absolute;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    right: -100%;
+    bottom: -100%;
+    left: -100%;
+    object-fit: cover;
+  }
 `
 
 export const Wrapper = styled.section`
