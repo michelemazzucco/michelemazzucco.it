@@ -11,7 +11,7 @@
     "lint:css": "stylelint './src/**/*.js'",
     "lint:js": "eslint './src/**/*.js'",
     "precommit": "npm run lint:css && npm run lint:js",
-    "deploy": "s3-deploy './public/**' --cwd './public/' --region us-east-1 --bucket www.michelemazzucco.it --deleteRemoved --gzip --cache 21600",
+    "deploy": "s3-deploy './public/**' --cwd './public/' --region us-east-1 --bucket www.michelemazzucco.it --deleteRemoved --gzip --cache 86400",
     "pubblish": "npm run build && npm run deploy"
   },
   "keywords": [
