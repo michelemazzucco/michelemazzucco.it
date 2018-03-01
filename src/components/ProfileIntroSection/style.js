@@ -19,11 +19,16 @@ export const StyledImage = styled(Image)`
   grid-area: 1 / 4 / last-line / end;
   background: ${colors.blue900};
   position: relative;
-  padding-top: 150%;
   overflow: hidden;
-  ${media.sm`
-    padding-top: 100%;
-  `}
+
+  &::before {
+    content: '';
+    padding-top: 150%;
+    display: block;
+    ${media.sm`
+      padding-top: 100%;
+    `}
+  }
 
   img {
     position: absolute;

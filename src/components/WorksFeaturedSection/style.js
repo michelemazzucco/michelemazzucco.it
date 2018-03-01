@@ -43,11 +43,16 @@ export const WorkFeatured = styled.article`
 export const StyledImage = styled(Image)`
   display: block;
   position: relative;
-  padding-top: 74%;
   background: #242e3a;
-  ${media.sm`
-    padding-top: 100%;
-  `}
+  
+  &::before {
+    content: '';
+    padding-top: 74%;
+    display: block;
+    ${media.sm`
+      padding-top: 100%;
+    `}
+  }
 
   img {
     position: absolute;
