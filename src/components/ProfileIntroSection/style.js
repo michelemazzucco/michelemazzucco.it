@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import WeekDistance from '../WeekDistance'
 import Image from '../Image'
 import { colors, media } from '../../style/constants'
@@ -96,4 +96,23 @@ export const Content = styled.main`
       border-bottom-color: ${colors.yellow500};
     }
   }
+`
+
+export const Loader = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: red;
+  ${props => props.isLoaded 
+  ? css`
+    transform: translateX(101%);
+  `
+  : css`
+    transform: translateX(0);
+  `}
+  transition: .5s cubic-bezier(.45, 0, .07, 1) transform;
+  will-change: transform;
 `

@@ -45,4 +45,10 @@ const mf = {
   ]
 }
 
-module.exports = { fs, ga, fv, mf }
+const gs ={ 
+  token: 'GSN-123456-A'
+}
+
+// GSN-016552-P
+
+module.exports = { fs, ga, fv, mf, gs }
