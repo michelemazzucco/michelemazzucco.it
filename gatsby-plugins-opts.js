@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const fs = {
   name: 'data',
   path: './src/data/'
@@ -24,6 +26,10 @@ const fv = {
   }
 }
 
+const sn = {
+  dsn: process.env.SENTRY_DSN,
+}
+
 const mf = {
   name: 'Michele Mazzucco',
   short_name: 'MHL MZZ',
@@ -45,4 +51,4 @@ const mf = {
   ]
 }
 
-module.exports = { fs, ga, fv, mf }
+module.exports = { fs, ga, fv, sn, mf }
