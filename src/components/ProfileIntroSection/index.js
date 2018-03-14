@@ -1,6 +1,7 @@
 import React from 'react'
 import Intro from '../Intro'
-import { Wrapper, InfoWrapper, Content, StyledWeekDistance, StyledImage, Loader } from './style'
+import { Wrapper, InfoWrapper, Content, StyledWeekDistance, StyledImage } from './style'
+import { Loader } from '../../style/shared'
 
 const ProfileIntroSection = ({ content }) => 
   <Wrapper>
@@ -12,10 +13,7 @@ const ProfileIntroSection = ({ content }) =>
     <StyledImage 
       src="/images/profile/michele-mazzucco-portrait.jpg"
       alt="Michele Mazzucco - Interdisciplinary Designer"
-      loader={({ isLoaded }) => { 
-        console.log('ddd', isLoaded)
-        return <Loader isLoaded={isLoaded} />
-      }}
+      loader={({ isLoaded }) => <Loader isLoaded={isLoaded} />}
       sources={[{
         media: 'max-width: 40rem',
         srcset: [
