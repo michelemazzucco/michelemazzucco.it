@@ -60,13 +60,13 @@ export const StyledWeekDistance = styled(WeekDistance)`
   grid-row: 4 / last-line;
   grid-column: 1 / span 4;
   align-self: end;
-  z-index: 2;
+  z-index: 3;
 `
 
 export const InfoWrapper = styled.header`
   grid-row: 2 / 4;
   grid-column: 1 / 6;
-  z-index: 2;
+  z-index: 3;
   ${media.md`
     grid-column: 1 / 7;
   `}

@@ -9,13 +9,16 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: fs
-    },{
+    },
+    {
       resolve: 'gatsby-plugin-google-analytics',
       options: ga
-    },{
+    },
+    {
       resolve: 'gatsby-plugin-favicon',
       options: fv
-    },{
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: mf
     },

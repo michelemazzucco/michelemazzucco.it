@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Wrapper, WorkFeatured, StyledCarousel, StyledImage } from './style'
+import { Loader } from '../../style/shared'
 
 class WorksFeaturedSection extends Component {
   constructor() {
@@ -37,6 +38,7 @@ class WorksFeaturedSection extends Component {
       <WorkFeatured key={title}>
         <StyledImage 
           alt={title} 
+          loader={({ isLoaded }) => <Loader isLoaded={isLoaded} />}
           {...image} 
         />
         {url && <a href={url} target="_blank" rel="noopener noreferrer">More Info</a>}
