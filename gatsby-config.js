@@ -1,4 +1,4 @@
-const { fs, ga, fv, mf } = require('./gatsby-plugins-opts.js')
+const { fs, ga, fv, mf, sn } = require('./gatsby-plugins-opts.js')
 
 module.exports = {
   pathPrefix: '/',
@@ -17,6 +17,10 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-favicon',
       options: fv
+    },
+    {
+      resolve: 'gatsby-plugin-sentry',
+      options: sn
     },
     {
       resolve: 'gatsby-plugin-manifest',
