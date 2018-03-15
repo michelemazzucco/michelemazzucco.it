@@ -13,26 +13,23 @@ AWS.config.update({ region: process.env.AWS_REGION })
 
 const uploadFiles = () => 
   new Promise((resolve, reject) => {
-    resolve()
     const s3Client = new AWS.S3()
     const config = { s3Client }
     const client = s3.createClient(config)
     const bucket = process.env.AWS_BUCKET
     const uploader = client.uploadDir({
       localDir: 'public',
-      deleteRemoved: false,
+      deleteRemoved: true,
       s3Params: { Bucket: bucket },
       getS3Params: (filepath, stat, callback) => {
         const isStaticFolder = /\/static\//g.test(filepath)
         const params = isStaticFolder 
             ? {
               CacheControl: 'public,max-age=31536000,immutable',
-              //ContentEncoding: 'gzip'
             }
             : {
               ACL: 'public-read',
               CacheControl: 'public,max-age=0,must-revalidate',
-              //ContentEncoding: 'gzip'
             }
         callback(null, params)
       }
@@ -42,6 +39,7 @@ const uploadFiles = () =>
     
     uploader.on('end', () => {
       console.log(chalk.green('✔ Success uploading files to production bucket!')) 
+      resolve()
     })
   })
 
