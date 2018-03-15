@@ -18,10 +18,6 @@ module.exports = {
       resolve: 'gatsby-plugin-favicon',
       options: fv
     },
-    //{
-    //  resolve: 'gatsby-plugin-sentry',
-    //  options: sn
-    //},
     {
       resolve: 'gatsby-plugin-manifest',
       options: mf

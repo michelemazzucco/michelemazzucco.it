@@ -11,7 +11,7 @@
     "lint:css": "stylelint './src/**/*.js'",
     "lint:js": "eslint './src/**/*.js'",
     "precommit": "npm run lint:css && npm run lint:js",
-    "deploy": "s3-deploy './public/**' --cwd './public/' --region us-east-1 --bucket www.michelemazzucco.it --deleteRemoved --gzip --cache 172800",
+    "deploy": "./scripts/deploy.js",
     "pubblish": "npm run build && npm run deploy"
   },
   "keywords": [
@@ -42,6 +42,7 @@
     "gatsby-source-filesystem": "^1.5.27",
     "gatsby-transformer-json": "^1.0.16",
     "idx": "^2.2.0",
+    "lodash.assign": "^4.2.0",
     "prop-types": "^15.6.1",
     "react-helmet": "^5.2.0",
     "react-responsive-carousel": "^3.1.33",
@@ -51,7 +52,9 @@
     "url-loader": "^0.6.2"
   },
   "devDependencies": {
+    "aws-sdk": "^2.209.0",
     "babel-eslint": "^8.2.2",
+    "chalk": "^2.3.2",
     "eslint": "^4.18.2",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
@@ -62,7 +65,7 @@
     "eslint-plugin-react": "^7.7.0",
     "husky": "^0.14.3",
     "rimraf": "^2.6.2",
-    "s3-deploy": "^0.9.0",
+    "s3": "^4.4.0",
     "stylelint": "^8.4.0",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-config-styled-components": "^0.1.1",
