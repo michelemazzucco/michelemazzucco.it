@@ -4,10 +4,9 @@
   "description": "Michele Mazzucco's personal portfolio website",
   "main": "n/a",
   "scripts": {
+    "dev": "gatsby develop",
     "clean": "rimraf ./public",
-    "flush-cache": "rimraf ./.cache",
     "build": "npm run clean && gatsby build",
-    "dev": "npm run flush-cache && gatsby develop",
     "lint:css": "stylelint './src/**/*.js'",
     "lint:js": "eslint './src/**/*.js'",
     "precommit": "npm run lint:css && npm run lint:js",

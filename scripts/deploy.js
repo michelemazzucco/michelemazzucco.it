@@ -23,15 +23,15 @@ const uploadFiles = () =>
       s3Params: { Bucket: bucket },
       getS3Params: (filepath, stat, callback) => {
         const isStaticFolder = /\/static\//g.test(filepath)
-        const params = isStaticFolder 
-            ? {
-              CacheControl: 'public,max-age=31536000,immutable',
-            }
-            : {
-              ACL: 'public-read',
-              CacheControl: 'public,max-age=0,must-revalidate',
-            }
-        callback(null, params)
+        callback(null, isStaticFolder 
+          ? {
+            CacheControl: 'public,max-age=31536000,immutable',
+          }
+          : { 
+            ACL: 'public-read',
+            CacheControl: 'public,max-age=0,must-revalidate',
+          }
+        )
       }
     })
     
