@@ -8,7 +8,6 @@ const AWS = require('aws-sdk')
 const s3 = require('s3')
 const chalk = require('chalk')
 const mime = require('mime-types')
-const zlib = require('zlib')
 
 AWS.config.apiVersions = { s3: '2006-03-01', cloudfront:'2017-03-25' }
 AWS.config.update({ region: process.env.AWS_REGION })
@@ -36,6 +35,8 @@ const uploadFiles = () =>
     files.forEach(({ path, key }, i) => {
       const isStaticFolder = /\/(images|favicon|static)\//g.test(path)
       const ContentType = mime.lookup(path)
+
+      console.log(path, key)
       
       s3Client.putObject({
         Bucket,
@@ -50,7 +51,7 @@ const uploadFiles = () =>
       }, e => e && console.log(e))
 
       if (i === (files.length - 1)) {
-        console.log(chalk.green('✔ Files uploade!'))
+        console.log(chalk.green('✔ Files uploaded!'))
         resolve()
       }
     })
