@@ -27,6 +27,7 @@ export const WorkFeatured = styled.article`
     left: 0;
     font-size: 0;
     line-height: 0;
+    z-index: 2;
   }
 
   ${media.sm`
@@ -65,6 +66,7 @@ export const StyledImage = styled(Image)`
     bottom: -100%;
     left: -100%;
     object-fit: cover;
+    z-index: 1;
   }
 `
 
