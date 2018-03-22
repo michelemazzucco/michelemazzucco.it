@@ -1,5 +1,3 @@
-const { fs, ga, fv, mf, sn } = require('./gatsby-plugins-opts.js')
-
 module.exports = {
   pathPrefix: '/',
   siteMetadata: {
@@ -8,23 +6,58 @@ module.exports = {
   plugins: [
     {
       resolve: 'gatsby-source-filesystem',
-      options: fs
+      options: {
+        name: 'data',
+        path: './src/data/'
+      }
     },
     {
       resolve: 'gatsby-plugin-google-analytics',
-      options: ga
+      options: {
+        trackingId: 'UA-113472346-1',
+        anonymize: true,
+      }
     },
     {
       resolve: 'gatsby-plugin-favicon',
-      options: fv
+      options: {
+        logo: './src/assets/favicon.png',
+        injectHTML: true,
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: false,
+          coast: false,
+          favicons: true,
+          firefox: false,
+          twitter: true,
+          yandex: false,
+          windows: false
+        }
+      }
     },
-    //{
-    //  resolve: 'gatsby-plugin-sentry',
-    //  options: sn
-    //},
     {
       resolve: 'gatsby-plugin-manifest',
-      options: mf
+      options: {
+        name: 'Michele Mazzucco',
+        short_name: 'mzzmhl',
+        start_url: '/',
+        background_color: '#f7f0eb',
+        theme_color: '#a2466c',
+        display: 'minimal-ui',
+        icons: [
+          {
+            src: '/favicons/favicon-16x16.png',
+            sizes: '16x16',
+            type: 'image/png'
+          },
+          {
+            src: '/favicons/favicon-32x32.png',
+            sizes: '32x32',
+            type: 'image/png'
+          }
+        ]
+      }
     },
     'gatsby-plugin-react-next',
     'gatsby-plugin-react-helmet',
