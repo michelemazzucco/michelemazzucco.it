@@ -12,7 +12,7 @@
     "precommit": "npm run lint:css && npm run lint:js",
     "gzip": "gzip -r public",
     "deploy": "./scripts/deploy.js",
-    "pubblish": "npm run build && npm run gzip && npm run deploy"
+    "pubblish": "npm run build && npm run deploy"
   },
   "keywords": [
     "react",
