@@ -10,6 +10,7 @@
     "lint:css": "stylelint './src/**/*.js'",
     "lint:js": "eslint './src/**/*.js'",
     "precommit": "npm run lint:css && npm run lint:js",
+    "gzip": "gzip -r public",
     "deploy": "./scripts/deploy.js",
     "pubblish": "npm run build && npm run deploy"
   },
@@ -62,7 +63,9 @@
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
+    "gzip-all": "^1.0.0",
     "husky": "^0.14.3",
+    "mime-types": "^2.1.18",
     "rimraf": "^2.6.2",
     "s3": "^4.4.0",
     "stylelint": "^8.4.0",
