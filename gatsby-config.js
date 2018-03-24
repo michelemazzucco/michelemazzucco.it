@@ -24,7 +24,7 @@ module.exports = {
         logo: './src/assets/favicon.png',
         injectHTML: true,
         icons: {
-          android: true,
+          android: false,
           appleIcon: true,
           appleStartup: false,
           coast: false,
