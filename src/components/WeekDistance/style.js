@@ -39,7 +39,7 @@ export const EmojiWrapper = styled.span`
   margin-right: .65rem;
 `
 
-export const Kilometers = styled.span`
+export const Kilometers = styled.a`
   border-bottom: 1px dotted ${colors.gray700};
   display: inline-block;
   vertical-align: top;
