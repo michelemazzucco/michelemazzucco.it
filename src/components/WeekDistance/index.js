@@ -22,8 +22,8 @@ class WeekDistance extends Component {
     const { distance } = this.state
 
     return distance === 0 
-      ? <Fragment><EmojiWrapper role="img" aria-label="poop">💩</EmojiWrapper>No km of running this week</Fragment>
-      : <Fragment>{this.getEmoji(distance)} I've run <Kilometers>{this.state.distance}km</Kilometers> this week</Fragment>
+      ? <Fragment><EmojiWrapper role="img" aria-label="sad face">☹️</EmojiWrapper>No km of running this week</Fragment>
+      : <Fragment>{this.getEmoji(distance)} I've run <Kilometers target="_blank" rel="noopener noreferrer" href="https://www.strava.com/athletes/8681316">{this.state.distance}km</Kilometers> this week</Fragment>
   }
 
   render() {

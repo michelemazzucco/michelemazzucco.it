@@ -36,10 +36,10 @@ export const EmojiWrapper = styled.span`
   color: initial;
   display: inline-block;
   vertical-align: middle;
-  margin-right: .65rem;
+  margin-right: .5rem;
 `
 
-export const Kilometers = styled.span`
+export const Kilometers = styled.a`
   border-bottom: 1px dotted ${colors.gray700};
   display: inline-block;
   vertical-align: top;
