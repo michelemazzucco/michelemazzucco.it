@@ -36,7 +36,7 @@ export const EmojiWrapper = styled.span`
   color: initial;
   display: inline-block;
   vertical-align: middle;
-  margin-right: .65rem;
+  margin-right: .5rem;
 `
 
 export const Kilometers = styled.a`
