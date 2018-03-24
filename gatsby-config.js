@@ -42,8 +42,8 @@ module.exports = {
         name: 'Michele Mazzucco',
         short_name: 'mzzmhl',
         start_url: '/',
-        background_color: '#f7f0eb',
-        theme_color: '#a2466c',
+        background_color: '#1e2732',
+        theme_color: '#1e2732',
         display: 'minimal-ui',
         icons: [
           {
