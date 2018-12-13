@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import Logo from '../../components/Logo'
-import Footer from '../../components/Footer'
-import Menu from '../../components/Menu'
-import ToggleMenu from '../../components/ToggleMenu'
+import Logo from '../Logo'
+import Footer from '../Footer'
+import Menu from '../Menu'
+import ToggleMenu from '../ToggleMenu'
 import { Wrapper, Header, Shoable } from './style'
 
 class Navigation extends Component {
