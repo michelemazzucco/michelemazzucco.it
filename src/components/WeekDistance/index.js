@@ -8,6 +8,7 @@ class WeekDistance extends Component {
   componentDidMount() {
     getWeekDistance()
       .then(data => this.setState({ distance: data.distance }))
+      .catch(e => this.setState({ distance: null }))
   }
 
   getEmoji() {
