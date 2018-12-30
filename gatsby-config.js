@@ -12,6 +12,14 @@ module.exports = {
       }
     },
     {
+    resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Roboto:300,400', 'Roboto Mono']
+        }
+      }
+    },
+    {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: 'UA-113472346-1',
