@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
+import Layout from '../components/layout'
 import { fonts, colors, media } from '../style/constants'
 
 const Title = styled.h1`
@@ -46,11 +47,13 @@ const BackToHome = styled(Link)`
   }
 `
 
-export default props =>
-  <Wrapper>
-    <header>
-      <Title>Oops, sorry!</Title>
-      <Subtitle>This page cannot be found.</Subtitle>
-      <BackToHome to='/'>Go to index</BackToHome>
-    </header>
-  </Wrapper>
+export default ({ location }) =>
+  <Layout location={location}>
+    <Wrapper>
+      <header>
+        <Title>Oops, sorry!</Title>
+        <Subtitle>This page cannot be found.</Subtitle>
+        <BackToHome to='/'>Go to index</BackToHome>
+      </header>
+    </Wrapper>
+  </Layout>

@@ -1,8 +1,8 @@
-import { injectGlobal } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 import reset from 'styled-reset'
 import { colors, fonts, media } from './constants'
 
-injectGlobal`
+export const GlobalStyle = createGlobalStyle`
   ${reset}
 
   @font-face {
@@ -58,4 +58,4 @@ injectGlobal`
     color: ${colors.yellow500};
     background: transparent;
   }
-`
+`;

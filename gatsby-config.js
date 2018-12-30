@@ -59,11 +59,11 @@ module.exports = {
         ]
       }
     },
-    'gatsby-plugin-react-next',
+    //'gatsby-plugin-react-next',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
     'gatsby-transformer-json',
-    '@jacobmischka/gatsby-plugin-react-svg',
+    'gatsby-plugin-react-svg',
     'gatsby-plugin-styled-components'
   ],
 }
