@@ -20,13 +20,13 @@ const Menu = () =>
     </Nav>
     <Nav>
       <NavItem>
-        <NavLink exact to='/'>Index</NavLink>
+        <NavLink to='/'>Index</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink exact to='/works'>Works</NavLink>
+        <NavLink to='/works'>Works</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink exact to='/profile'>Profile</NavLink>
+        <NavLink to='/profile'>Profile</NavLink>
       </NavItem>
       <NavItem highlight><EmailMe text="Contact"/>
     </NavItem>
