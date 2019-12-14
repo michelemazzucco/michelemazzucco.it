@@ -1,6 +1,6 @@
 import React from 'react'
 import Intro from '../Intro'
-import { Wrapper, InfoWrapper, Content, StyledWeekDistance, StyledImage } from './style'
+import { Wrapper, InfoWrapper, Content, StyledImage } from './style'
 import { Loader } from '../../style/shared'
 
 const ProfileIntroSection = ({ content }) => 
@@ -9,7 +9,6 @@ const ProfileIntroSection = ({ content }) =>
       <Intro fixed={false} />
       <Content>{content()}</Content>
     </InfoWrapper>
-    { /* <StyledWeekDistance /> */}
     <StyledImage 
       src="/images/profile/michele-mazzucco-portrait.jpg"
       alt="Michele Mazzucco - Interdisciplinary Designer"
