@@ -9,7 +9,7 @@ const ProfileIntroSection = ({ content }) =>
       <Intro fixed={false} />
       <Content>{content()}</Content>
     </InfoWrapper>
-    <StyledWeekDistance />
+    { /* <StyledWeekDistance /> */}
     <StyledImage 
       src="/images/profile/michele-mazzucco-portrait.jpg"
       alt="Michele Mazzucco - Interdisciplinary Designer"
